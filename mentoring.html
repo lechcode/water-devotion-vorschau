@@ -17,7 +17,7 @@
 <meta property="og:image:height" content="630">
 <meta name="theme-color" content="#24494C">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2324494C'/%3E%3Cpath d='M10 34c6-8 12-8 18 0s12 8 18 0' stroke='%23CFE8E6' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M10 44c6-8 12-8 18 0s12 8 18 0' stroke='%23D8EDED' stroke-width='3' fill='none' stroke-linecap='round' opacity='.7'/%3E%3C/svg%3E">
-<link rel="preload" href="assets/fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/playfair-display-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/outfit-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css">
 <style>
@@ -31,7 +31,7 @@
   --tinte:#1E3234;        /* Text auf hell */
   --akzent:#2E6A6E;       /* Links/CTA auf hell (AA auf Papier/Aqua) */
   --akzent-d:#CFE8E6;     /* Akzent auf dunkel */
-  --serif:'Instrument Serif','Instrument Serif Fallback',Georgia,serif;
+  --serif:'Playfair Display','Playfair Display Fallback',Georgia,serif;
   --sans:'Outfit','Outfit Fallback','Helvetica Neue',Arial,sans-serif;
   --s1:.5rem;--s2:1rem;--s3:1.75rem;--s4:3rem;--s5:5rem;--s6:7.5rem;
   --radius:14px;
@@ -40,7 +40,7 @@
   --fs-1:clamp(1rem, .95rem + .25vw, 1.125rem);
   --fs-2:clamp(1.25rem, 1.1rem + .7vw, 1.7rem);
   --fs-3:clamp(1.7rem, 1.4rem + 1.4vw, 2.6rem);
-  --fs-4:clamp(2.6rem, 1.9rem + 3.4vw, 4.6rem);
+  --fs-4:clamp(2.4rem, 1.8rem + 3vw, 4.1rem);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -48,7 +48,7 @@ html{scroll-behavior:smooth}
 body{font-family:var(--sans);font-size:var(--fs-1);line-height:1.7;color:var(--tinte);background:var(--papier);overflow-x:clip}
 img{max-width:100%}
 picture{display:block}
-h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.22;letter-spacing:.005em}
 h1 em,h2 em,.em{font-style:italic}
 a{color:var(--akzent)}
 .wrap{max-width:1180px;margin:0 auto;padding:0 clamp(1.1rem, 4vw, 2.5rem)}
@@ -238,8 +238,8 @@ section{padding:var(--s6) 0}
 /* Ticket-Karten */
 .tickets{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.2rem,2.5vw,2rem)}
 .ticket{background:var(--papier);border-radius:var(--radius);padding:var(--s3);display:flex;flex-direction:column;gap:.9rem;box-shadow:0 6px 30px rgba(30,50,52,.08)}
-.ticket-kopf{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem}
-.ticket .datum{font-family:var(--serif);font-size:var(--fs-2);color:var(--akzent);white-space:nowrap}
+.ticket-kopf{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap}
+.ticket .datum{font-family:var(--serif);font-size:var(--fs-2);color:var(--akzent)}
 .ticket .preis{font-weight:500;background:var(--aqua);border-radius:999px;padding:.45rem 1rem;font-size:var(--fs-0);white-space:nowrap}
 .ticket h3{font-size:var(--fs-2)}
 .ticket .meta{font-size:var(--fs-0);letter-spacing:.08em;text-transform:uppercase;color:var(--akzent)}

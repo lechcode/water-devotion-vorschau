@@ -18,6 +18,9 @@ Zwei Dinge vorab, weil sie dich sicher interessieren:
 
 Die Vorschau ist privat (bei Google nicht auffindbar) und völlig unverbindlich — wenn sie dir nicht gefällt, löschen wir sie einfach wieder.
 
+Damit wir deine Seite komplett fertig machen können, beantworte uns gern kurz ein paar Fragen (dauert ca. 3 Minuten):
+https://lechcode.github.io/water-devotion-vorschau/onboarding.html#k=1dN7vt3sdQwFSN5cTybCioE9toVPs7vW
+
 Magst du in einem kurzen 30-Minuten-Gespräch mit Michael durchgehen, was sich noch anders anfühlen soll? Einen Termin kannst du dir direkt unten auf der Vorschau-Seite aussuchen — oder antworte einfach auf diese Mail.
 
 Herzliche Grüße aus Landsberg am Lech

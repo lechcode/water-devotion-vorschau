@@ -41,8 +41,8 @@ EXTRA_CSS = """
 /* Ticket-Karten */
 .tickets{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.2rem,2.5vw,2rem)}
 .ticket{background:var(--papier);border-radius:var(--radius);padding:var(--s3);display:flex;flex-direction:column;gap:.9rem;box-shadow:0 6px 30px rgba(30,50,52,.08)}
-.ticket-kopf{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem}
-.ticket .datum{font-family:var(--serif);font-size:var(--fs-2);color:var(--akzent);white-space:nowrap}
+.ticket-kopf{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap}
+.ticket .datum{font-family:var(--serif);font-size:var(--fs-2);color:var(--akzent)}
 .ticket .preis{font-weight:500;background:var(--aqua);border-radius:999px;padding:.45rem 1rem;font-size:var(--fs-0);white-space:nowrap}
 .ticket h3{font-size:var(--fs-2)}
 .ticket .meta{font-size:var(--fs-0);letter-spacing:.08em;text-transform:uppercase;color:var(--akzent)}
@@ -88,7 +88,7 @@ def kopf(title, desc, slug):
 <meta property="og:image:height" content="630">
 <meta name="theme-color" content="#24494C">
 {favicon}
-<link rel="preload" href="assets/fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/playfair-display-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/outfit-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css">
 {style}
