@@ -1,0 +1,17 @@
+# design-brief · water-devotion (Phase 3, 03.09.2026)
+
+**Design-DNA (aus 2.5):** Profil modern(2)/reduziert(2,5)/ruhig(2)/warm-über-Sprache · Archetyp **Editorial-Ruhe × Dunkel-Cinematisch** („Tiefenwasser-Editorial") · **Instrument Serif + Outfit** (beide erstmalig) · Abhebung: erste Teal/Aqua-Wasserwelt, Vollbild-Wasser-Hero ohne Gesicht, Tauchgang-Rhythmus.
+
+**Branding-Entscheidung: ÜBERNEHMEN + verfeinern** — Palette/Logo/Stimmung sind ihre Marke (W2/W4); nur destilliert (5 Rollen-Tokens) und typografisch neu getragen.
+
+1. **Stimmung:** fließend · tief · getragen. „Die Seite fühlt sich an wie langsames Eintauchen in ruhiges Wasser."
+2. **Palette:** Tiefe `#24494C` / Fläche `#306569` / Papier `#FCFBF8` / Aqua `#D8EDED`+`#EAF4F3` / Tinte `#1E3234` / Akzent hell `#2E6A6E` · auf dunkel `#CFE8E6`. AA geprüft (Text auf #306569 nur Weiß/#EAF4F3; #2E6A6E nur auf Papier/Aqua).
+3. **Typografie:** Instrument Serif 400+Italic (H1–H3, Zitate — Italic als Wasser-Akzent) · Outfit 300/400/500 (Body/UI). Skala fluid `clamp()`: H1 ~ clamp(2.6rem, 5vw + 1rem, 4.6rem).
+4. **Hero:** Vollbild Watershoot-1808-1 (Hände/Wasser), Dual-Scrim nach `#24494C`, Eyebrow „Fluid dance · Lucerne" → H1 „The art of becoming *fluid*" (Italic-em) → Lead (ihr Welcome-Text gestrafft) → CTA „Explore the offerings" + Sekundär „Book a discovery call". Text links unten in ruhiger Wasserfläche, nie über den Händen.
+5. **Sektions-Plan Startseite:** ① Nav (transparent→Blur) ② Hero (dunkel) ③ Intro-Zeilen + 3 Offerings-Karten (Papier) ④ About Lucy (Aqua, Porträt 4/5 + ihre Geschichte gestrafft) ⑤ Eiseley-Zitat-Bühne (dunkel, Wellen-SVG) ⑥ Stimmen (Papier, 3 Zitate) ⑦ Newsletter + Instagram (Aqua) ⑧ Footer (Tiefe, NAP + Credit). **Unterseiten:** mentoring.html (Sehnsuchts-Fragen → Ablauf/What awaits → Atwood-Zitat → Stimmen → CTA Discovery Call) · workshops.html (Konzept → **Termin-/Ticket-Karten (W6, Payrexx-Demo)** → Online-Immersion → Stimmen → CTA) · shiatsu.html (Einladung → Methode → 3 Preis-Karten → Hinweise/Soli-Preise → Stimmen → CTA). Jede Unterseite endet mit CTA + Kontaktweg.
+6. **Bildsprache:** NUR echte Shooting-Fotos, zwei Raster: Porträt/hochkant `aspect-ratio: 4/5`, Szene/quer `3/2`; einheitliche Behandlung (leichte Teal-Tonung via CSS `filter` nur wo B&W/Farbe kollidieren — sparsam); keine Insta-Kacheln mit eingebrannter Typo. srcset 400/800/1200/1600.
+7. **Motion-Budget (3):** ① Scroll-Reveals (einmalig, 250–350 ms) ② Wellen-Linie im Zitat/Sektionsübergang, sanftes `translateX`-Treiben ③ Hero-Bild langsames Scale-Settle (Ken-Burns-mini). Alles hinter `prefers-reduced-motion`.
+8. **Referenzen:** Somatic-Studio-Klasse (Prinzip: Kursive als Emotionsträger — anders: warme Teal-Welt statt Studio-Grau) · Editorial-Landingpages (Prinzip: Zitat-Bühnen/Tauchgänge — anders: Wellen-Motive statt Marquee) · Ticket-Seiten (Prinzip: Datum-Karten statt Shop — anders: poetische Karten-Sprache, CHF, Payrexx).
+
+**Anrede/Ton:** EN, „you", warm-poetisch — ihre Stimme (W3). DE nur Rechtsseiten. Formular: keins auf index (sie arbeitet mit Mail/IG/Newsletter) — Kontakt via mailto + Discovery-Call-CTA; Demo-Hinweis wo Buchung.
+**Shop-Konzept (W6):** workshops.html-Ticket-Karten mit Preis in CHF; Button „Book via Payrexx" als Demo-Attrappe (öffnet Hinweis-Tooltip/Badge „Demo — im Live-Betrieb öffnet hier deine Payrexx-Bezahlseite (TWINT, Karte …)"). Shiatsu-Buttons → mailto (wie heute sinngemäß Buchung).

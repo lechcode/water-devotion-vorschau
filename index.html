@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow"><!-- ENTFERNEN sobald Impressum+Datenschutz live & freigegeben -->
+<title>Fluid Dance &amp; Embodiment in Lucerne | The Water Devotion</title>
+<meta name="description" content="Fluid dance, 1:1 mentoring, workshops and ZenThai Shiatsu in Lucerne. The Water Devotion guides you inward — finding ease, flow, and more of you.">
+<meta property="og:title" content="The Water Devotion — Fluid Dance &amp; Embodiment in Lucerne">
+<meta property="og:description" content="Fluid dance, 1:1 mentoring, workshops and ZenThai Shiatsu in Lucerne. Finding ease, flow, and more of you.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://lechcode.github.io/water-devotion-vorschau/index.html"><!-- bei Go-Live auf echte Domain -->
+<meta property="og:image" content="https://lechcode.github.io/water-devotion-vorschau/assets/og.jpg"><!-- bei Go-Live auf echte Domain -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="theme-color" content="#24494C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2324494C'/%3E%3Cpath d='M10 34c6-8 12-8 18 0s12 8 18 0' stroke='%23CFE8E6' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M10 44c6-8 12-8 18 0s12 8 18 0' stroke='%23D8EDED' stroke-width='3' fill='none' stroke-linecap='round' opacity='.7'/%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/outfit-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/img/hero-water-1200.avif" as="image" type="image/avif" media="(min-width: 700px)">
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+/* ==== The Water Devotion · Tokens ==================================== */
+:root{
+  --tiefe:#24494C;        /* dunkelste Fläche: Hero-Scrim, Footer, Zitat-Bühnen */
+  --flaeche:#306569;      /* ihr Teal: dunkle Sektionen */
+  --papier:#FCFBF8;       /* helle Sektionen */
+  --aqua:#D8EDED;         /* ihre Aqua-Fläche */
+  --aqua-hell:#EAF4F3;    /* zarte Karten/Flächen */
+  --tinte:#1E3234;        /* Text auf hell */
+  --akzent:#2E6A6E;       /* Links/CTA auf hell (AA auf Papier/Aqua) */
+  --akzent-d:#CFE8E6;     /* Akzent auf dunkel */
+  --serif:'Instrument Serif','Instrument Serif Fallback',Georgia,serif;
+  --sans:'Outfit','Outfit Fallback','Helvetica Neue',Arial,sans-serif;
+  --s1:.5rem;--s2:1rem;--s3:1.75rem;--s4:3rem;--s5:5rem;--s6:7.5rem;
+  --radius:14px;
+  --ease:cubic-bezier(.33,.8,.35,1);
+  --fs-0:clamp(.85rem, .8rem + .2vw, .95rem);
+  --fs-1:clamp(1rem, .95rem + .25vw, 1.125rem);
+  --fs-2:clamp(1.25rem, 1.1rem + .7vw, 1.7rem);
+  --fs-3:clamp(1.7rem, 1.4rem + 1.4vw, 2.6rem);
+  --fs-4:clamp(2.6rem, 1.9rem + 3.4vw, 4.6rem);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{font-family:var(--sans);font-size:var(--fs-1);line-height:1.7;color:var(--tinte);background:var(--papier);overflow-x:clip}
+img{max-width:100%}
+picture{display:block}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12}
+h1 em,h2 em,.em{font-style:italic}
+a{color:var(--akzent)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(1.1rem, 4vw, 2.5rem)}
+.eyebrow{font-size:var(--fs-0);letter-spacing:.22em;text-transform:uppercase;font-weight:500}
+.skip{position:absolute;left:-999px;top:0;background:var(--tinte);color:var(--papier);padding:.8rem 1.2rem;z-index:99;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--akzent);outline-offset:3px}
+.dunkel :focus-visible,.site-footer :focus-visible{outline-color:var(--akzent-d)}
+
+/* ==== Nav ==== */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s var(--ease), box-shadow .3s var(--ease)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem clamp(1.1rem,4vw,2.5rem);max-width:1320px;margin:0 auto}
+.nav.scrolled{background:rgba(36,73,76,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(207,232,230,.15)}
+.brand img{width:150px;height:64px;object-fit:contain;display:block}
+.nav-links{display:flex;align-items:center;gap:1.6rem;list-style:none}
+.nav-links a{color:#fff;text-decoration:none;font-size:var(--fs-0);letter-spacing:.06em;font-weight:500;padding:.6rem 0;display:inline-block}
+.nav-links a:hover{color:var(--akzent-d)}
+.nav-links a.pill{border:1px solid var(--akzent-d);border-radius:999px;padding:.65rem 1.3rem;color:var(--akzent-d)}
+.nav-links a.pill:hover{background:rgba(207,232,230,.14)}
+.burger{display:none;background:none;border:0;width:48px;height:48px;cursor:pointer;position:relative;z-index:60}
+.burger span{display:block;width:26px;height:2px;background:#fff;margin:6px auto;transition:transform .3s var(--ease), opacity .3s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+@media (max-width: 900px){
+  .burger{display:block}
+  .nav-links{position:fixed;inset:0;background:var(--tiefe);flex-direction:column;justify-content:center;gap:2rem;transform:translateY(-102%);transition:transform .4s var(--ease)}
+  .nav-links.open{transform:translateY(0)}
+  .nav-links a{font-size:var(--fs-2);font-family:var(--serif);letter-spacing:.02em}
+}
+
+/* ==== Hero ==== */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;background:var(--tiefe)}
+.hero-bild{position:absolute;inset:0;overflow:hidden}
+.hero-bild img{width:100%;height:100%;object-fit:cover;object-position:68% 42%}
+.js .hero-bild img{animation:settle 2.4s var(--ease) both}
+@keyframes settle{from{transform:scale(1.045)}to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(12deg, rgba(36,73,76,.88) 0%, rgba(36,73,76,.55) 34%, rgba(36,73,76,.08) 62%),
+  radial-gradient(ellipse at 22% 82%, rgba(18,42,44,.75), transparent 58%)}
+.hero-text{position:relative;z-index:2;padding:0 0 clamp(3.5rem,9vh,6.5rem);max-width:640px}
+.hero-text .eyebrow{color:var(--akzent-d);margin-bottom:var(--s2)}
+.hero-text h1{font-size:var(--fs-4);text-wrap:balance;text-shadow:0 1px 24px rgba(10,25,26,.35)}
+.hero-text h1 em{color:var(--akzent-d)}
+.hero-text p{margin:var(--s3) 0;max-width:52ch;font-size:var(--fs-2);font-weight:400;line-height:1.55;text-shadow:0 1px 16px rgba(10,25,26,.4)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem}
+
+/* ==== Buttons ==== */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.85rem 1.7rem;border-radius:999px;text-decoration:none;font-weight:500;font-size:var(--fs-1);transition:transform .25s var(--ease), background .25s, color .25s;border:1px solid transparent}
+.btn:hover{transform:translateY(-2px)}
+.btn-voll{background:var(--akzent-d);color:var(--tiefe)}
+.btn-voll:hover{background:#fff}
+.btn-line{border-color:var(--akzent-d);color:var(--akzent-d)}
+.btn-line:hover{background:rgba(207,232,230,.14)}
+.btn-tinte{background:var(--tiefe);color:var(--aqua-hell)}
+.btn-tinte:hover{background:var(--flaeche);color:#fff}
+.btn-tline{border-color:var(--akzent);color:var(--akzent)}
+.btn-tline:hover{background:var(--aqua-hell)}
+
+/* ==== Sektionen / Tauchgänge ==== */
+section{padding:var(--s6) 0}
+.dunkel{background:var(--flaeche);color:var(--aqua-hell)}
+.dunkel h2{color:#fff}
+.aqua{background:var(--aqua)}
+.aqua-hell{background:var(--aqua-hell)}
+.welle{display:block;width:100%;height:auto}
+.sek-kopf{max-width:640px;margin-bottom:var(--s4)}
+.sek-kopf .eyebrow{color:var(--akzent);margin-bottom:var(--s2)}
+.dunkel .sek-kopf .eyebrow{color:var(--akzent-d)}
+.sek-kopf h2{font-size:var(--fs-3);text-wrap:balance}
+
+/* Intro */
+.intro{padding-bottom:var(--s5)}
+.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,5rem);align-items:end}
+.intro p.gross{font-family:var(--serif);font-size:var(--fs-3);line-height:1.3;text-wrap:balance}
+.intro p.gross em{color:var(--akzent)}
+.intro-neben p{margin-bottom:var(--s2)}
+@media (max-width: 900px){.intro-grid{grid-template-columns:1fr}}
+
+/* Offerings */
+.karten{display:grid;grid-template-columns:repeat(3, 1fr);gap:clamp(1.2rem,2.5vw,2rem)}
+.karte{background:var(--papier);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 6px 30px rgba(30,50,52,.08);transition:transform .35s var(--ease), box-shadow .35s var(--ease);text-decoration:none;color:var(--tinte)}
+.karte:hover{transform:translateY(-6px);box-shadow:0 16px 44px rgba(30,50,52,.14)}
+.karte figure{aspect-ratio:4/5;overflow:hidden}
+.karte img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.karte:hover img{transform:scale(1.04)}
+.karte-text{padding:var(--s3);display:flex;flex-direction:column;gap:.6rem;flex:1}
+.karte h3{font-size:var(--fs-2)}
+.karte p{font-size:var(--fs-1);opacity:.88;flex:1}
+.karte .mehr{color:var(--akzent);font-weight:500;display:inline-flex;align-items:center;gap:.4rem;min-height:48px}
+.karte:hover .mehr{text-decoration:underline}
+@media (max-width: 900px){.karten{grid-template-columns:1fr;max-width:460px;margin:0 auto}}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+.about-figur{position:relative;max-width:400px;margin:0 auto}
+.about-figur figure{aspect-ratio:4/5;overflow:hidden;border-radius:var(--radius)}
+.about-figur img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.about-figur::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--akzent);border-radius:var(--radius);z-index:-1}
+.about-text h2{font-size:var(--fs-3);margin-bottom:var(--s2)}
+.about-text p{margin-bottom:var(--s2)}
+.about-text .gruss{font-family:var(--serif);font-style:italic;font-size:var(--fs-2);color:var(--akzent)}
+@media (max-width: 900px){.about-grid{grid-template-columns:1fr}.about-figur{max-width:260px}}
+
+/* Zitat-Bühne */
+.zitat{background:var(--tiefe);color:var(--aqua-hell);text-align:center;position:relative;overflow:hidden}
+.zitat blockquote{max-width:820px;margin:0 auto;font-family:var(--serif);font-style:italic;font-size:var(--fs-3);line-height:1.35;text-wrap:balance}
+.zitat cite{display:block;margin-top:var(--s3);font-family:var(--sans);font-style:normal;font-size:var(--fs-0);letter-spacing:.2em;text-transform:uppercase;color:var(--akzent-d)}
+.zitat .treiben{margin:0 auto var(--s3)}
+.js .treiben path{animation:treiben 9s ease-in-out infinite alternate}
+@keyframes treiben{from{transform:translateX(-14px)}to{transform:translateX(14px)}}
+
+/* Stimmen */
+.stimmen{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.2rem,2.5vw,2rem)}
+.stimme{background:var(--aqua-hell);border-radius:var(--radius);padding:var(--s3);display:flex;flex-direction:column;gap:1rem}
+.stimme p{font-family:var(--serif);font-size:var(--fs-2);line-height:1.4}
+.stimme footer{font-size:var(--fs-0);letter-spacing:.14em;text-transform:uppercase;color:var(--akzent);margin-top:auto}
+@media (max-width: 900px){.stimmen{grid-template-columns:1fr}}
+
+/* Newsletter */
+.news{background:var(--aqua)}
+.news-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(2rem,4vw,4rem);align-items:center}
+.news h2{font-size:var(--fs-3);margin-bottom:var(--s2)}
+.news-cta{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:flex-end}
+@media (max-width: 900px){.news-grid{grid-template-columns:1fr}.news-cta{justify-content:flex-start}}
+
+/* Footer */
+.site-footer{background:var(--tiefe);color:var(--aqua-hell);padding:var(--s5) 0 var(--s3)}
+.site-footer a{color:var(--akzent-d)}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:var(--s4);margin-bottom:var(--s4)}
+.foot-grid h3{font-size:var(--fs-1);letter-spacing:.16em;text-transform:uppercase;font-family:var(--sans);font-weight:500;color:var(--akzent-d);margin-bottom:var(--s2)}
+.site-footer ul{list-style:none}
+.site-footer li{margin-bottom:.55rem}
+.site-footer li a{text-decoration:none;min-height:48px;display:inline-flex;align-items:center}
+.site-footer li a:hover{text-decoration:underline}
+.foot-brand img{width:170px;height:72px;object-fit:contain;margin-bottom:var(--s2)}
+.foot-brand p{font-size:var(--fs-0);opacity:.8;max-width:34ch}
+.foot-unten{border-top:1px solid rgba(207,232,230,.2);padding-top:var(--s3);display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;font-size:var(--fs-0);opacity:.85}
+.lc-credit a{color:inherit;text-decoration:underline}
+@media (max-width: 900px){.foot-grid{grid-template-columns:1fr}}
+
+/* Reveals */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .5s var(--ease), transform .6s var(--ease)}
+.js .reveal.sichtbar{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .js .hero-bild img{animation:none}
+  .js .treiben path{animation:none}
+  .btn,.karte,.karte img{transition:none}
+}
+@media print{
+  .nav,.hero-cta,.news,.burger{display:none}
+  .hero{min-height:auto;color:#000;background:#fff}
+  .hero::after,.hero-bild{display:none}
+  body{background:#fff;color:#000}
+  section{padding:1rem 0}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#inhalt">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html" aria-label="The Water Devotion — Home">
+      <img src="assets/logo-hell.png" alt="The Water Devotion" width="150" height="64">
+    </a>
+    <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="menu">
+      <li><a href="mentoring.html">Mentoring</a></li>
+      <li><a href="workshops.html">Workshops</a></li>
+      <li><a href="shiatsu.html">Shiatsu</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a class="pill" href="mailto:lucy@thewaterdevotion.com?subject=Discovery%20Call">Discovery call</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="inhalt">
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Welcome">
+    <div class="hero-bild">
+      <picture>
+        <source type="image/avif" srcset="assets/img/hero-water-480.avif 480w, assets/img/hero-water-800.avif 800w, assets/img/hero-water-1200.avif 1200w, assets/img/hero-water-1600.avif 1600w, assets/img/hero-water-2000.avif 2000w" sizes="100vw">
+        <source type="image/webp" srcset="assets/img/hero-water-480.webp 480w, assets/img/hero-water-800.webp 800w, assets/img/hero-water-1200.webp 1200w, assets/img/hero-water-1600.webp 1600w, assets/img/hero-water-2000.webp 2000w" sizes="100vw">
+        <img src="assets/img/hero-water-1200.jpg" srcset="assets/img/hero-water-480.jpg 480w, assets/img/hero-water-800.jpg 800w, assets/img/hero-water-1200.jpg 1200w, assets/img/hero-water-1600.jpg 1600w, assets/img/hero-water-2000.jpg 2000w" sizes="100vw" width="2048" height="1365" alt="Two hands reaching gently into calm, dark green water" fetchpriority="high">
+      </picture>
+    </div>
+    <div class="wrap hero-text">
+      <p class="eyebrow">Fluid dance · Embodiment · Lucerne</p>
+      <h1>The art of becoming <em>fluid</em></h1>
+      <p>Welcome to the place of your authentic expression and fluid dance. Like a quiet current, the water devotion guides you inward — unfolding your own rhythm and the power behind your movement. Finding ease, flow, and more of you.</p>
+      <div class="hero-cta">
+        <a class="btn btn-voll" href="#offerings">Explore the offerings</a>
+        <a class="btn btn-line" href="mailto:lucy@thewaterdevotion.com?subject=Discovery%20Call">Book a free discovery call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="intro">
+    <div class="wrap intro-grid">
+      <p class="gross reveal">Are you yearning to surrender to your own fluidity — to explore the waves your body longs to share? <em>The waters are waiting.</em></p>
+      <div class="intro-neben reveal">
+        <p>More than body awareness, this is about feeling, letting go and allowing yourself to be moved. Unfolding your unique rhythm — and recognizing the power behind your movement.</p>
+        <p>Let us dive in, gently and deeply.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings -->
+  <section class="aqua-hell" id="offerings">
+    <div class="wrap">
+      <div class="sek-kopf reveal">
+        <p class="eyebrow">Offerings</p>
+        <h2>Three ways into the <em>water</em></h2>
+      </div>
+      <div class="karten">
+        <a class="karte reveal" href="mentoring.html">
+          <figure>
+            <picture>
+              <source type="image/avif" srcset="assets/img/card-mentoring-400.avif 400w, assets/img/card-mentoring-800.avif 800w, assets/img/card-mentoring-1200.avif 1200w" sizes="(max-width: 900px) 92vw, 30vw">
+              <source type="image/webp" srcset="assets/img/card-mentoring-400.webp 400w, assets/img/card-mentoring-800.webp 800w, assets/img/card-mentoring-1200.webp 1200w" sizes="(max-width: 900px) 92vw, 30vw">
+              <img src="assets/img/card-mentoring-800.jpg" srcset="assets/img/card-mentoring-400.jpg 400w, assets/img/card-mentoring-800.jpg 800w, assets/img/card-mentoring-1200.jpg 1200w" sizes="(max-width: 900px) 92vw, 30vw" width="1365" height="2048" alt="Lucy lifting water in her hands at the lake" loading="lazy" decoding="async">
+            </picture>
+          </figure>
+          <div class="karte-text">
+            <h3>The Fluid Self — 1:1 Mentoring</h3>
+            <p>Work with me, tailored to your needs, your rhythm and your desire to surrender to your dance, your body awareness and your inner flow.</p>
+            <span class="mehr">Discover the mentoring →</span>
+          </div>
+        </a>
+        <a class="karte reveal" href="workshops.html">
+          <figure>
+            <picture>
+              <source type="image/avif" srcset="assets/img/card-workshops-400.avif 400w, assets/img/card-workshops-800.avif 800w, assets/img/card-workshops-1200.avif 1200w" sizes="(max-width: 900px) 92vw, 30vw">
+              <source type="image/webp" srcset="assets/img/card-workshops-400.webp 400w, assets/img/card-workshops-800.webp 800w, assets/img/card-workshops-1200.webp 1200w" sizes="(max-width: 900px) 92vw, 30vw">
+              <img src="assets/img/card-workshops-800.jpg" srcset="assets/img/card-workshops-400.jpg 400w, assets/img/card-workshops-800.jpg 800w, assets/img/card-workshops-1200.jpg 1200w" sizes="(max-width: 900px) 92vw, 30vw" width="1365" height="2048" alt="Dancers moving together outdoors" loading="lazy" decoding="async">
+            </picture>
+          </figure>
+          <div class="karte-text">
+            <h3>Workshops &amp; Dance Journeys</h3>
+            <p>Feel the presence, the people, and the practice — live in Lucerne. Become part of a community devoted to the waters within.</p>
+            <span class="mehr">See the next dates →</span>
+          </div>
+        </a>
+        <a class="karte reveal" href="shiatsu.html">
+          <figure>
+            <picture>
+              <source type="image/avif" srcset="assets/img/shiatsu-outdoor-400.avif 400w, assets/img/shiatsu-outdoor-800.avif 800w, assets/img/shiatsu-outdoor-1200.avif 1200w" sizes="(max-width: 900px) 92vw, 30vw">
+              <source type="image/webp" srcset="assets/img/shiatsu-outdoor-400.webp 400w, assets/img/shiatsu-outdoor-800.webp 800w, assets/img/shiatsu-outdoor-1200.webp 1200w" sizes="(max-width: 900px) 92vw, 30vw">
+              <img src="assets/img/shiatsu-outdoor-800.jpg" srcset="assets/img/shiatsu-outdoor-400.jpg 400w, assets/img/shiatsu-outdoor-800.jpg 800w, assets/img/shiatsu-outdoor-1200.jpg 1200w" sizes="(max-width: 900px) 92vw, 30vw" width="1365" height="2048" alt="Lucy giving a ZenThai Shiatsu session outdoors at dusk" loading="lazy" decoding="async">
+            </picture>
+          </figure>
+          <div class="karte-text">
+            <h3>ZenThai Shiatsu</h3>
+            <p>A dance with the body. Conscious touch and gentle movement that support your wellbeing — booked one to one, in Lucerne.</p>
+            <span class="mehr">Discover the bodywork →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="aqua" id="about">
+    <div class="wrap about-grid">
+      <div class="about-figur reveal">
+        <figure>
+          <picture>
+            <source type="image/avif" srcset="assets/img/lucy-water-400.avif 400w, assets/img/lucy-water-800.avif 800w, assets/img/lucy-water-1200.avif 1200w" sizes="(max-width: 900px) 70vw, 34vw">
+            <source type="image/webp" srcset="assets/img/lucy-water-400.webp 400w, assets/img/lucy-water-800.webp 800w, assets/img/lucy-water-1200.webp 1200w" sizes="(max-width: 900px) 70vw, 34vw">
+            <img src="assets/img/lucy-water-800.jpg" srcset="assets/img/lucy-water-400.jpg 400w, assets/img/lucy-water-800.jpg 800w, assets/img/lucy-water-1200.jpg 1200w" sizes="(max-width: 900px) 70vw, 34vw" width="2048" height="1365" alt="Lucy standing in the lake, arms moving through the water" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+      </div>
+      <div class="about-text reveal">
+        <p class="eyebrow" style="color:var(--akzent);margin-bottom:1rem">About me</p>
+        <h2>My name is <em>Lucy</em></h2>
+        <p>Born and raised in Hamburg, now living in Lucerne. Dance has been a deep companion of mine since I was a little child. At 16, I began teaching, and I've been creating joyful, connecting experiences through movement ever since. After years of choreography and performance, my body began to speak through pain in my gut and lungs.</p>
+        <p>That pain led me to freestyle and fluid movement, to a place where emotions could find authentic expression. Through intensives at humanhood, amenti movemeant and somatic dance, it guided me to create spaces that don't just reflect you in the mirror of a dance studio, but in the mirror of the person in front of you. Through the studies of ZenThai Shiatsu I'm touched by how gently, and sometimes with sharp clarity, the body communicates with us.</p>
+        <p>I care about how often we're taught to minimize our voices and presence, instead of celebrating them. The Water Devotion is here to shift that. In a soft, artistic and most compassionate way.</p>
+        <p class="gruss">Looking forward to flow with you soon. With love. Lucy</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zitat-Bühne -->
+  <section class="zitat">
+    <div class="wrap reveal">
+      <svg class="treiben" width="140" height="30" viewBox="0 0 140 30" aria-hidden="true"><path d="M6 15c11-13 22-13 33 0s22 13 33 0 22-13 33 0 18 10 29 4" stroke="#CFE8E6" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".85"/></svg>
+      <blockquote>&bdquo;If there is magic on this planet, it is contained in water.&ldquo;
+        <cite>Loren Eiseley</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Stimmen -->
+  <section>
+    <div class="wrap">
+      <div class="sek-kopf reveal">
+        <p class="eyebrow">Voices from the practice</p>
+        <h2>What practitioners <em>feel</em></h2>
+      </div>
+      <div class="stimmen">
+        <div class="stimme reveal">
+          <p>&bdquo;My expression has opened deeply, and I feel much more connected to my body, to myself. For me, this experience went far beyond dancing.&ldquo;</p>
+          <footer>Janine · TWD Practitioner</footer>
+        </div>
+        <div class="stimme reveal">
+          <p>&bdquo;This journey has once again reminded me how deep my passion for dance truly is — and how much I want to nurture and expand my practice.&ldquo;</p>
+          <footer>Milena · TWD Practitioner</footer>
+        </div>
+        <div class="stimme reveal">
+          <p>&bdquo;Three months of depth, touch, exploring, expanding, integrating and becoming myself. Step by step.&ldquo;</p>
+          <footer>Kathi · 1:1 Mentoring</footer>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="news">
+    <div class="wrap news-grid">
+      <div class="reveal">
+        <p class="eyebrow" style="color:var(--akzent);margin-bottom:1rem">Stay in the flow</p>
+        <h2>Letters from the <em>water</em></h2>
+        <p>Now and then a note from me — new dates, journeys, and what the waters are asking for.</p>
+      </div>
+      <div class="news-cta reveal">
+        <a class="btn btn-tinte" href="https://shorturl.at/KjHTp" target="_blank" rel="noopener noreferrer">Join the newsletter</a>
+        <a class="btn btn-tline" href="https://www.instagram.com/luzseed/" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/logo-hell.png" alt="The Water Devotion" width="170" height="72" loading="lazy">
+        <p>Fluid dance, embodiment &amp; ZenThai Shiatsu — with Lucy Nicholas in Lucerne, Switzerland.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="mentoring.html">1:1 Mentoring</a></li>
+          <li><a href="workshops.html">Workshops &amp; Journeys</a></li>
+          <li><a href="shiatsu.html">ZenThai Shiatsu</a></li>
+          <li><a href="index.html#about">About me</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="mailto:lucy@thewaterdevotion.com">lucy@thewaterdevotion.com</a></li>
+          <li><a href="https://www.instagram.com/luzseed/" target="_blank" rel="noopener noreferrer">Instagram · @luzseed</a></li>
+          <li>Tanzlaboor Luzern · Nidfeldstrasse 1, 6010 Kriens</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-unten">
+      <span>© 2026 Lucy Nicholas · The Water Devotion — <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+      <span class="lc-credit">Website gebaut von <a href="https://lechcode.de" target="_blank" rel="noopener">Lechcode</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  var setz=function(){nav.classList.toggle('scrolled', window.scrollY>24)};
+  setz(); window.addEventListener('scroll', setz, {passive:true});
+
+  var burger=document.querySelector('.burger'), menu=document.getElementById('menu');
+  burger.addEventListener('click', function(){
+    var offen=menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', offen?'true':'false');
+    burger.setAttribute('aria-label', offen?'Close menu':'Open menu');
+  });
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click', function(){
+    menu.classList.remove('open'); burger.setAttribute('aria-expanded','false');
+  })});
+
+  var reduziert=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reveals=document.querySelectorAll('.reveal');
+  if(reduziert||!('IntersectionObserver' in window)||new URLSearchParams(location.search).has('foto')){
+    document.documentElement.classList.remove('js');
+    reveals.forEach(function(r){r.classList.add('sichtbar')});
+  } else {
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('sichtbar'); io.unobserve(e.target);}
+    })},{threshold:.12});
+    reveals.forEach(function(r){io.observe(r)});
+  }
+})();
+</script>
+</body>
+</html>
