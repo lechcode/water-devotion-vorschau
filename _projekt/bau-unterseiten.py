@@ -61,7 +61,14 @@ EXTRA_CSS = """
 .behandlung li::before{content:"";position:absolute;left:0;top:.62em;width:14px;height:6px;border-radius:99px;background:var(--akzent);opacity:.45}
 @media (max-width: 900px){.behandlungen{grid-template-columns:1fr}}
 .kleingedruckt{font-size:.85rem;opacity:.75;margin-top:var(--s2)}
-.band-figur img{width:100%;height:100%;object-fit:cover;object-position:50% 68%}
+/* Gemeinschafts-Moment: Vollbild-Szene mit Satz im Bild */
+.gemeinschaft{position:relative;padding:0;overflow:hidden}
+.gemeinschaft figure{height:min(72vh,640px);margin:0}
+.gemeinschaft img{object-position:50% 62%}
+.gemeinschaft::after{content:"";position:absolute;inset:0;background:linear-gradient(6deg, rgba(24,49,51,.78) 0%, rgba(24,49,51,.34) 38%, rgba(24,49,51,0) 62%);pointer-events:none}
+.gemeinschaft-text{position:absolute;left:0;right:0;bottom:clamp(1.6rem,5vh,3.2rem);z-index:2;color:#fff}
+.gemeinschaft-text p{font-family:var(--serif);font-size:var(--fs-2);line-height:1.45;max-width:34ch;text-shadow:0 1px 18px rgba(10,25,26,.45)}
+.gemeinschaft-text em{color:var(--akzent-d)}
 .schluss-cta{text-align:center}
 .schluss-cta h2{font-size:var(--fs-3);margin-bottom:var(--s2)}
 .schluss-cta p{max-width:52ch;margin:0 auto var(--s3)}
@@ -277,13 +284,13 @@ w += f"""
     </div>
   </section>
 
-  <section class="aqua" style="padding:0">
-    <figure class="reveal band-figur" style="margin:0;height:min(64vh,560px);overflow:hidden">
-      {bild('workshops-room','100vw',2048,1363,'A Water Devotion workshop — the group moving together',(400,800,1200))}
+  <section class="gemeinschaft">
+    <figure>
+      {bild('workshops-room','100vw',2048,1363,'A Water Devotion workshop — the group moving together',(400,800,1200,1600))}
     </figure>
-  </section>
-  <section style="padding-top:var(--s4);padding-bottom:0">
-    <div class="wrap"><p class="reveal" style="max-width:60ch;font-family:var(--serif);font-size:var(--fs-2);line-height:1.4">This is what the waters look like when we share them — <em class="em">the presence, the people, and the practice.</em></p></div>
+    <div class="wrap gemeinschaft-text reveal">
+      <p>This is what the waters look like when we share them —<br><em>the presence, the people, and the practice.</em></p>
+    </div>
   </section>
 
   <section class="aqua-hell" id="dates">
