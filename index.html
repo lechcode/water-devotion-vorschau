@@ -159,6 +159,16 @@ section{padding:var(--s6) 0}
 .about-text .gruss{font-family:var(--serif);font-style:italic;font-size:var(--fs-2);color:var(--akzent)}
 @media (max-width: 900px){.about-grid{grid-template-columns:1fr}.about-figur{max-width:260px}}
 
+/* Für wen — Litanei auf Teal */
+.fuerwen-lead{font-size:var(--fs-2);line-height:1.5;margin-top:var(--s2);max-width:44ch;color:#fff}
+.fuerwen-liste{list-style:none;max-width:62ch;border-top:1px solid rgba(207,232,230,.28)}
+.fuerwen-liste li{padding:var(--s2) 0 var(--s2) 2.1rem;border-bottom:1px solid rgba(207,232,230,.28);position:relative}
+.fuerwen-liste li::before{content:"";position:absolute;left:0;top:1.85rem;width:22px;height:7px;
+  background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 7'%3E%3Cpath d='M1 4c2.5-3.5 5-3.5 7.5 0S16 7.5 18.5 4 21 .8 21 .8' stroke='%23CFE8E6' stroke-width='1.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E")}
+.fuerwen-schluss{margin-top:var(--s3);max-width:56ch;display:flex;flex-direction:column;gap:var(--s2)}
+.fuerwen-klein{font-size:var(--fs-0);opacity:.92;letter-spacing:.01em}
+@media (max-width: 540px){.fuerwen-liste li{padding-left:1.7rem}.fuerwen-liste li::before{width:18px}}
+
 /* Zitat-Bühne */
 .zitat{background:var(--tiefe);color:var(--aqua-hell);text-align:center;position:relative;overflow:hidden}
 .zitat blockquote{max-width:820px;margin:0 auto;font-family:var(--serif);font-style:italic;font-size:var(--fs-3);line-height:1.35;text-wrap:balance}
@@ -318,6 +328,28 @@ section{padding:var(--s6) 0}
             <span class="mehr">Discover the bodywork →</span>
           </div>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Für wen (aus dem Gespräch vom 03.09.) -->
+  <section class="dunkel" id="who">
+    <div class="wrap">
+      <div class="sek-kopf reveal">
+        <p class="eyebrow">Who finds their way here</p>
+        <h2>You don't need to arrive <em>ready</em></h2>
+        <p class="fuerwen-lead">Most people come to The Water Devotion in a season of change — quietly exhausted, and giving everyone and everything a place except themselves.</p>
+      </div>
+      <ul class="fuerwen-liste reveal">
+        <li>You've been carrying a lot, and something in you wants aliveness back — not another to-do, just movement, just yours.</li>
+        <li>You've noticed how rigid you've become, and something in you is curious about moving again — for the joints, for the years still ahead.</li>
+        <li>You feel the pull toward water — more range than you're used to giving yourself, more current, more room.</li>
+        <li>You're in the middle of change — a job, a relationship, a version of you you're leaving behind — and you don't want to leave your body out of it.</li>
+        <li>You're ready to take up more space, and curious what happens when the people around you meet that.</li>
+      </ul>
+      <div class="fuerwen-schluss reveal">
+        <p>If you're looking for choreography to master or steps to get exactly right, this isn't quite that door. The practice here begins with letting go, not performing.</p>
+        <p class="fuerwen-klein">The 1:1 mentoring is currently held with women. Workshops, classes and ZenThai Shiatsu are open to everyone.</p>
       </div>
     </div>
   </section>

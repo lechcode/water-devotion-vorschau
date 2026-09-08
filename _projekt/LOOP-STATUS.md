@@ -9,6 +9,11 @@ Alle R1-Fixes sitzen (Farbmodus-Konsistenz, OG/Querlinks); Andrea-Bonus (Preissp
 Urteil: **AUSLIEFERN**
 
 ## Feintuning nach Lennys Abnahme (03.09., nach Gate-Grün — kein neuer Loop, gezielte Nachjustierung)
+**Runde 2 der Nachjustierung (Lennys Browser-Feedback):**
+1. **About-Bild „unten kantig":** Bilder füllten aspect-ratio-Figuren nicht (picture height auto → img endete vor dem abgerundeten Rahmen). Fix global: `figure picture, figure picture img{height:100%}` + `object-fit:cover` — alle vier Ecken rund, Crops greifen jetzt echt.
+2. **Community-Passage workshops.html:** Bild-Band + verwaister Kursiv-Satz zu EINER `.gemeinschaft`-Sektion verschmolzen — Vollbild-Szene mit Boden-Scrim, Satz liegt im Bild (weiß/Serif, em in Aqua). Dazu fehlende workshops-room-1600er erzeugt.
+3. **Dabei gefundener echter Bug (alle Seiten):** `backdrop-filter` auf `.nav.scrolled` machte die Nav zum Containing Block des fixen Mobilmenüs → „verstecktes" Menü ragte unten aus der Leiste (About/Discovery call sichtbar über dem Inhalt). Fix: Blur auf `.nav::before` verlagert + Menü mit `visibility:hidden` (transition-delay) gehärtet; Burger-Öffnen per Playwright belegt. ⚠ Merken fürs QA-Skript: backdrop-filter = Containing-Block-Falle.
+QA-Lauf 4: 0 ROT · redeployt · Vergleichsbilder erneuert.
 Lenny: Typografie wirkt Desktop „gequetscht" → Display-Font **Instrument Serif → Playfair Display** (breiter laufend, 400+Italic, weiter 4 Font-Dateien/80 KB), Headline-line-height 1.12→1.22 (+letter-spacing .005em), H1-Skala leicht reduziert (4.6→4.1rem max). OG-Bild neu gerendert, Vergleichsbilder erneuert. QA-Lauf 3: 0 ROT (2 Folge-Fixes: Font-Preload in Unterseiten-Vorlage, Ticket-Datum-nowrap = 11px-Overflow@360). Perf 100 · LCP 1,73 s. Redeployt.
 
 ## Aldo-Umsetzung nach R1 (03.09., „Fixes umgesetzt, bereit zur Wiedervorlage")

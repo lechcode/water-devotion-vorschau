@@ -165,6 +165,7 @@ m += f"""
         <p class="eyebrow">1:1 · online or in Lucerne</p>
         <h1>The Fluid Self — 1:1 <em>Mentoring</em></h1>
         <p class="lead">A space for fluid dance, mindful presence and embodied transformation.</p>
+        <p class="lead" style="font-size:var(--fs-1);opacity:.9">The Fluid Self is held 1:1 with women who are in a season of change and want their body to come with them — not just their mind.</p>
         <div class="subhero-cta">
           <a class="btn btn-voll" href="{MAILTO}">Book your free discovery call</a>
         </div>
