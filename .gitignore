@@ -1,0 +1,6 @@
+_projekt/
+material/
+kunde-material/
+beweise/
+*.md
+.DS_Store
