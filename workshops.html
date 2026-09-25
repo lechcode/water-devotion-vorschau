@@ -11,6 +11,8 @@
 <meta property="og:description" content="Workshops and dance journeys in Lucerne: fluid movement, contact improvisation and choreographic landscapes. See the next dates and join the community.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
+<link rel="alternate" hreflang="en" href="https://lechcode.github.io/water-devotion-vorschau/workshops.html">
+<link rel="alternate" hreflang="de" href="https://lechcode.github.io/water-devotion-vorschau/workshops-de.html">
 <meta property="og:url" content="https://lechcode.github.io/water-devotion-vorschau/workshops.html"><!-- bei Go-Live auf echte Domain -->
 <meta property="og:image" content="https://lechcode.github.io/water-devotion-vorschau/assets/og.jpg"><!-- bei Go-Live auf echte Domain -->
 <meta property="og:image:width" content="1200">
@@ -94,8 +96,9 @@ a{color:var(--akzent)}
 .hero::after{content:"";position:absolute;inset:0;background:
   linear-gradient(12deg, rgba(36,73,76,.88) 0%, rgba(36,73,76,.55) 34%, rgba(36,73,76,.08) 62%),
   radial-gradient(ellipse at 22% 82%, rgba(18,42,44,.75), transparent 58%)}
-.hero-text{position:relative;z-index:2;padding:0 0 clamp(3.5rem,9vh,6.5rem);max-width:640px}
-.hero-text .eyebrow{color:var(--akzent-d);margin-bottom:var(--s2)}
+.hero-text{position:relative;z-index:2;padding-bottom:clamp(3.5rem,9vh,6.5rem);width:100%}
+.hero-text>*{max-width:640px}
+.hero-text .eyebrow{color:var(--akzent-d);margin-bottom:var(--s2);white-space:nowrap}
 .hero-text h1{font-size:var(--fs-4);text-wrap:balance;text-shadow:0 1px 24px rgba(10,25,26,.35)}
 .hero-text h1 em{color:var(--akzent-d)}
 .hero-text p{margin:var(--s3) 0;max-width:52ch;font-size:var(--fs-2);font-weight:400;line-height:1.55;text-shadow:0 1px 16px rgba(10,25,26,.4)}
@@ -165,7 +168,7 @@ section{padding:var(--s6) 0}
 .fuerwen-liste li::before{content:"";position:absolute;left:0;top:1.85rem;width:22px;height:7px;
   background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 7'%3E%3Cpath d='M1 4c2.5-3.5 5-3.5 7.5 0S16 7.5 18.5 4 21 .8 21 .8' stroke='%23CFE8E6' stroke-width='1.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E")}
 .fuerwen-schluss{margin-top:var(--s3);max-width:56ch;display:flex;flex-direction:column;gap:var(--s2)}
-.fuerwen-klein{font-size:var(--fs-0);opacity:.8;letter-spacing:.01em}
+.fuerwen-klein{font-size:var(--fs-0);opacity:.92;letter-spacing:.01em}
 @media (max-width: 540px){.fuerwen-liste li{padding-left:1.7rem}.fuerwen-liste li::before{width:18px}}
 
 /* Zitat-Bühne */
@@ -205,6 +208,33 @@ section{padding:var(--s6) 0}
 .lc-credit a{color:inherit;text-decoration:underline}
 @media (max-width: 900px){.foot-grid{grid-template-columns:1fr}}
 
+/* Sprachwahl + schlanke Mobil-Kopfzeile (seit 25.09.) */
+.sprache{display:flex;align-items:center;gap:.15rem;margin-left:auto;margin-right:.4rem;font-size:var(--fs-0);letter-spacing:.08em;font-weight:500}
+.sprache a,.sprache span{color:#fff;text-decoration:none;min-width:36px;min-height:40px;display:inline-flex;align-items:center;justify-content:center;border-radius:999px}
+.sprache a{opacity:.8}.sprache a:hover{opacity:1;color:var(--akzent-d)}
+.sprache span[aria-current]{border:1px solid rgba(207,232,230,.6);min-height:30px;min-width:34px}
+@media (min-width: 901px){.sprache{order:3;margin:0 0 0 1rem}.nav-links{margin-left:auto}}
+@media (max-width: 900px){
+  .nav-inner{padding:.45rem 1rem}
+  .brand img{width:104px;height:44px}
+  .burger{width:44px;height:44px}
+  .burger span{width:22px}
+}
+@media (max-width: 900px){.hero{min-height:88svh}}
+@media (max-width: 480px){.eyebrow{letter-spacing:.12em;font-size:.72rem}.hero-text .eyebrow,.e-hero-text .eyebrow{letter-spacing:.06em;font-size:.68rem}.hero-text,.e-hero-text{max-width:100%;min-width:0}}
+
+/* Stimmen als ruhiger Slider (kompakt, ohne Autoplay; ohne JS einfach wischbar) */
+.slider{position:relative}
+.slider-spur{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 2 * 1.4rem) / 3);gap:1.4rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:.4rem}
+.slider-spur::-webkit-scrollbar{display:none}
+.slider-spur>*{scroll-snap-align:start}
+.slider .stimme p{font-size:var(--fs-1);line-height:1.55}
+.slider-knoepfe{display:flex;gap:.6rem;justify-content:flex-end;margin-top:var(--s2)}
+.slider-knoepfe button{width:48px;height:48px;border-radius:50%;border:1px solid var(--akzent);background:transparent;color:var(--akzent);font-size:1.1rem;cursor:pointer}
+.slider-knoepfe button:hover{background:var(--aqua-hell)}
+.slider-knoepfe button:disabled{opacity:.35;cursor:default}
+@media (max-width: 900px){.slider-spur{grid-auto-columns:82%}}
+
 /* Reveals */
 .js .reveal{opacity:0;transform:translateY(26px);transition:opacity .5s var(--ease), transform .6s var(--ease)}
 .js .reveal.sichtbar{opacity:1;transform:none}
@@ -236,7 +266,7 @@ section{padding:var(--s6) 0}
 .subhero-figur img{width:100%;height:100%;object-fit:cover}
 .subhero-cta{margin-top:var(--s3);display:flex;flex-wrap:wrap;gap:.9rem}
 @media (max-width: 900px){.subhero-grid{grid-template-columns:1fr}.subhero-figur{max-width:300px;justify-self:start}}
-.prosa{max-width:62ch}
+.prosa{max-width:62ch;margin-inline:auto}
 .prosa p{margin-bottom:var(--s2)}
 .prosa strong{font-weight:500}
 .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.2rem,2.5vw,2rem);margin-top:var(--s4)}
@@ -247,11 +277,11 @@ section{padding:var(--s6) 0}
 .checkliste li{display:flex;gap:.8rem;align-items:flex-start}
 .checkliste svg{flex:0 0 auto;margin-top:.45rem}
 @media (max-width: 720px){.checkliste{grid-template-columns:1fr}}
-.band{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:var(--s3)}
+.band{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:var(--s3);justify-content:center}
 .band span{border:1px solid var(--akzent);color:var(--akzent);border-radius:999px;padding:.5rem 1.1rem;font-size:var(--fs-0);letter-spacing:.05em}
 .dunkel .band span{border-color:rgba(207,232,230,.5);color:var(--akzent-d)}
 /* Ticket-Karten */
-.tickets{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.2rem,2.5vw,2rem)}
+.tickets{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(1.2rem,2.5vw,2rem)}
 .ticket{background:var(--papier);border-radius:var(--radius);padding:var(--s3);display:flex;flex-direction:column;gap:.9rem;box-shadow:0 6px 30px rgba(30,50,52,.08)}
 .ticket-kopf{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap}
 .ticket .datum{font-family:var(--serif);font-size:var(--fs-2);color:var(--akzent)}
@@ -291,18 +321,19 @@ section{padding:var(--s6) 0}
 <a class="skip" href="#inhalt">Skip to content</a>
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a class="brand" href="index.html" aria-label="The Water Devotion — Home">
+    <a class="brand" href="index.html" aria-label="The Water Devotion, home">
       <img src="assets/logo-hell.png" alt="The Water Devotion" width="150" height="64">
     </a>
+    <nav class="sprache" aria-label="Language"><span aria-current="page" lang="en">EN</span><a href="workshops-de.html" hreflang="de" lang="de">DE</a></nav>
     <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="menu">
-      <li><a href="mentoring.html">Mentoring</a></li>
+      <li><a href="mentoring.html">1:1</a></li>
       <li><a href="workshops.html">Workshops</a></li>
       <li><a href="shiatsu.html">Shiatsu</a></li>
       <li><a href="index.html#about">About</a></li>
-      <li><a class="pill" href="mailto:lucy@thewaterdevotion.com?subject=Discovery%20Call">Discovery call</a></li>
+      <li><a class="pill" href="mentoring.html#angebot">Free intro call</a></li>
     </ul>
   </div>
 </header>
@@ -363,17 +394,6 @@ section{padding:var(--s6) 0}
       </div>
       <div class="tickets" id="payrexx-demo">
         <article class="ticket reveal">
-          <div class="ticket-kopf"><span class="datum">05.09.2026</span><span class="preis">CHF 50–110</span></div>
-          <h3>The WATER Devotion — DANCE Workshop</h3>
-          <p class="meta">Saturday 17–20h · Tanzlaboor Luzern, Nidfeldstrasse 1, 6010 Kriens</p>
-          <p class="beschr">An immersive evening workshop and an invitation to tap into the intelligence of the many ways water communicates through and with us. Diving into fluid movement, deep listening within and shared connection through contact improvisation.</p>
-          <p class="spots">— Limited spots —</p>
-          <div class="ticket-fuss">
-        <a class="btn btn-tline payrexx-demo" href="#payrexx-demo">More information &amp; registration</a>
-          </div>
-          <p class="demo-hinweis">Demo — im Live-Betrieb öffnet hier deine Payrexx-Bezahlseite (TWINT, Karte&nbsp;…).</p>
-        </article>
-        <article class="ticket reveal">
           <div class="ticket-kopf"><span class="datum">10. &amp; 11.10.2026</span><span class="preis">CHF 50–190</span></div>
           <h3>A weekend of the waters — TWD Dance Intensive</h3>
           <p class="meta">Saturday 17–20h, Sunday 11–16h · Tanzlaboor Luzern</p>
@@ -407,28 +427,6 @@ section{padding:var(--s6) 0}
           </div>
           <p class="demo-hinweis">Demo — im Live-Betrieb öffnet hier deine Payrexx-Bezahlseite (TWINT, Karte&nbsp;…).</p>
         </article>
-        <article class="ticket reveal">
-          <div class="ticket-kopf"><span class="datum">Dance Journey</span><span class="preis">CHF 420 · or 2 × 210</span></div>
-          <h3>Tides of Expansion Vol. 3 — Dance Journey</h3>
-          
-          <p class="beschr">The third tide of this journey: expanding into your movement, your expression and the connection within the group.</p>
-          
-          <div class="ticket-fuss">
-        <a class="btn btn-tline payrexx-demo" href="#payrexx-demo">More information &amp; registration</a>
-          </div>
-          <p class="demo-hinweis">Demo — im Live-Betrieb öffnet hier deine Payrexx-Bezahlseite (TWINT, Karte&nbsp;…).</p>
-        </article>
-        <article class="ticket reveal">
-          <div class="ticket-kopf"><span class="datum">2-day intensive</span><span class="preis">CHF 210–400</span></div>
-          <h3>Rhythm of Liberation — 2 Day Intensive</h3>
-          
-          <p class="beschr">Two days of moving, releasing and finding rhythm together.</p>
-          
-          <div class="ticket-fuss">
-        <a class="btn btn-tline payrexx-demo" href="#payrexx-demo">More information &amp; registration</a>
-          </div>
-          <p class="demo-hinweis">Demo — im Live-Betrieb öffnet hier deine Payrexx-Bezahlseite (TWINT, Karte&nbsp;…).</p>
-        </article>
       </div>
     </div>
   </section>
@@ -436,7 +434,7 @@ section{padding:var(--s6) 0}
   <section class="zitat">
     <div class="wrap reveal">
       <svg class="treiben" width="140" height="30" viewBox="0 0 140 30" aria-hidden="true"><path d="M6 15c11-13 22-13 33 0s22 13 33 0 22-13 33 0 18 10 29 4" stroke="#CFE8E6" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".85"/></svg>
-      <blockquote>&bdquo;The Water Devotion is the art of becoming fluid — strong in softness, free in surrender.&ldquo;
+      <blockquote>&ldquo;The Water Devotion is the art of becoming fluid: strong in softness, free in surrender.&rdquo;
         <cite>Lucy Nicholas</cite>
       </blockquote>
     </div>
@@ -448,19 +446,22 @@ section{padding:var(--s6) 0}
         <p class="eyebrow">Voices from the practice</p>
         <h2>What practitioners <em>feel</em></h2>
       </div>
-      <div class="stimmen">
-        <div class="stimme reveal">
-          <p>&bdquo;I have perceived my body in a new, more holistic way. It helped me become more mindful and more sensitive in feeling into certain areas of it. […] It was a beautiful realization that my body can express so much more than I often think.&ldquo;</p>
+      <div class="slider reveal" aria-label="Voices">
+        <div class="slider-spur" tabindex="0">
+        <div class="stimme">
+          <p>&ldquo;I have perceived my body in a new, more holistic way. It helped me become more mindful and more sensitive in feeling into certain areas of it. […] It was a beautiful realization that my body can express so much more than I often think.&rdquo;</p>
           <footer>Fotini · TWD Practitioner</footer>
         </div>
-        <div class="stimme reveal">
-          <p>&bdquo;I could truly feel how the movement eventually transformed into real waves, and how I was able to flow effortlessly with my body. I had never experienced this before. […] I would never have thought that I could feel so connected to the other participants in an online class.&ldquo;</p>
+        <div class="stimme">
+          <p>&ldquo;I could truly feel how the movement eventually transformed into real waves, and how I was able to flow effortlessly with my body. I had never experienced this before. […] I would never have thought that I could feel so connected to the other participants in an online class.&rdquo;</p>
           <footer>Leonie · TWD Online Class</footer>
         </div>
-        <div class="stimme reveal">
-          <p>&bdquo;The Water Devotion journey connected me with parts of my body that I had never consciously felt before. I allowed myself to be guided by my soul and danced in a way that felt right and good for my body.&ldquo;</p>
+        <div class="stimme">
+          <p>&ldquo;The Water Devotion journey connected me with parts of my body that I had never consciously felt before. I allowed myself to be guided by my soul and danced in a way that felt right and good for my body.&rdquo;</p>
           <footer>Leonora · 1:1 Mentoring &amp; TWD Practitioner</footer>
         </div>
+        </div>
+        <div class="slider-knoepfe"><button type="button" data-richtung="-1" aria-label="Previous voice">←</button><button type="button" data-richtung="1" aria-label="Next voice">→</button></div>
       </div>
     </div>
   </section>
@@ -483,7 +484,7 @@ section{padding:var(--s6) 0}
     <div class="foot-grid">
       <div class="foot-brand">
         <img src="assets/logo-hell.png" alt="The Water Devotion" width="170" height="72" loading="lazy">
-        <p>Fluid dance, embodiment &amp; ZenThai Shiatsu — with Lucy Nicholas in Lucerne, Switzerland.</p>
+        <p>Fluid dance, embodiment &amp; ZenThai Shiatsu with Lucy Nicholas in Lucerne, Switzerland.</p>
       </div>
       <nav aria-label="Footer">
         <h3>Explore</h3>
@@ -504,7 +505,7 @@ section{padding:var(--s6) 0}
       </div>
     </div>
     <div class="foot-unten">
-      <span>© 2026 Lucy Nicholas · The Water Devotion — <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+      <span>© 2026 Lucy Nicholas · The Water Devotion · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
       <span class="lc-credit">Website gebaut von <a href="https://lechcode.de" target="_blank" rel="noopener">Lechcode</a></span>
     </div>
   </div>
@@ -536,6 +537,17 @@ section{padding:var(--s6) 0}
     })},{threshold:.12});
     reveals.forEach(function(r){io.observe(r)});
   }
+
+  /* Stimmen-Slider: Pfeile scrollen eine Karte weiter */
+  document.querySelectorAll('.slider').forEach(function(sl){
+    var spur=sl.querySelector('.slider-spur'), zur=sl.querySelector('[data-richtung="-1"]'), vor=sl.querySelector('[data-richtung="1"]');
+    if(!spur||!zur||!vor) return;
+    function schritt(){var k=spur.firstElementChild;return k?k.getBoundingClientRect().width+22:300}
+    function stand(){zur.disabled=spur.scrollLeft<4;vor.disabled=spur.scrollLeft+spur.clientWidth>=spur.scrollWidth-4}
+    zur.addEventListener('click',function(){spur.scrollBy({left:-schritt(),behavior:reduziert?'auto':'smooth'})});
+    vor.addEventListener('click',function(){spur.scrollBy({left:schritt(),behavior:reduziert?'auto':'smooth'})});
+    spur.addEventListener('scroll',stand,{passive:true}); stand();
+  });
 })();
 </script>
 </body>

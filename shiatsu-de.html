@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>document.documentElement.classList.add('js')</script>
 <meta name="robots" content="noindex, nofollow"><!-- ENTFERNEN sobald Impressum+Datenschutz live & freigegeben -->
-<title>Fluid Dance &amp; Embodiment in Lucerne | The Water Devotion</title>
-<meta name="description" content="Fluid dance, 1:1 embodiment, workshops and ZenThai Shiatsu with Lucy Nicholas in Lucerne. Strong in softness. Here you get to feel, and it gets to be easy.">
-<meta property="og:title" content="The Water Devotion · Fluid Dance &amp; Embodiment in Lucerne">
-<meta property="og:description" content="Fluid dance, 1:1 mentoring, workshops and ZenThai Shiatsu in Lucerne. Finding ease, flow, and more of you.">
+<title>ZenThai Shiatsu in Luzern | The Water Devotion</title>
+<meta name="description" content="ZenThai Shiatsu in Kriens bei Luzern: bewusste Berührung, begleitete Dehnungen und sanftes Wiegen auf dem Futon. 75 oder 90 Minuten, dazu ein Deep-Dive-Paket.">
+<meta property="og:title" content="ZenThai Shiatsu in Luzern | The Water Devotion">
+<meta property="og:description" content="ZenThai Shiatsu in Kriens bei Luzern: bewusste Berührung, begleitete Dehnungen und sanftes Wiegen auf dem Futon. 75 oder 90 Minuten, dazu ein Deep-Dive-Paket.">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
-<link rel="alternate" hreflang="en" href="https://lechcode.github.io/water-devotion-vorschau/index.html">
-<link rel="alternate" hreflang="de" href="https://lechcode.github.io/water-devotion-vorschau/index-de.html">
-<meta property="og:url" content="https://lechcode.github.io/water-devotion-vorschau/index.html"><!-- bei Go-Live auf echte Domain -->
+<meta property="og:locale" content="de_CH">
+<link rel="alternate" hreflang="en" href="https://lechcode.github.io/water-devotion-vorschau/shiatsu.html">
+<link rel="alternate" hreflang="de" href="https://lechcode.github.io/water-devotion-vorschau/shiatsu-de.html">
+<meta property="og:url" content="https://lechcode.github.io/water-devotion-vorschau/shiatsu-de.html"><!-- bei Go-Live auf echte Domain -->
 <meta property="og:image" content="https://lechcode.github.io/water-devotion-vorschau/assets/og.jpg"><!-- bei Go-Live auf echte Domain -->
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -21,7 +21,6 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2324494C'/%3E%3Cpath d='M10 34c6-8 12-8 18 0s12 8 18 0' stroke='%23CFE8E6' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M10 44c6-8 12-8 18 0s12 8 18 0' stroke='%23D8EDED' stroke-width='3' fill='none' stroke-linecap='round' opacity='.7'/%3E%3C/svg%3E">
 <link rel="preload" href="assets/fonts/playfair-display-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/outfit-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/img/hero-water-1200.avif" as="image" type="image/avif" media="(min-width: 700px)">
 <link rel="stylesheet" href="assets/fonts.css">
 <style>
 /* ==== The Water Devotion · Tokens ==================================== */
@@ -253,220 +252,242 @@ section{padding:var(--s6) 0}
   section{padding:1rem 0}
 }
 </style>
+
+<style>
+/* Unterseiten */
+.subhero{background:var(--tiefe);color:#fff;padding:calc(var(--s6) + 3rem) 0 var(--s5)}
+.subhero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+.subhero .eyebrow{color:var(--akzent-d);margin-bottom:var(--s2)}
+.subhero h1{font-size:var(--fs-4);text-wrap:balance}
+.subhero h1 em{color:var(--akzent-d)}
+.subhero .lead{font-size:var(--fs-2);margin-top:var(--s3);max-width:46ch;color:var(--aqua-hell)}
+.subhero-figur{max-width:420px;justify-self:end;width:100%}
+.subhero-figur figure{aspect-ratio:4/5;overflow:hidden;border-radius:var(--radius)}
+.subhero-figur img{width:100%;height:100%;object-fit:cover}
+.subhero-cta{margin-top:var(--s3);display:flex;flex-wrap:wrap;gap:.9rem}
+@media (max-width: 900px){.subhero-grid{grid-template-columns:1fr}.subhero-figur{max-width:300px;justify-self:start}}
+.prosa{max-width:62ch;margin-inline:auto}
+.prosa p{margin-bottom:var(--s2)}
+.prosa strong{font-weight:500}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.2rem,2.5vw,2rem);margin-top:var(--s4)}
+.trio p{font-family:var(--serif);font-size:var(--fs-2);line-height:1.3;border-top:2px solid var(--akzent);padding-top:var(--s2)}
+.dunkel .trio p{border-top-color:var(--akzent-d)}
+@media (max-width: 900px){.trio{grid-template-columns:1fr}}
+.checkliste{display:grid;grid-template-columns:1fr 1fr;gap:.9rem clamp(1.4rem,3vw,2.6rem);list-style:none;margin-top:var(--s3)}
+.checkliste li{display:flex;gap:.8rem;align-items:flex-start}
+.checkliste svg{flex:0 0 auto;margin-top:.45rem}
+@media (max-width: 720px){.checkliste{grid-template-columns:1fr}}
+.band{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:var(--s3);justify-content:center}
+.band span{border:1px solid var(--akzent);color:var(--akzent);border-radius:999px;padding:.5rem 1.1rem;font-size:var(--fs-0);letter-spacing:.05em}
+.dunkel .band span{border-color:rgba(207,232,230,.5);color:var(--akzent-d)}
+/* Ticket-Karten */
+.tickets{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(1.2rem,2.5vw,2rem)}
+.ticket{background:var(--papier);border-radius:var(--radius);padding:var(--s3);display:flex;flex-direction:column;gap:.9rem;box-shadow:0 6px 30px rgba(30,50,52,.08)}
+.ticket-kopf{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap}
+.ticket .datum{font-family:var(--serif);font-size:var(--fs-2);color:var(--akzent)}
+.ticket .preis{font-weight:500;background:var(--aqua);border-radius:999px;padding:.45rem 1rem;font-size:var(--fs-0);white-space:nowrap}
+.ticket h3{font-size:var(--fs-2)}
+.ticket .meta{font-size:var(--fs-0);letter-spacing:.08em;text-transform:uppercase;color:var(--akzent)}
+.ticket p.beschr{flex:1}
+.ticket .spots{font-size:var(--fs-0);color:var(--akzent);letter-spacing:.12em}
+.ticket-fuss{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center}
+.demo-hinweis{font-size:.82rem;color:var(--flaeche);opacity:.85;margin-top:.4rem}
+@media (max-width: 900px){.tickets{grid-template-columns:1fr}}
+/* Treatment-Karten */
+.behandlungen{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.2rem,2.5vw,2rem)}
+.behandlung{background:var(--aqua-hell);border-radius:var(--radius);padding:var(--s3);display:flex;flex-direction:column;gap:.9rem}
+.behandlung .dauer{font-family:var(--serif);font-size:var(--fs-3);line-height:1}
+.behandlung .preis-zeile{font-weight:500;color:var(--akzent);letter-spacing:.06em}
+.behandlung ul{list-style:none;flex:1;display:flex;flex-direction:column;gap:.55rem}
+.behandlung li{padding-left:1.3rem;position:relative}
+.behandlung li::before{content:"";position:absolute;left:0;top:.62em;width:14px;height:6px;border-radius:99px;background:var(--akzent);opacity:.45}
+@media (max-width: 900px){.behandlungen{grid-template-columns:1fr}}
+.kleingedruckt{font-size:.85rem;opacity:.75;margin-top:var(--s2)}
+/* Gemeinschafts-Moment: Vollbild-Szene mit Satz im Bild */
+.gemeinschaft{position:relative;padding:0;overflow:hidden}
+.gemeinschaft figure{height:min(72vh,640px);margin:0}
+.gemeinschaft img{object-position:50% 62%}
+.gemeinschaft::after{content:"";position:absolute;inset:0;background:linear-gradient(6deg, rgba(24,49,51,.78) 0%, rgba(24,49,51,.34) 38%, rgba(24,49,51,0) 62%);pointer-events:none}
+.gemeinschaft-text{position:absolute;left:0;right:0;bottom:clamp(1.6rem,5vh,3.2rem);z-index:2;color:#fff}
+.gemeinschaft-text p{font-family:var(--serif);font-size:var(--fs-2);line-height:1.45;max-width:34ch;text-shadow:0 1px 18px rgba(10,25,26,.45)}
+.gemeinschaft-text em{color:var(--akzent-d)}
+.schluss-cta{text-align:center}
+.schluss-cta h2{font-size:var(--fs-3);margin-bottom:var(--s2)}
+.schluss-cta p{max-width:52ch;margin:0 auto var(--s3)}
+</style>
+
 </head>
 <body>
-<a class="skip" href="#inhalt">Skip to content</a>
-
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a class="brand" href="index.html" aria-label="The Water Devotion, home">
+    <a class="brand" href="index-de.html" aria-label="The Water Devotion, Startseite">
       <img src="assets/logo-hell.png" alt="The Water Devotion" width="150" height="64">
     </a>
-    <nav class="sprache" aria-label="Language"><span aria-current="page" lang="en">EN</span><a href="index-de.html" hreflang="de" lang="de">DE</a></nav>
-    <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+    <nav class="sprache" aria-label="Sprache"><a href="shiatsu.html" hreflang="en" lang="en">EN</a><span aria-current="page" lang="de">DE</span></nav>
+    <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="menu">
-      <li><a href="mentoring.html">1:1</a></li>
-      <li><a href="workshops.html">Workshops</a></li>
-      <li><a href="shiatsu.html">Shiatsu</a></li>
-      <li><a href="index.html#about">About</a></li>
-      <li><a class="pill" href="mentoring.html#angebot">Free intro call</a></li>
+      <li><a href="mentoring-de.html">1:1</a></li>
+      <li><a href="workshops-de.html">Workshops</a></li>
+      <li><a href="shiatsu-de.html">Shiatsu</a></li>
+      <li><a href="index-de.html#about">Über mich</a></li>
+      <li><a class="pill" href="mentoring-de.html#angebot">Kennenlernen kostenlos</a></li>
     </ul>
   </div>
 </header>
-
 <main id="inhalt">
 
-  <!-- Hero -->
-  <section class="hero" aria-label="Welcome">
-    <div class="hero-bild">
-      <picture>
-        <source type="image/avif" srcset="assets/img/hero-water-480.avif 480w, assets/img/hero-water-800.avif 800w, assets/img/hero-water-1200.avif 1200w, assets/img/hero-water-1600.avif 1600w, assets/img/hero-water-2000.avif 2000w" sizes="100vw">
-        <source type="image/webp" srcset="assets/img/hero-water-480.webp 480w, assets/img/hero-water-800.webp 800w, assets/img/hero-water-1200.webp 1200w, assets/img/hero-water-1600.webp 1600w, assets/img/hero-water-2000.webp 2000w" sizes="100vw">
-        <img src="assets/img/hero-water-1200.jpg" srcset="assets/img/hero-water-480.jpg 480w, assets/img/hero-water-800.jpg 800w, assets/img/hero-water-1200.jpg 1200w, assets/img/hero-water-1600.jpg 1600w, assets/img/hero-water-2000.jpg 2000w" sizes="100vw" width="2048" height="1365" alt="Two hands reaching gently into calm, dark green water" fetchpriority="high">
-      </picture>
-    </div>
-    <div class="wrap hero-text">
-      <p class="eyebrow">Fluid dance · Embodiment · Lucerne</p>
-      <h1>Strong in <em>softness</em></h1>
-      <p>Fluid dance and embodiment in Lucerne. Here you get to feel, and it gets to be easy.</p>
-      <div class="hero-cta">
-        <a class="btn btn-voll" href="#offerings">Explore the offerings</a>
-        <a class="btn btn-line" href="mentoring.html">The 1:1 with Lucy</a>
+  <section class="subhero">
+    <div class="wrap subhero-grid">
+      <div>
+        <p class="eyebrow">Bodywork · Kriens / Luzern</p>
+        <h1>ZenThai <em>Shiatsu</em></h1>
+        <p class="lead">Eine Körperarbeit, die zu tiefer Ruhe einlädt und dein Wohlbefinden nährt.</p>
+        <div class="subhero-cta">
+          <a class="btn btn-voll" href="#treatments">Angebote</a>
+        </div>
+      </div>
+      <div class="subhero-figur">
+        <figure><picture>
+  <source type="image/avif" srcset="assets/img/shiatsu-outdoor-400.avif 400w, assets/img/shiatsu-outdoor-800.avif 800w, assets/img/shiatsu-outdoor-1200.avif 1200w" sizes="(max-width: 900px) 76vw, 32vw">
+  <source type="image/webp" srcset="assets/img/shiatsu-outdoor-400.webp 400w, assets/img/shiatsu-outdoor-800.webp 800w, assets/img/shiatsu-outdoor-1200.webp 1200w" sizes="(max-width: 900px) 76vw, 32vw">
+  <img src="assets/img/shiatsu-outdoor-800.jpg" srcset="assets/img/shiatsu-outdoor-400.jpg 400w, assets/img/shiatsu-outdoor-800.jpg 800w, assets/img/shiatsu-outdoor-1200.jpg 1200w" sizes="(max-width: 900px) 76vw, 32vw" width="1365" height="2048" alt="Lucy gibt in der Abenddämmerung draussen eine ZenThai-Shiatsu-Stunde" loading="lazy" decoding="async">
+</picture></figure>
       </div>
     </div>
   </section>
 
-  <!-- Intro -->
-  <section class="intro">
+  <section>
     <div class="wrap">
-      <p class="gross reveal" style="max-width:26ch">We often live up in our heads, just functioning. <em>Here you land in your body</em> and get to flow, just as you are.</p>
-    </div>
-  </section>
-
-  <!-- Offerings -->
-  <section class="aqua-hell" id="offerings">
-    <div class="wrap">
-      <div class="sek-kopf reveal">
-        <p class="eyebrow">Offerings</p>
-        <h2>Three ways into the <em>water</em></h2>
-      </div>
-      <div class="karten">
-        <a class="karte reveal" href="mentoring.html">
-          <figure>
-            <picture>
-              <source type="image/avif" srcset="assets/img/card-mentoring-400.avif 400w, assets/img/card-mentoring-800.avif 800w, assets/img/card-mentoring-1200.avif 1200w" sizes="(max-width: 900px) 92vw, 30vw">
-              <source type="image/webp" srcset="assets/img/card-mentoring-400.webp 400w, assets/img/card-mentoring-800.webp 800w, assets/img/card-mentoring-1200.webp 1200w" sizes="(max-width: 900px) 92vw, 30vw">
-              <img src="assets/img/card-mentoring-800.jpg" srcset="assets/img/card-mentoring-400.jpg 400w, assets/img/card-mentoring-800.jpg 800w, assets/img/card-mentoring-1200.jpg 1200w" sizes="(max-width: 900px) 92vw, 30vw" width="1365" height="2048" alt="Lucy lifting water in her hands at the lake" loading="lazy" decoding="async">
-            </picture>
-          </figure>
-          <div class="karte-text">
-            <h3>The Fluid Self · 1:1</h3>
-            <p>Three months, six sessions, online or in Kriens. For you, if movement is ready to become a normal part of your day.</p>
-            <span class="mehr">The 1:1 →</span>
-          </div>
-        </a>
-        <a class="karte reveal" href="workshops.html">
-          <figure>
-            <picture>
-              <source type="image/avif" srcset="assets/img/card-workshops-400.avif 400w, assets/img/card-workshops-800.avif 800w, assets/img/card-workshops-1200.avif 1200w" sizes="(max-width: 900px) 92vw, 30vw">
-              <source type="image/webp" srcset="assets/img/card-workshops-400.webp 400w, assets/img/card-workshops-800.webp 800w, assets/img/card-workshops-1200.webp 1200w" sizes="(max-width: 900px) 92vw, 30vw">
-              <img src="assets/img/card-workshops-800.jpg" srcset="assets/img/card-workshops-400.jpg 400w, assets/img/card-workshops-800.jpg 800w, assets/img/card-workshops-1200.jpg 1200w" sizes="(max-width: 900px) 92vw, 30vw" width="1365" height="2048" alt="Dancers moving together outdoors" loading="lazy" decoding="async">
-            </picture>
-          </figure>
-          <div class="karte-text">
-            <h3>Journeys &amp; Workshops</h3>
-            <p>Dancing together, live in Lucerne. Open level, experimental, deeply connecting.</p>
-            <span class="mehr">Next dates →</span>
-          </div>
-        </a>
-        <a class="karte reveal" href="shiatsu.html">
-          <figure>
-            <picture>
-              <source type="image/avif" srcset="assets/img/shiatsu-outdoor-400.avif 400w, assets/img/shiatsu-outdoor-800.avif 800w, assets/img/shiatsu-outdoor-1200.avif 1200w" sizes="(max-width: 900px) 92vw, 30vw">
-              <source type="image/webp" srcset="assets/img/shiatsu-outdoor-400.webp 400w, assets/img/shiatsu-outdoor-800.webp 800w, assets/img/shiatsu-outdoor-1200.webp 1200w" sizes="(max-width: 900px) 92vw, 30vw">
-              <img src="assets/img/shiatsu-outdoor-800.jpg" srcset="assets/img/shiatsu-outdoor-400.jpg 400w, assets/img/shiatsu-outdoor-800.jpg 800w, assets/img/shiatsu-outdoor-1200.jpg 1200w" sizes="(max-width: 900px) 92vw, 30vw" width="1365" height="2048" alt="Lucy giving a ZenThai Shiatsu session outdoors at dusk" loading="lazy" decoding="async">
-            </picture>
-          </figure>
-          <div class="karte-text">
-            <h3>ZenThai Shiatsu</h3>
-            <p>A dance with the body: conscious touch and gentle movement for your wellbeing. No medical treatment.</p>
-            <span class="mehr">About Shiatsu →</span>
-          </div>
-        </a>
+      <div class="prosa reveal">
+        <p><strong>ZenThai Shiatsu ist eine Einladung zuzuhören.</strong> Dem Körper, dem Atem, der feinen Sprache unter der Oberfläche.</p>
+        <p>Es verbindet Stille und Fluss, Druck und Bewegung, Erdung und Weite. Durch bewusste Berührung und sanfte Bewegung entsteht Raum. Raum für das, was festgehalten, vergessen wurde oder darauf wartet, gefühlt zu werden.</p>
+        <p>Der Körper ist nichts, das repariert werden muss, sondern eine lebendige, fluide Landschaft, durch die wir uns bewegen. Jede Sitzung wird zu einer Reise, wie ein Tanz. Ein Tanz, der nachklingt, auch wenn die Behandlung vorbei ist.</p>
       </div>
     </div>
   </section>
 
-  <!-- Wasser-Teaser (S2) -->
-  <section class="zitat">
-    <div class="wrap reveal">
-      <svg class="treiben" width="140" height="30" viewBox="0 0 140 30" aria-hidden="true"><path d="M6 15c11-13 22-13 33 0s22 13 33 0 22-13 33 0 18 10 29 4" stroke="#CFE8E6" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".85"/></svg>
-      <h2 style="color:#fff;font-size:var(--fs-3);margin-bottom:var(--s2)">Why <em style="color:var(--akzent-d)">water</em></h2>
-      <p style="max-width:52ch;margin:0 auto var(--s3);font-size:var(--fs-2);line-height:1.5">Water is always there, moving from form into the formless. For me it stands for trust, and for rest as the source of our energy.</p>
-      <a class="btn btn-line" href="mentoring.html#water">More about the 1:1</a>
-    </div>
-  </section>
-
-  <!-- Für wen (aus dem Gespräch vom 03.09.) -->
-  <section class="dunkel" id="who">
+  <section class="dunkel">
     <div class="wrap">
       <div class="sek-kopf reveal">
-        <p class="eyebrow">Who finds their way here</p>
-        <h2>You don't need to arrive <em>ready</em></h2>
-        <p class="fuerwen-lead">Most people come to The Water Devotion in a season of change. Quietly exhausted, and giving everyone and everything a place except themselves.</p>
+        <p class="eyebrow">Die Praxis</p>
+        <h2>Verwurzelt im Zen Shiatsu, bewegt wie ein <em>Tanz</em></h2>
       </div>
-      <ul class="fuerwen-liste reveal">
-        <li>You've been carrying a lot, and something in you wants aliveness back. Not another to-do. Just movement, just yours.</li>
-        <li>You've noticed how rigid you've become, and something in you is curious about moving again. For the joints, for the years still ahead.</li>
-        <li>You feel the pull toward water: more range than you're used to giving yourself, more current, more room.</li>
-        <li>You're in the middle of change, a job, a relationship, a version of you you're leaving behind, and you don't want to leave your body out of it.</li>
-        <li>You're ready to take up more space, and curious what happens when the people around you meet that.</li>
-      </ul>
-      <div class="fuerwen-schluss reveal">
-        <p>If you're looking for choreography to master or steps to get exactly right, this isn't quite that door. The practice here begins with letting go, not performing.</p>
-        <p class="fuerwen-klein">The 1:1 mentoring is currently held with women. Workshops, classes and ZenThai Shiatsu are open to everyone.</p>
+      <div class="prosa reveal">
+        <p>Eine ganzheitliche Körperarbeit mit Wurzeln im Zen Shiatsu, bereichert um Elemente aus der Thai-Massage, somatische Bewegung und achtsamkeitsbasierte Praxis. Sie arbeitet mit bewusster Berührung, rhythmischem Druck, begleiteten Dehnungen, sanftem Wiegen und fliessender Bewegung.</p>
+        <p>Angelehnt an die Traditionelle Chinesische Medizin folgt ZenThai Shiatsu dem Meridiansystem und arbeitet mit dem Energiefluss im Körper. Jede Sitzung entfaltet sich als eigene, verkörperte Reise.</p>
+        <p class="kleingedruckt">ZenThai Shiatsu ist eine Praxis für dein Wohlbefinden. Es ersetzt keine ärztliche Diagnose oder Behandlung.</p>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section class="aqua" id="about">
-    <div class="wrap about-grid">
-      <div class="about-figur reveal">
-        <figure>
-          <picture>
-            <source type="image/avif" srcset="assets/img/lucy-water-400.avif 400w, assets/img/lucy-water-800.avif 800w, assets/img/lucy-water-1200.avif 1200w" sizes="(max-width: 900px) 70vw, 34vw">
-            <source type="image/webp" srcset="assets/img/lucy-water-400.webp 400w, assets/img/lucy-water-800.webp 800w, assets/img/lucy-water-1200.webp 1200w" sizes="(max-width: 900px) 70vw, 34vw">
-            <img src="assets/img/lucy-water-800.jpg" srcset="assets/img/lucy-water-400.jpg 400w, assets/img/lucy-water-800.jpg 800w, assets/img/lucy-water-1200.jpg 1200w" sizes="(max-width: 900px) 70vw, 34vw" width="2048" height="1365" alt="Lucy standing in the lake, arms moving through the water" loading="lazy" decoding="async">
-          </picture>
-        </figure>
+  <section class="aqua-hell" id="treatments">
+    <div class="wrap">
+      <div class="sek-kopf reveal">
+        <p class="eyebrow">Angebote</p>
+        <h2>Wähle deine <em>Tiefe</em></h2>
       </div>
-      <div class="about-text reveal">
-        <p class="eyebrow" style="color:var(--akzent);margin-bottom:1rem">About me</p>
-        <h2>I'm <em>Lucy</em></h2>
-        <p>Raised in Hamburg, living in Lucerne. I've danced since I was little.</p>
-        <p>I see people clearly and tell them honestly what I see, always to strengthen them. My invitation in the room: Don't wait. Something happens through you.</p>
-        <p class="gruss">Looking forward to flowing with you. Lucy</p>
+      <div class="behandlungen">
+        <article class="behandlung reveal">
+          <p class="dauer">75 Min</p>
+          <p class="preis-zeile">Ganzer Körper · CHF 155</p>
+          <ul>
+            <li>Individuell auf dich abgestimmt</li>
+            <li>Druckpunkte, Dehnungen und passive Bewegung</li>
+            <li>Lädt ein zu tiefer Entspannung, Energiefluss und Körperwahrnehmung</li>
+            <li>Inklusive Zeit zum Ankommen, für ein Vorgespräch und zum Nachklingen</li>
+          </ul>
+          <a class="btn btn-tinte" href="https://wa.me/41788636585?text=Ich%20interessiere%20mich%20f%C3%BCr%20ein%20ZenThaiShiatsu%20Treatment.%20" target="_blank" rel="noopener noreferrer">75 Minuten buchen</a>
+        </article>
+        <article class="behandlung reveal">
+          <p class="dauer">90 Min</p>
+          <p class="preis-zeile">Ganzer Körper · CHF 175</p>
+          <ul>
+            <li>Ein Bogen über den ganzen Körper, mit tieferem Loslassen</li>
+            <li>Raum für dein eigenes Anliegen</li>
+            <li>Druckpunkte und begleitete Dehnungen, die zu tiefer Entspannung und verkörperter Wahrnehmung einladen</li>
+            <li>Inklusive Zeit zum Ankommen, für ein Vorgespräch und zum Nachklingen</li>
+          </ul>
+          <a class="btn btn-tinte" href="https://wa.me/41788636585?text=Ich%20interessiere%20mich%20f%C3%BCr%20ein%20ZenThaiShiatsu%20Treatment.%20" target="_blank" rel="noopener noreferrer">90 Minuten buchen</a>
+        </article>
+        <article class="behandlung reveal">
+          <p class="dauer">Deep Dive</p>
+          <p class="preis-zeile">3 × 90 Min · CHF 499</p>
+          <ul>
+            <li>Drei Sitzungen für sanfte Veränderung, die bleiben darf</li>
+            <li>Regelmässige Sitzungen laden zu tieferen Schichten von Loslassen und Bewusstsein ein</li>
+            <li>Ein Blick aufs Ganze, der an die Wurzel geht</li>
+          </ul>
+          <a class="btn btn-tinte" href="https://wa.me/41788636585?text=Ich%20interessiere%20mich%20f%C3%BCr%20das%20ZenThaiShiatsu%20DeepDivePackage.%20" target="_blank" rel="noopener noreferrer">Deep Dive buchen</a>
+        </article>
+      </div>
+      <p class="kleingedruckt reveal">Die Buchung öffnet WhatsApp. Du kannst mir auch einfach <a href="mailto:lucy@thewaterdevotion.com?subject=ZenThai%20Shiatsu">eine E-Mail schreiben</a>.</p>
+      <div class="prosa reveal" style="margin-top:var(--s3)">
+        <p>Die Sitzungen finden in bequemer Kleidung auf einem weichen Futon am Boden statt. Die Behandlung orientiert sich an der Fünf-Elemente-Lehre der Traditionellen Chinesischen Medizin. Die Berührung kann still und verankernd sein oder fliessend und rhythmisch, je nachdem, was gerade gebraucht wird. Es gibt kein festes Protokoll, die Sitzung folgt den Signalen des Körpers. Das Ziel: dass du dich ausgeglichener, geerdeter und mit neuer Energie fühlst.</p>
+        <p>Ich biete <strong>Studierendenrabatte</strong> und besondere Preise für Menschen, die sich den vollen Preis gerade nicht leisten können. Melde dich jederzeit.</p>
       </div>
     </div>
   </section>
 
-  <!-- Stimmen -->
   <section>
     <div class="wrap">
       <div class="sek-kopf reveal">
-        <p class="eyebrow">Voices from the practice</p>
-        <h2>What practitioners <em>feel</em></h2>
+        <p class="eyebrow">Stimmen aus der Praxis</p>
+        <h2>Was Teilnehmende <em>spüren</em></h2>
       </div>
-      <div class="slider reveal" aria-label="Voices">
+      <div class="slider reveal" aria-label="Stimmen">
         <div class="slider-spur" tabindex="0">
-          <div class="stimme"><p>&ldquo;My expression has opened deeply, and I feel much more connected to myself.&rdquo;</p><footer>Janine · TWD Practitioner</footer></div>
-          <div class="stimme"><p>&ldquo;This journey reminded me how deep my passion for dance truly is.&rdquo;</p><footer>Milena · TWD Practitioner</footer></div>
-          <div class="stimme"><p>&ldquo;Three months of depth, touch, exploring, expanding, integrating and becoming myself.&rdquo;</p><footer>Kathi · 1:1 Mentoring</footer></div>
+        <div class="stimme">
+          <p>&bdquo;Lucys Behandlungen führen dich in einen verwandelnden Tanz mit dem Körper. Durch die aktiven und passiven Bewegungen habe ich tiefe Entspannung und ein Weichwerden erlebt, dazu eine innere Zentrierung. Ihre Präsenz schafft einen Raum, in dem du dich öffnen und wirklich im Moment ankommen kannst.&ldquo;</p>
+          <footer>Jordan</footer>
         </div>
-        <div class="slider-knoepfe"><button type="button" data-richtung="-1" aria-label="Previous voice">←</button><button type="button" data-richtung="1" aria-label="Next voice">→</button></div>
+        <div class="stimme">
+          <p>&bdquo;Ich habe meine erste Zen-Thai-Massage bekommen und war danach tagelang verzaubert. Lucy hat einen so schönen Raum geschaffen, in dem ich mich vollkommen sicher, gehalten und getragen gefühlt habe. […] Ich bin in einen tief entspannten Zustand gekommen, wie ich ihn erst wenige Male in meinem Leben erlebt habe.&ldquo;</p>
+          <footer>Martina</footer>
+        </div>
+        <div class="stimme">
+          <p>&bdquo;Ich habe mich von Anfang an sehr wohl und herzlich umsorgt gefühlt. Lucys ruhige, offene und einfühlsame Art hat sofort Vertrauen geschaffen. […] Die Behandlung war auf einer menschlichen Ebene zutiefst nährend. Ich bin sehr dankbar für diese Erfahrung und kann Lucy von Herzen empfehlen.&ldquo;</p>
+          <footer>Lucas</footer>
+        </div>
+        </div>
+        <div class="slider-knoepfe"><button type="button" data-richtung="-1" aria-label="Vorherige Stimme">←</button><button type="button" data-richtung="1" aria-label="Nächste Stimme">→</button></div>
       </div>
     </div>
   </section>
 
-  <!-- Newsletter -->
-  <section class="news">
-    <div class="wrap news-grid">
-      <div class="reveal">
-        <p class="eyebrow" style="color:var(--akzent);margin-bottom:1rem">Stay in the flow</p>
-        <h2>Letters from the <em>water</em></h2>
-        <p>Now and then a letter from me: new dates, journeys, and what the water is telling me.</p>
-      </div>
-      <div class="news-cta reveal">
-        <a class="btn btn-tinte" href="https://shorturl.at/KjHTp" target="_blank" rel="noopener noreferrer">Join the newsletter</a>
-        <a class="btn btn-tline" href="https://www.instagram.com/luzseed/" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
+  <section class="aqua schluss-cta">
+    <div class="wrap reveal">
+      <h2>Buche eine <em>Behandlung</em></h2>
+      <p>Schreib mir ein paar Zeilen, was dich herführt, dann finden wir zusammen einen Termin.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a class="btn btn-tinte" href="https://wa.me/41788636585?text=Ich%20interessiere%20mich%20f%C3%BCr%20ein%20ZenThaiShiatsu%20Treatment.%20" target="_blank" rel="noopener noreferrer">Per WhatsApp buchen</a>
+        <a class="btn btn-tline" href="mailto:lucy@thewaterdevotion.com?subject=ZenThai%20Shiatsu">E-Mail schreiben</a>
       </div>
     </div>
   </section>
+
 
 </main>
-
-<!-- Footer -->
 <footer class="site-footer">
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
         <img src="assets/logo-hell.png" alt="The Water Devotion" width="170" height="72" loading="lazy">
-        <p>Fluid dance, embodiment &amp; ZenThai Shiatsu with Lucy Nicholas in Lucerne, Switzerland.</p>
+        <p>Fluider Tanz, 1:1-Begleitung &amp; ZenThai Shiatsu mit Lucy Nicholas in Luzern, Schweiz.</p>
       </div>
-      <nav aria-label="Footer">
-        <h3>Explore</h3>
+      <nav aria-label="Fusszeile">
+        <h3>Entdecken</h3>
         <ul>
-          <li><a href="mentoring.html">1:1 Mentoring</a></li>
-          <li><a href="workshops.html">Workshops &amp; Journeys</a></li>
-          <li><a href="shiatsu.html">ZenThai Shiatsu</a></li>
-          <li><a href="index.html#about">About me</a></li>
+          <li><a href="mentoring-de.html">1:1-Begleitung</a></li>
+          <li><a href="workshops-de.html">Workshops &amp; Journeys</a></li>
+          <li><a href="shiatsu-de.html">ZenThai Shiatsu</a></li>
+          <li><a href="index-de.html#about">Über mich</a></li>
         </ul>
       </nav>
       <div>
-        <h3>Connect</h3>
+        <h3>Kontakt</h3>
         <ul>
           <li><a href="mailto:lucy@thewaterdevotion.com">lucy@thewaterdevotion.com</a></li>
           <li><a href="https://www.instagram.com/luzseed/" target="_blank" rel="noopener noreferrer">Instagram · @luzseed</a></li>
@@ -480,7 +501,6 @@ section{padding:var(--s6) 0}
     </div>
   </div>
 </footer>
-
 <script>
 (function(){
   var nav=document.getElementById('nav');
