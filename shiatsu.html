@@ -19,7 +19,7 @@
 <meta property="og:image:height" content="630">
 <meta name="theme-color" content="#24494C">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2324494C'/%3E%3Cpath d='M10 34c6-8 12-8 18 0s12 8 18 0' stroke='%23CFE8E6' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M10 44c6-8 12-8 18 0s12 8 18 0' stroke='%23D8EDED' stroke-width='3' fill='none' stroke-linecap='round' opacity='.7'/%3E%3C/svg%3E">
-<link rel="preload" href="assets/fonts/playfair-display-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/sego.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/outfit-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css">
 <style>
@@ -251,6 +251,35 @@ section{padding:var(--s6) 0}
   body{background:#fff;color:#000}
   section{padding:1rem 0}
 }
+/* FINAL-30-09 — Lucys Schrift + Bausteine der finalen Fassung */
+html{font-synthesis:none}
+:root{--serif:'Sego','Outfit','Outfit Fallback',Georgia,serif}
+h1,h2,h3,.intro p.gross,.zitat blockquote{font-synthesis:none;letter-spacing:.01em}
+h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
+.stimme p,.slider .stimme p{font-family:var(--sans)}
+.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.intro-grid figure{aspect-ratio:4/5;border-radius:var(--radius);overflow:hidden;max-width:440px;justify-self:end;width:100%}
+.intro-grid img,.zitat-bild img,.persoenlich figure img,.galerie img{width:100%;height:100%;object-fit:cover}
+.gedicht{margin-top:var(--s3);display:grid;gap:.35rem;font-size:var(--fs-2);line-height:1.45;color:var(--flaeche)}
+.gedicht p:last-child{margin-top:var(--s2);color:var(--tinte)}
+@media (max-width:900px){.intro-grid{grid-template-columns:1fr}.intro-grid figure{justify-self:start;max-width:320px}}
+.zitat-bild{position:relative;padding:0;overflow:hidden;color:#fff;text-align:center}
+.zitat-bild figure{position:absolute;inset:0;margin:0}
+.zitat-bild::after{content:"";position:absolute;inset:0;background:rgba(20,40,42,.55)}
+.zitat-bild .wrap{position:relative;z-index:2;padding-block:clamp(5rem,14vw,10rem)}
+.zitat-bild blockquote{max-width:760px;margin:0 auto;font-family:var(--serif);font-size:var(--fs-3);line-height:1.3;text-wrap:balance}
+.zitat-bild cite{display:block;margin-top:var(--s3);font-family:var(--sans);font-style:normal;font-size:var(--fs-0);letter-spacing:.2em;text-transform:uppercase;color:var(--akzent-d)}
+.fuerwen-text{max-width:60ch}
+.fuerwen-text p{font-size:var(--fs-2);line-height:1.5;margin-bottom:var(--s2)}
+.fuerwen-text p.fuerwen-klein{font-size:var(--fs-0);opacity:.8}
+.about-text blockquote{font-family:var(--sans);font-size:1.15rem;line-height:1.6;color:var(--flaeche);margin:0 0 var(--s2)}
+/* R2 (Leonardo/Andrea 30.09.) */
+.hero-bild picture,.e-hero-bild picture{display:block;height:100%}
+.e-hero-bild::after{background:linear-gradient(180deg, rgba(36,73,76,.88) 0%, rgba(36,73,76,0) 26%),linear-gradient(90deg, rgba(36,73,76,.55), transparent 28%)}
+@media (max-width:900px){
+  .intro-grid figure,.about-figur,.about-figur figure,.persoenlich figure,.subhero-figur{justify-self:center;margin-inline:auto}
+  .hero{min-height:92svh}
+}
 </style>
 
 <style>
@@ -316,6 +345,26 @@ section{padding:var(--s6) 0}
 .schluss-cta p{max-width:52ch;margin:0 auto var(--s3)}
 </style>
 
+
+<style>
+/* FINAL-30-09 Unterseiten */
+.trio-text{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.4rem,3vw,3rem)}
+.trio-text .eyebrow{color:var(--akzent);margin-bottom:.8rem;border-top:2px solid var(--akzent);padding-top:var(--s2)}
+@media (max-width:900px){.trio-text{grid-template-columns:1fr}}
+.raum-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.raum-grid.umgekehrt{grid-template-columns:1fr 1fr}
+.gross-zeile{font-family:var(--serif);font-size:var(--fs-3);line-height:1.3;color:var(--flaeche);text-wrap:balance}
+.dunkel .gross-zeile{color:#fff}
+.galerie{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+.galerie figure,.duo figure{aspect-ratio:4/5;border-radius:var(--radius);overflow:hidden}
+.galerie figure:nth-child(2){transform:translateY(2.2rem)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.duo figure:nth-child(2){transform:translateY(2.4rem)}
+.studio-bild{aspect-ratio:3/2;border-radius:var(--radius);overflow:hidden}
+.zitat blockquote.lang{font-size:var(--fs-2);line-height:1.45}
+@media (max-width:900px){.raum-grid,.raum-grid.umgekehrt{grid-template-columns:1fr}.galerie figure:nth-child(2),.duo figure:nth-child(2){transform:none}}
+</style>
+
 </head>
 <body>
 <a class="skip" href="#inhalt">Skip to content</a>
@@ -344,7 +393,7 @@ section{padding:var(--s6) 0}
       <div>
         <p class="eyebrow">Bodywork · Kriens / Lucerne</p>
         <h1>ZenThai <em>Shiatsu</em></h1>
-        <p class="lead">A bodywork that invites deep rest and nourishes your overall wellbeing.</p>
+        <p class="lead">An invitation to listen. To the body, to the breath, to the subtle language beneath the surface.</p>
         <div class="subhero-cta">
           <a class="btn btn-voll" href="#treatments">Treatment options</a>
         </div>
@@ -353,19 +402,44 @@ section{padding:var(--s6) 0}
         <figure><picture>
   <source type="image/avif" srcset="assets/img/shiatsu-outdoor-400.avif 400w, assets/img/shiatsu-outdoor-800.avif 800w, assets/img/shiatsu-outdoor-1200.avif 1200w" sizes="(max-width: 900px) 76vw, 32vw">
   <source type="image/webp" srcset="assets/img/shiatsu-outdoor-400.webp 400w, assets/img/shiatsu-outdoor-800.webp 800w, assets/img/shiatsu-outdoor-1200.webp 1200w" sizes="(max-width: 900px) 76vw, 32vw">
-  <img src="assets/img/shiatsu-outdoor-800.jpg" srcset="assets/img/shiatsu-outdoor-400.jpg 400w, assets/img/shiatsu-outdoor-800.jpg 800w, assets/img/shiatsu-outdoor-1200.jpg 1200w" sizes="(max-width: 900px) 76vw, 32vw" width="1365" height="2048" alt="Lucy giving a ZenThai Shiatsu session outdoors at dusk" loading="lazy" decoding="async">
+  <img src="assets/img/shiatsu-outdoor-800.jpg" srcset="assets/img/shiatsu-outdoor-400.jpg 400w, assets/img/shiatsu-outdoor-800.jpg 800w, assets/img/shiatsu-outdoor-1200.jpg 1200w" sizes="(max-width: 900px) 76vw, 32vw" width="1365" height="2048" alt="Lucy giving a ZenThai Shiatsu session outdoors at dusk" fetchpriority="high">
 </picture></figure>
       </div>
     </div>
   </section>
 
   <section>
-    <div class="wrap">
-      <div class="prosa reveal">
-        <p><strong>ZenThai Shiatsu is an invitation to listen.</strong> To the body, to the breath, to the subtle language beneath the surface.</p>
-        <p>It weaves together stillness and flow, pressure and movement, grounding and expansion. Through conscious touch and gentle motion, space is created — space for what has been held, forgotten or waiting to be felt.</p>
-        <p>The body is not something to be fixed, but a living, fluid landscape to move through. Each session becomes a journey, like a dance. A dance that continues to echo after the treatment has ended.</p>
+    <div class="wrap raum-grid">
+      <div class="prosa reveal" style="margin:0">
+        <p class="gross-zeile">It weaves together stillness and flow, pressure and movement, grounding and expansion.</p>
+        <p>Through conscious touch and gentle motion, space is created. Space for what has been held, forgotten or waiting to be felt.</p>
+        <p>The body is not something to be fixed, but a living, fluid landscape to move through. Each session becomes a journey, like a dance.</p>
       </div>
+      <div class="duo reveal">
+        <figure><picture>
+  <source type="image/avif" srcset="assets/img/shiatsu-warm-400.avif 400w, assets/img/shiatsu-warm-800.avif 800w, assets/img/shiatsu-warm-1200.avif 1200w" sizes="(max-width: 900px) 45vw, 22vw">
+  <source type="image/webp" srcset="assets/img/shiatsu-warm-400.webp 400w, assets/img/shiatsu-warm-800.webp 800w, assets/img/shiatsu-warm-1200.webp 1200w" sizes="(max-width: 900px) 45vw, 22vw">
+  <img src="assets/img/shiatsu-warm-800.jpg" srcset="assets/img/shiatsu-warm-400.jpg 400w, assets/img/shiatsu-warm-800.jpg 800w, assets/img/shiatsu-warm-1200.jpg 1200w" sizes="(max-width: 900px) 45vw, 22vw" width="1200" height="1500" alt="Two hands meeting in warm evening light during a treatment" loading="lazy" decoding="async">
+</picture></figure>
+        <figure><picture>
+  <source type="image/avif" srcset="assets/img/shiatsu-bw-400.avif 400w, assets/img/shiatsu-bw-800.avif 800w, assets/img/shiatsu-bw-1200.avif 1200w" sizes="(max-width: 900px) 45vw, 22vw">
+  <source type="image/webp" srcset="assets/img/shiatsu-bw-400.webp 400w, assets/img/shiatsu-bw-800.webp 800w, assets/img/shiatsu-bw-1200.webp 1200w" sizes="(max-width: 900px) 45vw, 22vw">
+  <img src="assets/img/shiatsu-bw-800.jpg" srcset="assets/img/shiatsu-bw-400.jpg 400w, assets/img/shiatsu-bw-800.jpg 800w, assets/img/shiatsu-bw-1200.jpg 1200w" sizes="(max-width: 900px) 45vw, 22vw" width="1200" height="1500" alt="A gentle assisted stretch, in black and white" loading="lazy" decoding="async">
+</picture></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="gemeinschaft">
+    <figure>
+      <picture>
+  <source type="image/avif" srcset="assets/img/shiatsu-sea-800.avif 800w, assets/img/shiatsu-sea-1200.avif 1200w, assets/img/shiatsu-sea-1600.avif 1600w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/shiatsu-sea-800.webp 800w, assets/img/shiatsu-sea-1200.webp 1200w, assets/img/shiatsu-sea-1600.webp 1600w" sizes="100vw">
+  <img src="assets/img/shiatsu-sea-1200.jpg" srcset="assets/img/shiatsu-sea-800.jpg 800w, assets/img/shiatsu-sea-1200.jpg 1200w, assets/img/shiatsu-sea-1600.jpg 1600w" sizes="100vw" width="1600" height="1066" alt="A ZenThai Shiatsu session on a blanket by the sea at sunset" loading="lazy" decoding="async">
+</picture>
+    </figure>
+    <div class="wrap gemeinschaft-text reveal">
+      <p>A dance that continues to echo<br><em>after the treatment has ended.</em></p>
     </div>
   </section>
 
@@ -375,9 +449,10 @@ section{padding:var(--s6) 0}
         <p class="eyebrow">The practice</p>
         <h2>Rooted in Zen Shiatsu, moved like a <em>dance</em></h2>
       </div>
-      <div class="prosa reveal">
-        <p>A holistic bodywork practice rooted in Zen Shiatsu, enriched with elements from Thai massage, somatic movement and mindfulness-based practices. It works through conscious touch, rhythmic pressure, assisted stretches, gentle rocking and fluid movement.</p>
-        <p>Drawing from Traditional Chinese Medicine, ZenThai Shiatsu follows the meridian system and works with the flow of energy throughout the body. Each session unfolds as a unique, embodied journey.</p>
+      <div class="prosa reveal" style="margin:0">
+        <p>A holistic bodywork practice that weaves together several modalities. It is rooted in Zen Shiatsu, enriched with elements from Thai massage, osteopathic principles, somatic movement and mindfulness-based practices. It works through conscious touch, rhythmic pressure, assisted stretches, gentle rocking and fluid movement.</p>
+        <p>Sessions take place in comfortable clothing on a soft futon on the floor. Your treatment is tailored to your specific needs, which we determine through a short TCM-based check-in at the beginning of the session. This may include observing the tongue, feeling the pulse and, when appropriate, checking the Hara (abdomen). Based on these observations we shape the session to what your body needs in that moment, to support the natural flow of energy throughout the body.</p>
+        <p>There is no fixed protocol. The session follows the body's cues. The aim is for you to feel more balanced, grounded and re-energized.</p>
         <p class="kleingedruckt">ZenThai Shiatsu is a wellbeing practice. It does not replace medical diagnosis or treatment.</p>
       </div>
     </div>
@@ -386,8 +461,8 @@ section{padding:var(--s6) 0}
   <section class="aqua-hell" id="treatments">
     <div class="wrap">
       <div class="sek-kopf reveal">
-        <p class="eyebrow">Treatment options</p>
-        <h2>Choose your <em>depth</em></h2>
+        <p class="eyebrow">Treatments</p>
+        <h2>Your <em>session</em></h2>
       </div>
       <div class="behandlungen">
         <article class="behandlung reveal">
@@ -396,8 +471,7 @@ section{padding:var(--s6) 0}
           <ul>
             <li>Individually tailored to your needs</li>
             <li>Pressure points, stretches and passive movement</li>
-            <li>Supports deep relaxation, energy flow and body awareness</li>
-            <li>Includes time for arrival, intake and integration</li>
+            <li>Time for arrival, intake and integration</li>
           </ul>
           <a class="btn btn-tinte" href="https://wa.me/41788636585?text=Ich%20interessiere%20mich%20f%C3%BCr%20ein%20ZenThaiShiatsu%20Treatment.%20" target="_blank" rel="noopener noreferrer">Book 75 minutes</a>
         </article>
@@ -407,8 +481,7 @@ section{padding:var(--s6) 0}
           <ul>
             <li>A full body arc with deeper unwinding</li>
             <li>Space for your specific intention</li>
-            <li>Pressure points and assisted stretches to invite deep relaxation and embodied awareness</li>
-            <li>Includes time for arrival, intake and integration</li>
+            <li>Time for arrival, intake and integration</li>
           </ul>
           <a class="btn btn-tinte" href="https://wa.me/41788636585?text=Ich%20interessiere%20mich%20f%C3%BCr%20ein%20ZenThaiShiatsu%20Treatment.%20" target="_blank" rel="noopener noreferrer">Book 90 minutes</a>
         </article>
@@ -416,26 +489,31 @@ section{padding:var(--s6) 0}
           <p class="dauer">Deep Dive</p>
           <p class="preis-zeile">3 × 90 min · CHF 499</p>
           <ul>
-            <li>Three sessions to support gentle, lasting change</li>
-            <li>Ongoing sessions invite deeper layers of release and awareness</li>
-            <li>A holistic, root-oriented approach</li>
+            <li>Three sessions, one after another</li>
+            <li>Room for deeper layers to unfold</li>
+            <li>Time between sessions to integrate</li>
           </ul>
           <a class="btn btn-tinte" href="https://wa.me/41788636585?text=Ich%20interessiere%20mich%20f%C3%BCr%20das%20ZenThaiShiatsu%20DeepDivePackage.%20" target="_blank" rel="noopener noreferrer">Book the Deep Dive</a>
         </article>
       </div>
-      <p class="kleingedruckt reveal">Booking opens WhatsApp — you can also simply <a href="mailto:lucy@thewaterdevotion.com?subject=ZenThai%20Shiatsu">write an email</a>.</p>
-      <div class="prosa reveal" style="margin-top:var(--s3)">
-        <p>Sessions take place in comfortable clothes, on a soft futon on the floor. Your treatment is guided by insights from Traditional Chinese Five Element theory. Touch can be still and anchoring or fluid and rhythmic, depending on what is needed. There is no fixed protocol — the session follows the body's cues. The aim is for you to feel more balanced, grounded and re-energized.</p>
-        <p>I offer <strong>student discounts</strong> and special rates for people who can't afford the full price at the moment. Feel free to reach out anytime.</p>
-      </div>
+      <p class="kleingedruckt reveal">Booking opens WhatsApp. You can also simply <a href="mailto:lucy@thewaterdevotion.com?subject=ZenThai%20Shiatsu">write an email</a>. I offer student discounts and special rates for people who can't afford the full price at the moment, feel free to reach out.</p>
+    </div>
+  </section>
+
+  <section class="zitat">
+    <div class="wrap reveal">
+      <svg class="treiben" width="140" height="30" viewBox="0 0 140 30" aria-hidden="true"><path d="M6 15c11-13 22-13 33 0s22 13 33 0 22-13 33 0 18 10 29 4" stroke="#CFE8E6" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".85"/></svg>
+      <blockquote class="lang">“Water does not resist. Water flows. When you plunge your hand into it, all you feel is a caress. […] Water is patient. Dripping water wears away a stone. Remember you are half water.”
+        <cite>Margaret Atwood</cite>
+      </blockquote>
     </div>
   </section>
 
   <section>
     <div class="wrap">
       <div class="sek-kopf reveal">
-        <p class="eyebrow">Voices from the practice</p>
-        <h2>What practitioners <em>feel</em></h2>
+        <p class="eyebrow">Voices</p>
+        <h2>Kind <em>words</em></h2>
       </div>
       <div class="slider reveal" aria-label="Voices">
         <div class="slider-spur" tabindex="0">
@@ -444,11 +522,11 @@ section{padding:var(--s6) 0}
           <footer>Jordan</footer>
         </div>
         <div class="stimme">
-          <p>&ldquo;I received my first Zen Thai Massage, and I was enchanted for days afterward. Lucy created such a beautiful space where I felt completely safe, held and supported. […] I entered a deeply relaxed state — one I have experienced only a few times in my life.&rdquo;</p>
+          <p>&ldquo;I received my first Zen Thai Massage, and I was enchanted for days afterward. Lucy created such a beautiful space where I felt completely safe, held and supported. […] I entered a deeply relaxed state, one I have experienced only a few times in my life.&rdquo;</p>
           <footer>Martina</footer>
         </div>
         <div class="stimme">
-          <p>&ldquo;I felt very comfortable and warmly cared for from the very beginning. Lucy's calm, open and empathetic manner immediately created a sense of trust. […] The treatment was deeply nourishing on a human level. I am very grateful for this experience and can wholeheartedly recommend Lucy.&rdquo;</p>
+          <p>&ldquo;I felt very comfortable and warmly cared for from the very beginning. Lucy's calm, open and empathetic manner immediately created a sense of trust. […] I am very grateful for this experience and can wholeheartedly recommend Lucy.&rdquo;</p>
           <footer>Lucas</footer>
         </div>
         </div>
@@ -460,7 +538,7 @@ section{padding:var(--s6) 0}
   <section class="aqua schluss-cta">
     <div class="wrap reveal">
       <h2>Book a <em>treatment</em></h2>
-      <p>Write me a few lines about what brings you — we'll find a time together.</p>
+      <p>Write me a few lines about what brings you, and we'll find a time together.</p>
       <div class="hero-cta" style="justify-content:center">
         <a class="btn btn-tinte" href="https://wa.me/41788636585?text=Ich%20interessiere%20mich%20f%C3%BCr%20ein%20ZenThaiShiatsu%20Treatment.%20" target="_blank" rel="noopener noreferrer">Book via WhatsApp</a>
         <a class="btn btn-tline" href="mailto:lucy@thewaterdevotion.com?subject=ZenThai%20Shiatsu">Write an email</a>

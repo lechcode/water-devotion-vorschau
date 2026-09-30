@@ -12,3 +12,6 @@
 /* size-adjust-Fallbacks gegen Layout-Shift (an Metriken angenähert) */
 @font-face{font-family:'Playfair Display Fallback';src:local('Georgia');size-adjust:112%;ascent-override:97%;descent-override:24%;}
 @font-face{font-family:'Outfit Fallback';src:local('Helvetica Neue'),local('Arial');size-adjust:99%;ascent-override:100%;descent-override:26%;}
+
+/* Sego — Lucys Hausschrift (von ihr gekauft, 30.09.2026 geliefert). Nur für Überschriften/Auszeichnung. */
+@font-face{font-family:'Sego';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/sego.woff2) format('woff2');unicode-range:U+0000-002F,U+003A-FFFF;}

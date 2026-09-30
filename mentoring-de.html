@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>document.documentElement.classList.add('js')</script>
-<meta name="robots" content="noindex, nofollow"><!-- ENTWURF nach Session 2 (25.09.2026) · Texte aus Lucys O-Ton, sie schreibt sie vor S3 in ihre Sprache -->
+<meta name="robots" content="noindex, nofollow"><!-- finale Fassung 30.09.2026 mit Lucys eigenen Texten · noindex bis Go-Live -->
 <title>The Fluid Self · 1:1 Embodiment in Kriens &amp; online</title>
 <meta name="description" content="Drei Monate 1:1 mit Lucy Nicholas: fluider Tanz, Berührung und Ruhe, online oder im Studio in Kriens bei Luzern. Stark in der Sanftheit. Kennenlernen kostenlos.">
 <meta property="og:title" content="The Fluid Self · 1:1 mit Lucy Nicholas">
@@ -19,7 +19,7 @@
 <meta property="og:image:height" content="630">
 <meta name="theme-color" content="#24494C">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2324494C'/%3E%3Cpath d='M10 34c6-8 12-8 18 0s12 8 18 0' stroke='%23CFE8E6' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M10 44c6-8 12-8 18 0s12 8 18 0' stroke='%23D8EDED' stroke-width='3' fill='none' stroke-linecap='round' opacity='.7'/%3E%3C/svg%3E">
-<link rel="preload" href="assets/fonts/playfair-display-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/sego.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/outfit-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css">
 <style>
@@ -358,6 +358,68 @@ section{padding:var(--s6) 0}
 .slider-knoepfe button:hover{background:var(--aqua-hell)}
 .slider-knoepfe button:disabled{opacity:.35;cursor:default}
 @media (max-width: 900px){.slider-spur{grid-auto-columns:82%}}
+/* FINAL-30-09 — Lucys Schrift + Bausteine der finalen Fassung */
+html{font-synthesis:none}
+:root{--serif:'Sego','Outfit','Outfit Fallback',Georgia,serif}
+h1,h2,h3,.intro p.gross,.zitat blockquote{font-synthesis:none;letter-spacing:.01em}
+h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
+.stimme p,.slider .stimme p{font-family:var(--sans)}
+.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.intro-grid figure{aspect-ratio:4/5;border-radius:var(--radius);overflow:hidden;max-width:440px;justify-self:end;width:100%}
+.intro-grid img,.zitat-bild img,.persoenlich figure img,.galerie img{width:100%;height:100%;object-fit:cover}
+.gedicht{margin-top:var(--s3);display:grid;gap:.35rem;font-size:var(--fs-2);line-height:1.45;color:var(--flaeche)}
+.gedicht p:last-child{margin-top:var(--s2);color:var(--tinte)}
+@media (max-width:900px){.intro-grid{grid-template-columns:1fr}.intro-grid figure{justify-self:start;max-width:320px}}
+.zitat-bild{position:relative;padding:0;overflow:hidden;color:#fff;text-align:center}
+.zitat-bild figure{position:absolute;inset:0;margin:0}
+.zitat-bild::after{content:"";position:absolute;inset:0;background:rgba(20,40,42,.55)}
+.zitat-bild .wrap{position:relative;z-index:2;padding-block:clamp(5rem,14vw,10rem)}
+.zitat-bild blockquote{max-width:760px;margin:0 auto;font-family:var(--serif);font-size:var(--fs-3);line-height:1.3;text-wrap:balance}
+.zitat-bild cite{display:block;margin-top:var(--s3);font-family:var(--sans);font-style:normal;font-size:var(--fs-0);letter-spacing:.2em;text-transform:uppercase;color:var(--akzent-d)}
+.fuerwen-text{max-width:60ch}
+.fuerwen-text p{font-size:var(--fs-2);line-height:1.5;margin-bottom:var(--s2)}
+.fuerwen-text p.fuerwen-klein{font-size:var(--fs-0);opacity:.8}
+.about-text blockquote{font-family:var(--sans);font-size:1.15rem;line-height:1.6;color:var(--flaeche);margin:0 0 var(--s2)}
+/* R2 (Leonardo/Andrea 30.09.) */
+.hero-bild picture,.e-hero-bild picture{display:block;height:100%}
+.e-hero-bild::after{background:linear-gradient(180deg, rgba(36,73,76,.88) 0%, rgba(36,73,76,0) 26%),linear-gradient(90deg, rgba(36,73,76,.55), transparent 28%)}
+@media (max-width:900px){
+  .intro-grid figure,.about-figur,.about-figur figure,.persoenlich figure,.subhero-figur{justify-self:center;margin-inline:auto}
+  .hero{min-height:92svh}
+}
+/* 1:1-Seite */
+.persoenlich{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.persoenlich figure{aspect-ratio:4/5;border-radius:var(--radius);overflow:hidden;max-width:420px;width:100%}
+.persoenlich-text .eyebrow{color:var(--akzent);margin-bottom:1rem}
+.persoenlich-text h2{font-size:var(--fs-3);margin-bottom:var(--s3);text-wrap:balance}
+.persoenlich-text p{margin-bottom:var(--s2);max-width:56ch}
+.persoenlich-text p.betont{font-family:var(--serif);font-size:var(--fs-2);line-height:1.4;color:var(--flaeche)}
+.persoenlich-text .gruss{font-family:var(--serif);font-size:var(--fs-2);color:var(--akzent)}
+@media (max-width:900px){.persoenlich{grid-template-columns:1fr}.persoenlich figure{max-width:300px}}
+.prosa-mitte{max-width:62ch;margin-inline:auto}
+.prosa-mitte .eyebrow{color:var(--akzent);margin-bottom:1rem}
+.prosa-mitte h2{font-size:var(--fs-3);margin-bottom:var(--s3);text-wrap:balance}
+.prosa-mitte p{margin-bottom:var(--s2)}
+.prosa-mitte p.gross-satz{font-family:var(--serif);font-size:var(--fs-3);line-height:1.3;color:var(--akzent);margin-top:var(--s3);text-wrap:balance}
+.drei{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.2rem,2.5vw,2rem);margin:var(--s4) auto 0;max-width:1000px}
+.drei li{font-family:var(--serif);font-size:var(--fs-2);line-height:1.3;border-top:2px solid var(--akzent);padding-top:var(--s2)}
+@media (max-width:900px){.drei{grid-template-columns:1fr}}
+.wellen h2{color:#fff;font-size:var(--fs-3);margin-bottom:var(--s2)}
+.wellen h2 em{color:var(--akzent-d)}
+.wellen-lead{max-width:48ch;margin:0 auto var(--s3);font-size:var(--fs-2);line-height:1.5;color:var(--aqua-hell)}
+.fragen{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:1rem 2rem;max-width:760px;margin:0 auto}
+.fragen li{font-family:var(--serif);font-size:var(--fs-2);line-height:1.35;border-top:1px solid rgba(207,232,230,.4);padding-top:1rem}
+@media (max-width:700px){.fragen{grid-template-columns:1fr}}
+.sek-lead{margin-top:1rem;max-width:60ch}
+.paket figure{overflow:hidden}
+.paket figure img{width:100%;height:100%;object-fit:cover}
+.abschluss blockquote{max-width:760px;margin:0 auto;font-family:var(--serif);font-size:var(--fs-3);line-height:1.3;text-wrap:balance;color:#fff}
+/* R2 (Leonardo/Andrea 30.09.) */
+#lucy + #video{padding-top:0}
+.persoenlich-text p.betont{font-family:var(--sans);font-size:1.15rem;line-height:1.6}
+.vielleicht{margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid rgba(46,106,110,.25)}
+.vielleicht h3{font-size:var(--fs-2);margin-bottom:var(--s2)}
+.vielleicht p{margin-bottom:var(--s2);max-width:46ch}
 </style>
 <style>
 /* ==== 1:1-Seite nach Session 2 ==== */
@@ -417,30 +479,50 @@ section{padding:var(--s6) 0}
       <li><a href="workshops-de.html">Workshops</a></li>
       <li><a href="shiatsu-de.html">Shiatsu</a></li>
       <li><a href="index-de.html#about">Über mich</a></li>
-      <li><a class="pill" href="mentoring-de.html#angebot">Kennenlernen kostenlos</a></li>
+      <li><a class="pill" href="mentoring-de.html#angebot">Kostenloses Kennenlernen</a></li>
     </ul>
   </div>
 </header>
 
 <main id="inhalt">
-
   <!-- 1 · Hero -->
   <section class="e-hero" aria-label="The Fluid Self">
     <div class="e-hero-text">
-      <p class="eyebrow">1:1 · online · Kriens</p>
-      <h1>Vom Ich muss zum Ich <em>darf</em></h1>
-      <p class="lead">Du wirst stark in deiner Sanftheit. Das Fühlen wird leichter. Und Bewegung wird zu einer ganz normalen Devotion in deinem Alltag.</p>
+      <p class="eyebrow">The Fluid Self · 1:1-Begleitung</p>
+      <h1>Eine Hingabe an deinen <em>inneren Fluss</em></h1>
+      <p class="lead">Und an die Kraft, die dich bewegt. Drei Monate 1:1 mit Lucy, online oder im Studio in Kriens.</p>
       <div class="hero-cta">
-        <a class="btn btn-voll" href="#angebot">Kostenloses Kennenlernen buchen</a>
-        <a class="btn btn-line" href="#energy">Wie es sich anfühlt</a>
+        <a class="btn btn-voll" href="#angebot">Kostenloses Kennenlernen anfragen</a>
+        <a class="btn btn-line" href="#video">Zum Video</a>
       </div>
     </div>
     <div class="e-hero-bild">
-      <picture>
-        <source type="image/avif" srcset="assets/img/card-mentoring-400.avif 400w, assets/img/card-mentoring-800.avif 800w, assets/img/card-mentoring-1200.avif 1200w" sizes="(max-width: 900px) 100vw, 48vw">
-        <source type="image/webp" srcset="assets/img/card-mentoring-400.webp 400w, assets/img/card-mentoring-800.webp 800w, assets/img/card-mentoring-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 48vw">
-        <img src="assets/img/card-mentoring-800.jpg" srcset="assets/img/card-mentoring-400.jpg 400w, assets/img/card-mentoring-800.jpg 800w, assets/img/card-mentoring-1200.jpg 1200w" sizes="(max-width: 900px) 100vw, 48vw" width="1365" height="2048" alt="Lucy steht bei Sonnenaufgang im See und hebt Wasser in ihren Händen" fetchpriority="high">
-      </picture>
+<picture>
+  <source type="image/avif" srcset="assets/img/float-sunset-480.avif 480w, assets/img/float-sunset-800.avif 800w, assets/img/float-sunset-1200.avif 1200w" sizes="(max-width: 900px) 100vw, 48vw">
+  <source type="image/webp" srcset="assets/img/float-sunset-480.webp 480w, assets/img/float-sunset-800.webp 800w, assets/img/float-sunset-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 48vw">
+  <img src="assets/img/float-sunset-800.jpg" srcset="assets/img/float-sunset-480.jpg 480w, assets/img/float-sunset-800.jpg 800w, assets/img/float-sunset-1200.jpg 1200w" sizes="(max-width: 900px) 100vw, 48vw" width="1200" height="1800" alt="Eine Frau treibt bei Sonnenuntergang auf dem Rücken im See, ein Arm streckt sich nach oben" fetchpriority="high">
+</picture>
+    </div>
+  </section>
+
+  <!-- 1b · Lucys persönliches Intro (ihr Text, wörtlich) -->
+  <section class="aqua-hell" id="lucy">
+    <div class="wrap persoenlich">
+      <figure class="reveal">
+<picture>
+  <source type="image/avif" srcset="assets/img/lucy-meadow-400.avif 400w, assets/img/lucy-meadow-800.avif 800w, assets/img/lucy-meadow-1200.avif 1200w" sizes="(max-width: 900px) 80vw, 36vw">
+  <source type="image/webp" srcset="assets/img/lucy-meadow-400.webp 400w, assets/img/lucy-meadow-800.webp 800w, assets/img/lucy-meadow-1200.webp 1200w" sizes="(max-width: 900px) 80vw, 36vw">
+  <img src="assets/img/lucy-meadow-800.jpg" srcset="assets/img/lucy-meadow-400.jpg 400w, assets/img/lucy-meadow-800.jpg 800w, assets/img/lucy-meadow-1200.jpg 1200w" sizes="(max-width: 900px) 80vw, 36vw" width="1200" height="1500" alt="Lucy Nicholas tanzt langsam auf einer Wiese" loading="lazy" decoding="async">
+</picture>
+      </figure>
+      <div class="persoenlich-text reveal">
+        <p class="eyebrow">Ganz persönlich</p>
+        <h2>Am liebsten tanze ich <em>im Meer</em></h2>
+        <p>Wenn ich mich atmen lasse und den Wind einatme, das Salz, die weichen Wassermoleküle des Meeres, dann werde ich eins mit dem endlosen Ozean in mir. Ich tauche ein in die Fluidität meines Körpers – in eine der schönsten Formen von Meditation, die es gibt.</p>
+        <p class="betont">Die Stärke in der Sanftheit spüren. Die Liebe und Kraft aus meiner Mitte. Und zu merken: Je mehr ich mich entspanne, desto mehr bewegt es mich. Ein ständiges Fliessen.</p>
+        <p>Ich lade dich ein, mit mir zu tanzen und in den Ozean in dir einzutauchen. Loszulassen, was war, und eins zu werden mit dem Jetzt, aus dem heraus du immer erschaffst. Ein Raum, um deine Tiefe und deine Leichtigkeit zu erkunden – und mit diesen beiden Polen zu spielen.</p>
+        <p class="gruss">Lucy</p>
+      </div>
     </div>
   </section>
 
@@ -450,145 +532,54 @@ section{padding:var(--s6) 0}
       <p class="eyebrow" style="color:var(--akzent)">In ihren Worten</p>
       <h2 style="font-size:var(--fs-3)">Lucy erzählt, wie sich dieser Raum für sie <em>anfühlt</em> </h2>
       <div class="video-rahmen">
-        <video controls playsinline preload="none" poster="assets/video/lucy-poster.jpg" width="1280" height="720" aria-label="Lucy Nicholas erzählt von The Fluid Self (72 Sekunden, mit Untertiteln)">
+        <video controls playsinline preload="none" poster="assets/video/lucy-poster-foto.jpg" width="1280" height="720" aria-label="Lucy Nicholas erzählt von The Fluid Self (72 Sekunden, mit Untertiteln)">
           <source src="assets/video/lucy-strong-in-softness-v4.mp4" type="video/mp4">
           <track kind="captions" src="assets/video/lucy-de.vtt" srclang="de" label="Deutsch" default>
           <track kind="subtitles" src="assets/video/lucy-en-v4.vtt" srclang="en" label="English">
         </video>
       </div>
-      <p class="video-cta"><a class="btn btn-tinte" href="#angebot">Kostenloses Kennenlernen buchen</a></p>
+      <p class="video-cta"><a class="btn btn-tinte" href="#angebot">Kostenloses Kennenlernen anfragen</a></p>
     </div>
   </section>
 
-  <!-- 3 · Die Energie -->
-  <section id="energy">
-    <div class="wrap energie-grid">
-      <div class="energie-text reveal">
-        <div class="sek-kopf" style="margin-bottom:var(--s3)">
-          <p class="eyebrow">Die Energie</p>
-          <h2>Stark in der <em>Sanftheit</em></h2>
-        </div>
-        <p>Wenn ich mich mit The Water Devotion verbinde, spüre ich fluide Leichtigkeit. Auch wenn wir tief in unsere Gewässer gehen. Wir bringen den Körper in einen Zustand von Effortlessness. Es darf leicht gehen, du darfst fühlen, alles darf da sein.</p>
-        <p>Oft sind wir oben im Kopf. Hier darfst du ankommen und fragen: Was ist in diesem Moment meine Wahrheit? Und was ist darin mein grösstes Potenzial?</p>
-        <p class="merksatz">Wasser hat viele Formen. Es geht vom Form ins Formlose.</p>
-        <p class="merksatz staerke">Und die Stärke darin: Warte nicht, durch dich passiert was.</p>
-      </div>
-      <aside class="worte-karte reveal" aria-label="Wie es sich anfühlt">
-        <h3>Wie es sich anfühlt</h3>
-        <ul class="worte">
-          <li>offen</li><li>leicht</li><li>neugierig</li><li>verbindend</li><li>weit</li><li>explorativ</li><li>sanft</li><li>liebevoll</li><li>ausatmend</li><li>erkenntnisreich</li>
-        </ul>
-        <h3 class="worte-zwei">und die Stärke darin</h3>
-        <ul class="worte stark">
-          <li>klar</li><li>direkt</li><li>warte nicht</li>
-        </ul>
-        <p class="klein">Lucys Worte, wenn sie mittendrin ist.</p>
-      </aside>
-    </div>
-  </section>
 
-  <!-- 4 · Was sich verändert -->
-  <section class="aqua-hell">
+  <!-- 3 · Unter der Oberfläche (Lucys Text) -->
+  <section id="journey">
     <div class="wrap">
-      <div class="sek-kopf reveal">
-        <p class="eyebrow">Was es dir schenkt</p>
-        <h2>Was sich <em>verändert</em></h2>
+      <div class="prosa-mitte reveal">
+        <p class="eyebrow">Die Reise</p>
+        <h2>Hast du dich schon mal gefragt, was <em>unter der Oberfläche liegt?</em></h2>
+        <p>Unter deiner Sehnsucht nach Ausdruck und deiner ganz eigenen Art, dich zu bewegen? Wie es sich anfühlt, die Fluidität in deinem Körper und in deinem Lebensrhythmus anzunehmen?</p>
+        <p>Ich lade dich ein auf eine Reise nach innen. Zu Schichten, denen du jeden Tag begegnest, die du aber nie wirklich berühren konntest. Ein Raum zum Langsamwerden – um auf deinen Körper zu hören, auf deinen Atem und auf das, was sich durch dich bewegen möchte.</p>
+        <p>Ausdruck braucht Mut und Geduld. Darum arbeiten wir mit sanften, intuitiven Methoden, ganz auf dich und deinen Körper abgestimmt. Der Leistungsdruck darf gehen. Dein Tanz wird weicher, runder, echter. Und langsam entfaltet sich ein tiefes Vertrauen in deinen inneren Fluss und in das Geheimnisvolle, das in dir lebt.</p>
+        <p class="gross-satz">Du wirst mutiger darin, dich zu zeigen – in deinem Tanz und in deinem Leben.</p>
       </div>
-      <ul class="wandel">
-        <li class="reveal"><h3>Dein Körper</h3><p>Deine Gelenke bekommen Platz, deine Wirbelsäule Bewegung. Manchmal reicht die Hand irgendwo drauf und die Frage: Was brauche ich gerade? Du nimmst zu dir, was in Resonanz ist, nicht mehr schnell, schnell.</p></li>
-        <li class="reveal"><h3>Deine Beziehungen</h3><p>Weniger „du hast das falsch gemacht“, mehr Verständnis und Mitgefühl. Wenn du dir Raum gibst für das, was fliessen möchte, kannst du ihn auch deinem Gegenüber schenken. Wir wollen ja alle in unserer Essenz gesehen werden.</p></li>
-        <li class="reveal"><h3>Das Jetzt</h3><p>Die Schultern, die oben sind, sinken wieder. Du merkst, dass du den Atem anhältst, und atmest aus. Wie weit eigentlich? Kopf, Herz und Bauch sind verbunden, und du reagierst nicht mehr sofort explosiv. Du spürst bewusster, was in dein Feld kommt, oder eben nicht mehr.</p></li>
-        <li class="reveal"><h3>Deine Arbeit</h3><p>Der Körper gibt Signale, die du vorher gekonnt ignoriert hast. Manchmal führt das in eine ganz neue Richtung. Manchmal bleibst du im Job und merkst: Es geht nicht darum, was ich mache, sondern wie.</p></li>
-        <li class="reveal"><h3>Dein Ausdruck</h3><p>Jede Emotion darf durch dich fliessen, ohne Bewertung. Es darf auch mal wehtun, und du tanzt trotzdem mit ihr. Was innen ist, kommt nach aussen.</p></li>
+      <ul class="drei reveal">
+        <li>Deinen inneren Fluss entfalten</li>
+        <li>Dich stark fühlen in deinem echten Körper</li>
+        <li>Dich der Sanftheit der Freiheit hingeben, jenseits von Leistung</li>
       </ul>
     </div>
   </section>
 
-  <!-- 5 · Warum es noch nicht fliesst -->
-  <section class="dunkel">
-    <div class="wrap hindernis-grid">
-      <div class="sek-kopf hindernis-kopf reveal">
-        <p class="eyebrow">Ehrlich gesagt</p>
-        <h2>Warum es noch nicht <em>fliesst</em> </h2>
-        <p class="fuerwen-lead nur-desktop">Das geht nicht von jetzt auf gleich. Es braucht ein wenig Zeit und Devotion. Je mehr du vom „Ich muss“ ins „Ich darf“ kommst, desto mehr umarmt dich diese Energie.</p>
-      </div>
-      <ul class="fuerwen-liste reveal">
-        <li><strong>Ich muss, ich muss.</strong> Jeden Tag aufstehen und funktionieren, weil das System es so will.</li>
-        <li><strong>Sicherheit zuerst.</strong> In uns allen steckt ein Geschenk für die Welt. Aus Sicherheitsgründen verlieren wir es im System.</li>
-        <li><strong>Der Kopf sagt: I can handle it.</strong> Der Körper sagt etwas anderes, und die Schultern bleiben oben.</li>
-        <li><strong>Gefühle werden bewertet.</strong> Gut, schlecht, zu viel. Statt dass sie einfach fliessen dürfen.</li>
-      </ul>
-      <p class="fuerwen-lead nur-mobil">Das geht nicht von jetzt auf gleich. Es braucht ein wenig Zeit und Devotion. Je mehr du vom „Ich muss“ ins „Ich darf“ kommst, desto mehr umarmt dich diese Energie.</p>
-    </div>
-  </section>
-
-  <!-- 6 · Warum Wasser -->
-  <svg class="welle" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true" style="background:var(--flaeche);height:48px"><path d="M0 30 C240 0 480 60 720 30 S1200 0 1440 30 V60 H0Z" fill="#24494C"/></svg>
-  <section class="wasser" id="water">
-    <div class="wasser-bild">
-      <picture>
-        <source type="image/avif" srcset="assets/img/mentoring-float-480.avif 480w, assets/img/mentoring-float-800.avif 800w, assets/img/mentoring-float-1200.avif 1200w, assets/img/mentoring-float-1600.avif 1600w" sizes="(max-width: 900px) 100vw, 52vw">
-        <source type="image/webp" srcset="assets/img/mentoring-float-480.webp 480w, assets/img/mentoring-float-800.webp 800w, assets/img/mentoring-float-1200.webp 1200w, assets/img/mentoring-float-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 52vw">
-        <img src="assets/img/mentoring-float-1200.jpg" srcset="assets/img/mentoring-float-480.jpg 480w, assets/img/mentoring-float-800.jpg 800w, assets/img/mentoring-float-1200.jpg 1200w, assets/img/mentoring-float-1600.jpg 1600w" sizes="(max-width: 900px) 100vw, 52vw" width="1600" height="1066" alt="Lucy treibt mit geschlossenen Augen auf dem Rücken im See" loading="lazy" decoding="async">
-      </picture>
-    </div>
-    <div class="wrap">
-      <div class="wasser-text reveal">
-        <p class="eyebrow">Warum Wasser</p>
-        <h2>Wasser steht für <em>Vertrauen</em></h2>
-        <p>Tiefes Vertrauen.</p>
-        <p>In der Chinesischen Medizin gehört das Wasser zu den Nieren. Dort sitzt, so das Bild, unsere Essenz, die Energie, die wir von Geburt an haben. Alltagsenergie holen wir aus Essen, Atmung und Schlaf. Die Essenz nährt vor allem eines: Ruhe.</p>
-        <p>Das ist auch mein eigener Prozess. Ich bin mittendrin und sehe den Wert. Aus dem System rauszutanzen fällt mir leicht, und genau dabei begleite ich dich.</p>
-        <p class="klein">Ein traditionelles Bild aus der Chinesischen Medizin, keine medizinische Aussage. Die Arbeit hier ist keine medizinische Behandlung und ersetzt keinen Arztbesuch.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7 · Übung zum Mitnehmen -->
-  <section>
-    <div class="wrap uebung-grid">
-      <figure class="reveal"><picture>
-        <source type="image/avif" srcset="assets/img/workshops-dance-400.avif 400w, assets/img/workshops-dance-800.avif 800w" sizes="(max-width: 900px) 70vw, 30vw">
-        <source type="image/webp" srcset="assets/img/workshops-dance-400.webp 400w, assets/img/workshops-dance-800.webp 800w" sizes="(max-width: 900px) 70vw, 30vw">
-        <img src="assets/img/workshops-dance-800.jpg" srcset="assets/img/workshops-dance-400.jpg 400w, assets/img/workshops-dance-800.jpg 800w, assets/img/workshops-dance-1200.jpg 1200w" sizes="(max-width: 900px) 70vw, 30vw" width="1365" height="2048" alt="Eine Tänzerin bewegt sich frei auf der Wiese" loading="lazy" decoding="async">
-      </picture></figure>
-      <div class="reveal">
-        <p class="eyebrow" style="color:var(--akzent);margin-bottom:1rem">Zum Mitnehmen</p>
-        <h2>30 Sekunden <em>Spinal Waves</em></h2>
-        <p>Ich sage das allen: Lass deine Wirbelsäule einmal am Tag 30 Sekunden lang in Wellen fliessen. Ohne richtig oder falsch. Und dann schau, wie du durch den Tag gehst.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 8 · Kathis Weg [FREIGABE KATHI] -->
-  <section class="zitat geschichte">
+  <!-- 4 · Wellen, Spiralen, Kreise + Lucys Wasser-Fragen -->
+  <section class="zitat-bild wellen">
+    <figure>
+<picture>
+  <source type="image/avif" srcset="assets/img/lake-arms-bw-800.avif 800w, assets/img/lake-arms-bw-1200.avif 1200w, assets/img/lake-arms-bw-1600.avif 1600w, assets/img/lake-arms-bw-2000.avif 2000w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/lake-arms-bw-800.webp 800w, assets/img/lake-arms-bw-1200.webp 1200w, assets/img/lake-arms-bw-1600.webp 1600w, assets/img/lake-arms-bw-2000.webp 2000w" sizes="100vw">
+  <img src="assets/img/lake-arms-bw-1200.jpg" srcset="assets/img/lake-arms-bw-800.jpg 800w, assets/img/lake-arms-bw-1200.jpg 1200w, assets/img/lake-arms-bw-1600.jpg 1600w, assets/img/lake-arms-bw-2000.jpg 2000w" sizes="100vw" width="2000" height="1333" alt="" loading="lazy" decoding="async">
+</picture>
+    </figure>
     <div class="wrap reveal">
-      <svg class="treiben" width="140" height="30" viewBox="0 0 140 30" aria-hidden="true"><path d="M6 15c11-13 22-13 33 0s22 13 33 0 22-13 33 0 18 10 29 4" stroke="#CFE8E6" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".85"/></svg>
-      <h2>Wie eine <em>Blüte</em></h2>
-      <p class="erzaehlt">Kathi kam ganz versteift, scheu wie ein Mäuschen. Sich bewegen, ohne dass jemand sagt wie? Sie brauchte immer ein Konzept. Kontakt mochte sie, nur wusste sie nicht wie. Im 1:1 hat sie zuerst ihr Selbstvertrauen zurückgewonnen, konnte mehr ausatmen und hat sich in Gruppen getraut. Heute ist sie fast bei jedem Tanzworkshop dabei, und ihrer Energie treu geblieben.</p>
-      <cite>Kathi · 1:1 mit Lucy</cite>
-    </div>
-  </section>
-
-  <!-- 9 · Wer ist Lucy -->
-  <section class="aqua" id="about">
-    <div class="wrap about-grid">
-      <div class="about-figur reveal">
-        <figure>
-          <picture>
-            <source type="image/avif" srcset="assets/img/lucy-water-400.avif 400w, assets/img/lucy-water-800.avif 800w, assets/img/lucy-water-1200.avif 1200w" sizes="(max-width: 900px) 70vw, 34vw">
-            <source type="image/webp" srcset="assets/img/lucy-water-400.webp 400w, assets/img/lucy-water-800.webp 800w, assets/img/lucy-water-1200.webp 1200w" sizes="(max-width: 900px) 70vw, 34vw">
-            <img src="assets/img/lucy-water-800.jpg" srcset="assets/img/lucy-water-400.jpg 400w, assets/img/lucy-water-800.jpg 800w, assets/img/lucy-water-1200.jpg 1200w" sizes="(max-width: 900px) 70vw, 34vw" width="2048" height="1365" alt="Lucy steht im See, ihre Arme gleiten durchs Wasser" loading="lazy" decoding="async">
-          </picture>
-        </figure>
-      </div>
-      <div class="about-text reveal">
-        <p class="eyebrow" style="color:var(--akzent);margin-bottom:1rem">Über mich</p>
-        <h2>Hallo, ich bin <em>Lucy</em></h2>
-        <p>Ich sehe Menschen gut. Was ich sehe, sage ich dir straight, immer als Bestärkung, nie als Fehler. Wenn jemand tanzt, kann ich gar nicht anders, als die Person zu fühlen und ihr Energie zu geben. Manchmal schauen wir uns einfach in die Augen und werden zusammen weich.</p>
-        <p>In der Kontaktimprovisation heisst das Trickster Energy: hier antippen, da antippen, oh, was macht das? Das bringe ich in den Raum. Öffne dich, probier, beweg dich. <strong>Warte nicht, durch dich passiert was.</strong></p>
-        <p>Aufgewachsen in Hamburg, heute in Luzern. Ich tanze, seit ich klein bin, unterrichte seit ich 16 bin und habe über Freestyle und Fluid Movement zum ZenThai Shiatsu gefunden.</p>
-      </div>
+      <h2>Wellen, Spiralen und <em>Kreise</em></h2>
+      <p class="wellen-lead">Ein Feld, um deinen Fluss immer weiter zu entdecken – und immer wieder zu deiner ruhigen Sicherheit zurückzukommen, die immer da ist.</p>
+      <ul class="fragen">
+        <li>Wie bewegt sich Wasser im Sturm?</li>
+        <li>In einem stillen Bergsee?</li>
+        <li>Wenn ein Stein hineinfällt?</li>
+        <li>Wenn es auf die Küste zuläuft?</li>
+      </ul>
     </div>
   </section>
 
@@ -602,12 +593,13 @@ section{padding:var(--s6) 0}
       <ol class="ablauf">
         <li class="reveal"><strong>Ankommen</strong>Wir reden kurz oder gehen direkt in die Bewegung.</li>
         <li class="reveal"><strong>Am Boden</strong>Eine kleine Reise durch den Körper, angeleitet mit meiner Stimme.</li>
-        <li class="reveal"><strong>Fluide Tools</strong>Wir vertiefen, was dein Körper gerade lernt.</li>
+        <li class="reveal"><strong>Fliessende Werkzeuge</strong>Wir vertiefen, was dein Körper gerade lernt.</li>
         <li class="reveal"><strong>Dein Thema</strong>Kontaktimprovisation oder ein Thema, das wir im Körper erforschen. Choreos, wenn du magst.</li>
-        <li class="reveal"><strong>Nourishment</strong>Ein sanftes, meditatives Ankommen im Hier und Jetzt, oft mit meinen Händen.</li>
+        <li class="reveal"><strong>Ausklang</strong>Ein sanftes, meditatives Ankommen im Hier und Jetzt, oft mit meinen Händen.</li>
       </ol>
     </div>
   </section>
+
 
   <!-- 11 · Das Angebot -->
   <section class="aqua-hell" id="angebot">
@@ -615,22 +607,28 @@ section{padding:var(--s6) 0}
       <div class="sek-kopf reveal">
         <p class="eyebrow">Unsere Zusammenarbeit</p>
         <h2>The Fluid <em>Self</em></h2>
+        <p class="sek-lead">Ein Raum für alle, die neu im Fluid Movement sind, und genauso für Tänzerinnen, die Gelerntes loslassen und tiefer in ihr eigentliches Potenzial von Fühlen und Bewegung eintauchen möchten.</p>
       </div>
       <div class="zs-grid">
         <div class="zs-text reveal">
           <h3 style="font-size:var(--fs-2)">Vom Kennenlernen zum Ja</h3>
           <ol class="schritte">
-            <li><strong>Kennenlernen</strong>Ein kostenloser Video-Call. Wir schauen, wonach sich dein Körper sehnt und ob es passt.</li>
+            <li><strong>Kennenlernen</strong>Schreib mir kurz, dann finden wir einen Termin für einen kostenlosen Video-Call. Wir schauen, wonach sich dein Körper sehnt und ob es passt.</li>
             <li><strong>Du entscheidest</strong>In Ruhe. Bei einem Ja legen wir die sechs Termine fest.</li>
             <li><strong>Drei Monate</strong>Sechs Treffen, dazwischen deine eigene Praxis.</li>
           </ol>
+          <div class="vielleicht">
+            <h3>Vielleicht bist du hier, weil …</h3>
+            <p>dein Kopf sagt: „Ich schaff das schon“, und dein Körper sagt etwas anderes. Du arbeitest, arbeitest, arbeitest – und dir fehlt die Frage: Was fühle ich eigentlich?</p>
+            <p>Du musst nicht bereit ankommen. Wir fangen da an, wo du gerade bist.</p>
+          </div>
         </div>
         <aside class="paket reveal" aria-label="The Fluid Self auf einen Blick">
           <figure><picture>
-            <source type="image/avif" srcset="assets/img/mentoring-sunset-400.avif 400w, assets/img/mentoring-sunset-800.avif 800w" sizes="(max-width: 900px) 92vw, 40vw">
-            <source type="image/webp" srcset="assets/img/mentoring-sunset-400.webp 400w, assets/img/mentoring-sunset-800.webp 800w" sizes="(max-width: 900px) 92vw, 40vw">
-            <img src="assets/img/mentoring-sunset-800.jpg" srcset="assets/img/mentoring-sunset-400.jpg 400w, assets/img/mentoring-sunset-800.jpg 800w, assets/img/mentoring-sunset-1200.jpg 1200w" sizes="(max-width: 900px) 92vw, 40vw" width="1365" height="2048" alt="Lucy im stillen See bei Sonnenuntergang" loading="lazy" decoding="async">
-          </picture></figure>
+  <source type="image/avif" srcset="assets/img/paket-wasser-400.avif 400w, assets/img/paket-wasser-800.avif 800w, assets/img/paket-wasser-1200.avif 1200w" sizes="(max-width: 900px) 92vw, 40vw">
+  <source type="image/webp" srcset="assets/img/paket-wasser-400.webp 400w, assets/img/paket-wasser-800.webp 800w, assets/img/paket-wasser-1200.webp 1200w" sizes="(max-width: 900px) 92vw, 40vw">
+  <img src="assets/img/paket-wasser-800.jpg" srcset="assets/img/paket-wasser-400.jpg 400w, assets/img/paket-wasser-800.jpg 800w, assets/img/paket-wasser-1200.jpg 1200w" sizes="(max-width: 900px) 92vw, 40vw" width="1200" height="900" alt="Eine Frau steht bei Sonnenuntergang im See, die Arme bewegen sich durchs Wasser" loading="lazy" decoding="async">
+</picture></figure>
           <h3>The Fluid Self</h3>
           <ul>
             <li>3 Monate, länger geht immer</li>
@@ -640,14 +638,15 @@ section{padding:var(--s6) 0}
             <li>Dazwischen per Nachricht erreichbar</li>
           </ul>
           <p class="preis">CHF 2'300<small>Einmalig oder in 3 Raten.</small></p>
-          <p class="preis-zeile">Vor Ort zzgl. CHF 60 Raummiete pro Treffen. Online ohne.</p>
+          <p class="preis-zeile">Online: CHF 2'300. Im Studio: insgesamt CHF 2'660, inklusive CHF 60 Raummiete pro Treffen.</p>
           <!-- [KALENDER-LINK: sobald Lucys Buchungsseite steht, hier eintragen] -->
-          <a class="btn btn-voll" href="mailto:lucy@thewaterdevotion.com?subject=Kennenlernen">Kostenloses Kennenlernen buchen</a>
+          <a class="btn btn-voll" href="mailto:lucy@thewaterdevotion.com?subject=Kennenlernen&amp;body=Hi%20Lucy%2C%20I%27d%20love%20a%20free%20intro%20call.%20A%20little%20about%20me%3A%20">Kostenloses Kennenlernen anfragen</a>
           <p class="klein" style="margin-top:var(--s2)">Das 1:1 begleite ich derzeit mit Frauen.</p>
         </aside>
       </div>
     </div>
   </section>
+
 
   <!-- 12 · FAQ -->
   <section id="faq">
@@ -657,28 +656,29 @@ section{padding:var(--s6) 0}
         <h2>Gut zu <em>wissen</em></h2>
       </div>
       <div class="faq reveal">
-        <details><summary>Brauche ich Tanzerfahrung?</summary><p>Nein, es ist open level. Mit Tanzerfahrung bist du genauso willkommen. Die Arbeit ist experimentell und öffnet Bereiche, die du vielleicht noch nie erfahren hast.</p></details>
+        <details><summary>Brauche ich Tanzerfahrung?</summary><p>Nein, es ist offen für alle Levels. Mit Tanzerfahrung bist du genauso willkommen. Die Arbeit ist experimentell und öffnet Bereiche, die du vielleicht noch nie erfahren hast.</p></details>
         <details><summary>Wie ist das mit Berührung?</summary><p>Wir gehen ganz langsam ran, ohne Forcieren, je nachdem, wonach dein Körper sich sehnt. Du sagst, was stimmt und wo du nicht berührt werden möchtest. Meist ist es sehr sanft, bis hin dazu, dass du dein ganzes Gewicht abgibst, wenn und wann du das möchtest. Im ersten Treffen wird nichts von dir erwartet.</p></details>
-        <details><summary>Online oder vor Ort?</summary><p>Beides. Im Studio in Kriens (zzgl. CHF 60 Raummiete pro Treffen) oder online.</p></details>
+        <details><summary>Online oder vor Ort?</summary><p>Beides. Im Studio in Kriens (plus CHF 60 Raummiete pro Treffen) oder online. Online arbeiten wir mit Bewegung, Atem und meiner Stimme – Berührung gibt es im Studio.</p></details>
         <!-- [KLÄREN: Dauer des Kennenlernens] -->
-        <details><summary>Was passiert im Kennenlernen?</summary><p>Ein kostenloser Video-Call, direkt im Kalender buchbar. Wir sprechen über deine Wünsche, wonach sich dein Körper sehnt und welche Themen dran sind. Und wir spüren, ob die Resonanz stimmt und in welchem Rahmen.</p></details>
+        <details><summary>Was passiert im Kennenlernen?</summary><p>Ein kostenloser Video-Call. Schreib mir einfach kurz, dann finden wir einen Termin. Wir sprechen über deine Wünsche, wonach sich dein Körper sehnt und welche Themen gerade dran sind. Und wir spüren, ob es zwischen uns stimmt und in welchem Rahmen.</p></details>
         <details><summary>Kann ich in Raten zahlen?</summary><p>Ja, in 3 Raten.</p></details>
         <details><summary>Auf Deutsch oder Englisch?</summary><p>Ich spreche beides. Welche Sprache für dich passt, klären wir im Kennenlernen.</p></details>
       </div>
     </div>
   </section>
 
+
   <!-- 13 · Stimmen -->
   <section class="aqua-hell">
     <div class="wrap">
       <div class="sek-kopf reveal">
-        <p class="eyebrow">Stimmen aus der Praxis</p>
-        <h2>Was Teilnehmende <em>spüren</em></h2>
+        <p class="eyebrow">Stimmen</p>
+        <h2>Stimmen, die <em>berühren</em></h2>
       </div>
       <div class="slider reveal" aria-label="Stimmen">
         <div class="slider-spur" tabindex="0">
-          <div class="stimme" style="background:var(--papier)"><p>&bdquo;Mein Ausdruck hat sich tief geöffnet, und ich fühle mich viel verbundener mit mir selbst.&ldquo;</p><footer>Janine · Teilnehmerin</footer></div>
-          <div class="stimme" style="background:var(--papier)"><p>&bdquo;Diese Journey hat mich daran erinnert, wie tief meine Leidenschaft fürs Tanzen wirklich ist.&ldquo;</p><footer>Milena · Teilnehmerin</footer></div>
+          <div class="stimme" style="background:var(--papier)"><p>&bdquo;Mein Ausdruck hat sich tief geöffnet, und ich fühle mich viel verbundener mit mir selbst.&ldquo;</p><footer>Janine · Dance Journey</footer></div>
+          <div class="stimme" style="background:var(--papier)"><p>&bdquo;Diese Journey hat mich daran erinnert, wie tief meine Leidenschaft fürs Tanzen wirklich ist.&ldquo;</p><footer>Milena · Dance Journey</footer></div>
           <div class="stimme" style="background:var(--papier)"><p>&bdquo;Drei Monate voller Tiefe, Berührung, Erkunden, Weiten, Integrieren und Ich-selbst-Werden.&ldquo;</p><footer>Kathi · 1:1-Begleitung</footer></div>
         </div>
         <div class="slider-knoepfe"><button type="button" data-richtung="-1" aria-label="Vorherige Stimme">←</button><button type="button" data-richtung="1" aria-label="Nächste Stimme">→</button></div>
@@ -686,13 +686,14 @@ section{padding:var(--s6) 0}
     </div>
   </section>
 
+
   <!-- 14 · Abschluss -->
   <section class="zitat abschluss">
     <div class="wrap reveal">
       <svg class="treiben" width="140" height="30" viewBox="0 0 140 30" aria-hidden="true"><path d="M6 15c11-13 22-13 33 0s22 13 33 0 22-13 33 0 18 10 29 4" stroke="#CFE8E6" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".85"/></svg>
-      <h2 style="color:#fff">Es darf <em>leicht gehen</em></h2>
-      <p>Alles liegt offen, Ablauf und Preis. Wenn dich etwas daran bewegt, lass uns einfach sprechen.</p>
-      <a class="btn btn-voll" href="#angebot">Kostenloses Kennenlernen buchen</a>
+      <blockquote>„Sei wie Wasser – fliessend &amp; sanft &amp; nachgiebig. Mit der Zeit überwindet Wasser den Fels, der starr &amp; hart ist. Was sanft ist, ist stark.“</blockquote>
+      <p style="margin-top:var(--s3)">Wenn dich etwas davon berührt, lass uns einfach reden.</p>
+      <a class="btn btn-voll" href="#angebot">Kostenloses Kennenlernen anfragen</a>
     </div>
   </section>
 
@@ -730,7 +731,6 @@ section{padding:var(--s6) 0}
   </div>
 </footer>
 
-<p class="entwurf-band" aria-hidden="true">Entwurf für unser Treffen · 6. Okt.</p>
 
 <script>
 (function(){
