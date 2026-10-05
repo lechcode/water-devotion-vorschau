@@ -365,23 +365,51 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
 @media (max-width:900px){.raum-grid,.raum-grid.umgekehrt{grid-template-columns:1fr}.galerie figure:nth-child(2),.duo figure:nth-child(2){transform:none}}
 </style>
 
+
+<style id="variante-b">
+/* ===== Variante B (Chatti-Stil) ===== */
+:root{--papier:#F8F8F2;--aqua-hell:#EDF3EF;--aqua:#DCEAE5;--serif:'Playfair Display','Playfair Display Fallback',Georgia,serif}
+h1,h2{letter-spacing:-.03em;line-height:1.08}
+h1 em,h2 em,.intro p.gross em{font-family:'Sego','Playfair Display',Georgia,serif;font-style:normal;letter-spacing:0;font-size:1.08em}
+.hero-text h1,.e-hero-text h1,.subhero h1{font-size:clamp(2.6rem,6.2vw,5.4rem)}
+.gruss,.persoenlich-text .gruss,.about-text .gruss{font-family:'Sego','Playfair Display',Georgia,serif}
+/* Bogenrahmen */
+.intro-grid figure,.about-figur figure,.persoenlich figure,.subhero-figur figure{border-radius:999px 999px var(--radius) var(--radius)}
+.paket figure{border-radius:999px 999px 0 0;aspect-ratio:1/1}
+/* Stimmen ohne Kästen */
+.stimme{background:none!important;border-top:1px solid rgba(46,106,110,.35);border-radius:0;padding:var(--s2) 0 0;box-shadow:none}
+.stimme p,.slider .stimme p{font-family:var(--serif);font-size:1.1rem;line-height:1.55}
+/* zweiter Button als Textlink */
+.btn-line,.btn-tline{background:none;border:0;border-bottom:1px solid currentColor;border-radius:0;padding:.35rem 0;min-height:auto}
+.btn-line:hover,.btn-tline:hover{background:none;transform:none;opacity:.75}
+/* Video zweispaltig */
+.video-meta{font-size:var(--fs-0);letter-spacing:.04em;color:var(--flaeche);margin-top:.8rem}
+@media (min-width:900px){
+  .video-slot{max-width:1180px;display:grid;grid-template-columns:.75fr 1.25fr;column-gap:clamp(2rem,5vw,4.5rem);text-align:left;align-items:start;align-content:center}
+  .video-slot>.eyebrow{grid-column:1;grid-row:1;align-self:end}
+  .video-slot>h2{grid-column:1;grid-row:2}
+  .video-slot>.video-meta{grid-column:1;grid-row:3}
+  .video-slot>.video-cta{grid-column:1;grid-row:4}
+  .video-slot>.video-rahmen{grid-column:2;grid-row:1/6;margin-top:0}
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#inhalt">Skip to content</a>
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a class="brand" href="index.html" aria-label="The Water Devotion, home">
+    <a class="brand" href="index-b.html" aria-label="The Water Devotion, home">
       <img src="assets/logo-hell.png" alt="The Water Devotion" width="150" height="64">
     </a>
-    <nav class="sprache" aria-label="Language"><span aria-current="page" lang="en">EN</span><a href="workshops-de.html" hreflang="de" lang="de">DE</a></nav>
+    <nav class="sprache" aria-label="Language"><span aria-current="page" lang="en">EN</span><a href="workshops-de-b.html" hreflang="de" lang="de">DE</a></nav>
     <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="menu">
-      <li><a href="mentoring.html">1:1</a></li>
-      <li><a href="workshops.html">Workshops</a></li>
-      <li><a href="shiatsu.html">Shiatsu</a></li>
-      <li><a href="index.html#about">About</a></li>
+      <li><a href="mentoring-b.html">1:1</a></li>
+      <li><a href="workshops-b.html">Workshops</a></li>
+      <li><a href="shiatsu-b.html">Shiatsu</a></li>
+      <li><a href="index-b.html#about">About</a></li>
       <li><a class="pill" href="https://cal.com/lucymarlennicholas/30min" target="_blank" rel="noopener noreferrer">Free intro call</a></li>
     </ul>
   </div>
@@ -586,10 +614,10 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
       <nav aria-label="Footer">
         <h3>Explore</h3>
         <ul>
-          <li><a href="mentoring.html">1:1 Mentoring</a></li>
-          <li><a href="workshops.html">Workshops &amp; Journeys</a></li>
-          <li><a href="shiatsu.html">ZenThai Shiatsu</a></li>
-          <li><a href="index.html#about">About me</a></li>
+          <li><a href="mentoring-b.html">1:1 Mentoring</a></li>
+          <li><a href="workshops-b.html">Workshops &amp; Journeys</a></li>
+          <li><a href="shiatsu-b.html">ZenThai Shiatsu</a></li>
+          <li><a href="index-b.html#about">About me</a></li>
         </ul>
       </nav>
       <div>
@@ -647,6 +675,6 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
   });
 })();
 </script>
-<nav class="variante-schalter" aria-label="Design-Variante" style="position:fixed;left:12px;bottom:12px;z-index:60;background:rgba(30,50,52,.88);color:#EAF4F3;border-radius:999px;padding:.4rem .9rem;font:500 .78rem/1.2 Outfit,Arial,sans-serif;letter-spacing:.04em">Variante <a href="workshops.html" style="color:inherit;font-weight:600;text-decoration:underline">A</a> | <a href="workshops-b.html" style="color:inherit;">B</a></nav>
+<nav class="variante-schalter" aria-label="Design-Variante" style="position:fixed;left:12px;bottom:12px;z-index:60;background:rgba(30,50,52,.88);color:#EAF4F3;border-radius:999px;padding:.4rem .9rem;font:500 .78rem/1.2 Outfit,Arial,sans-serif;letter-spacing:.04em">Variante <a href="workshops.html" style="color:inherit;">A</a> | <a href="workshops-b.html" style="color:inherit;font-weight:600;text-decoration:underline">B</a></nav>
 </body>
 </html>

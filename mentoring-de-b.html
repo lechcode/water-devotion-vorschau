@@ -461,24 +461,70 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
 .faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
 .faq details p{padding:0 0 var(--s2);max-width:62ch}
 </style>
+
+<style id="variante-b">
+/* ===== Variante B (Chatti-Stil) ===== */
+:root{--papier:#F8F8F2;--aqua-hell:#EDF3EF;--aqua:#DCEAE5;--serif:'Playfair Display','Playfair Display Fallback',Georgia,serif}
+h1,h2{letter-spacing:-.03em;line-height:1.08}
+h1 em,h2 em,.intro p.gross em{font-family:'Sego','Playfair Display',Georgia,serif;font-style:normal;letter-spacing:0;font-size:1.08em}
+.hero-text h1,.e-hero-text h1,.subhero h1{font-size:clamp(2.6rem,6.2vw,5.4rem)}
+.gruss,.persoenlich-text .gruss,.about-text .gruss{font-family:'Sego','Playfair Display',Georgia,serif}
+/* Bogenrahmen */
+.intro-grid figure,.about-figur figure,.persoenlich figure,.subhero-figur figure{border-radius:999px 999px var(--radius) var(--radius)}
+.paket figure{border-radius:999px 999px 0 0;aspect-ratio:1/1}
+/* Stimmen ohne Kästen */
+.stimme{background:none!important;border-top:1px solid rgba(46,106,110,.35);border-radius:0;padding:var(--s2) 0 0;box-shadow:none}
+.stimme p,.slider .stimme p{font-family:var(--serif);font-size:1.1rem;line-height:1.55}
+/* zweiter Button als Textlink */
+.btn-line,.btn-tline{background:none;border:0;border-bottom:1px solid currentColor;border-radius:0;padding:.35rem 0;min-height:auto}
+.btn-line:hover,.btn-tline:hover{background:none;transform:none;opacity:.75}
+/* Video zweispaltig */
+.video-meta{font-size:var(--fs-0);letter-spacing:.04em;color:var(--flaeche);margin-top:.8rem}
+@media (min-width:900px){
+  .video-slot{max-width:1180px;display:grid;grid-template-columns:.75fr 1.25fr;column-gap:clamp(2rem,5vw,4.5rem);text-align:left;align-items:start;align-content:center}
+  .video-slot>.eyebrow{grid-column:1;grid-row:1;align-self:end}
+  .video-slot>h2{grid-column:1;grid-row:2}
+  .video-slot>.video-meta{grid-column:1;grid-row:3}
+  .video-slot>.video-cta{grid-column:1;grid-row:4}
+  .video-slot>.video-rahmen{grid-column:2;grid-row:1/6;margin-top:0}
+}
+</style>
+
+<style id="variante-b-hero">
+/* heller Hero auf der 1:1-Seite */
+.nav::before{opacity:1}
+.e-hero{background:var(--papier);color:var(--tinte);min-height:auto;padding-top:5.5rem;align-items:center}
+.e-hero-text .eyebrow{color:var(--akzent)}
+.e-hero-text h1{color:var(--tinte);text-shadow:none}
+.e-hero-text h1 em{color:var(--akzent)}
+.e-hero-text p.lead{color:var(--tinte)}
+.e-hero .btn-voll{background:var(--tiefe);color:#fff}
+.e-hero .btn-line{color:var(--tinte)}
+.e-hero-bild{margin:2.5rem clamp(1.1rem,5vw,5rem) 3rem 0;border-radius:999px 999px var(--radius) var(--radius);aspect-ratio:4/5;max-height:78vh;justify-self:center;width:min(100%,520px)}
+.e-hero-bild::after{display:none}
+@media (max-width:900px){
+  .e-hero-bild{order:1;margin:0 auto 2.5rem;width:calc(100% - 2.2rem);height:auto;min-height:0}
+  .e-hero-text{padding-top:1.5rem}
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
 
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a class="brand" href="index-de.html" aria-label="The Water Devotion, Startseite">
+    <a class="brand" href="index-de-b.html" aria-label="The Water Devotion, Startseite">
       <img src="assets/logo-hell.png" alt="The Water Devotion" width="150" height="64">
     </a>
-    <nav class="sprache" aria-label="Sprache"><a href="mentoring.html" hreflang="en" lang="en">EN</a><span aria-current="page" lang="de">DE</span></nav>
+    <nav class="sprache" aria-label="Sprache"><a href="mentoring-b.html" hreflang="en" lang="en">EN</a><span aria-current="page" lang="de">DE</span></nav>
     <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="menu">
-      <li><a href="mentoring-de.html">1:1</a></li>
-      <li><a href="workshops-de.html">Workshops</a></li>
-      <li><a href="shiatsu-de.html">Shiatsu</a></li>
-      <li><a href="index-de.html#about">Über mich</a></li>
+      <li><a href="mentoring-de-b.html">1:1</a></li>
+      <li><a href="workshops-de-b.html">Workshops</a></li>
+      <li><a href="shiatsu-de-b.html">Shiatsu</a></li>
+      <li><a href="index-de-b.html#about">Über mich</a></li>
       <li><a class="pill" href="https://cal.com/lucymarlennicholas/30min" target="_blank" rel="noopener noreferrer">Kostenloses Kennenlernen</a></li>
     </ul>
   </div>
@@ -531,6 +577,7 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
     <div class="wrap video-slot reveal">
       <p class="eyebrow" style="color:var(--akzent)">In ihren Worten</p>
       <h2 style="font-size:var(--fs-3)">Lucy erzählt, wie sich dieser Raum für sie <em>anfühlt</em> </h2>
+      <p class="video-meta">72 Sekunden · Deutsch · Untertitel DE / EN</p>
       <div class="video-rahmen">
         <video controls playsinline preload="none" poster="assets/video/lucy-poster-foto.jpg" width="1280" height="720" aria-label="Lucy Nicholas erzählt von The Fluid Self (72 Sekunden, mit Untertiteln)">
           <source src="assets/video/lucy-strong-in-softness-v4.mp4" type="video/mp4">
@@ -709,10 +756,10 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
       <nav aria-label="Fusszeile">
         <h3>Entdecken</h3>
         <ul>
-          <li><a href="mentoring-de.html">1:1-Begleitung</a></li>
-          <li><a href="workshops-de.html">Workshops &amp; Journeys</a></li>
-          <li><a href="shiatsu-de.html">ZenThai Shiatsu</a></li>
-          <li><a href="index-de.html#about">Über mich</a></li>
+          <li><a href="mentoring-de-b.html">1:1-Begleitung</a></li>
+          <li><a href="workshops-de-b.html">Workshops &amp; Journeys</a></li>
+          <li><a href="shiatsu-de-b.html">ZenThai Shiatsu</a></li>
+          <li><a href="index-de-b.html#about">Über mich</a></li>
         </ul>
       </nav>
       <div>
@@ -772,6 +819,6 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
   });
 })();
 </script>
-<nav class="variante-schalter" aria-label="Design-Variante" style="position:fixed;left:12px;bottom:12px;z-index:60;background:rgba(30,50,52,.88);color:#EAF4F3;border-radius:999px;padding:.4rem .9rem;font:500 .78rem/1.2 Outfit,Arial,sans-serif;letter-spacing:.04em">Variante <a href="mentoring-de.html" style="color:inherit;font-weight:600;text-decoration:underline">A</a> | <a href="mentoring-de-b.html" style="color:inherit;">B</a></nav>
+<nav class="variante-schalter" aria-label="Design-Variante" style="position:fixed;left:12px;bottom:12px;z-index:60;background:rgba(30,50,52,.88);color:#EAF4F3;border-radius:999px;padding:.4rem .9rem;font:500 .78rem/1.2 Outfit,Arial,sans-serif;letter-spacing:.04em">Variante <a href="mentoring-de.html" style="color:inherit;">A</a> | <a href="mentoring-de-b.html" style="color:inherit;font-weight:600;text-decoration:underline">B</a></nav>
 </body>
 </html>

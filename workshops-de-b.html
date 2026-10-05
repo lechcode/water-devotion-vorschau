@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>document.documentElement.classList.add('js')</script>
 <meta name="robots" content="noindex, nofollow"><!-- ENTFERNEN sobald Impressum+Datenschutz live & freigegeben -->
-<title>Dance Workshops in Lucerne | The Water Devotion</title>
-<meta name="description" content="Workshops and dance journeys in Lucerne: fluid movement, contact improvisation and choreographic landscapes. See the next dates and join the community.">
-<meta property="og:title" content="Dance Workshops in Lucerne | The Water Devotion">
-<meta property="og:description" content="Workshops and dance journeys in Lucerne: fluid movement, contact improvisation and choreographic landscapes. See the next dates and join the community.">
+<title>Tanz-Workshops in Luzern | The Water Devotion</title>
+<meta name="description" content="Workshops und Dance Journeys in Luzern: Fluid Movement, Kontaktimprovisation und choreografische Landschaften. Hier findest du die nächsten Daten und die Community.">
+<meta property="og:title" content="Tanz-Workshops in Luzern | The Water Devotion">
+<meta property="og:description" content="Workshops und Dance Journeys in Luzern: Fluid Movement, Kontaktimprovisation und choreografische Landschaften. Hier findest du die nächsten Daten und die Community.">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="de_CH">
 <link rel="alternate" hreflang="en" href="https://lechcode.github.io/water-devotion-vorschau/workshops.html">
 <link rel="alternate" hreflang="de" href="https://lechcode.github.io/water-devotion-vorschau/workshops-de.html">
-<meta property="og:url" content="https://lechcode.github.io/water-devotion-vorschau/workshops.html"><!-- bei Go-Live auf echte Domain -->
+<meta property="og:url" content="https://lechcode.github.io/water-devotion-vorschau/workshops-de.html"><!-- bei Go-Live auf echte Domain -->
 <meta property="og:image" content="https://lechcode.github.io/water-devotion-vorschau/assets/og.jpg"><!-- bei Go-Live auf echte Domain -->
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -365,24 +365,52 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
 @media (max-width:900px){.raum-grid,.raum-grid.umgekehrt{grid-template-columns:1fr}.galerie figure:nth-child(2),.duo figure:nth-child(2){transform:none}}
 </style>
 
+
+<style id="variante-b">
+/* ===== Variante B (Chatti-Stil) ===== */
+:root{--papier:#F8F8F2;--aqua-hell:#EDF3EF;--aqua:#DCEAE5;--serif:'Playfair Display','Playfair Display Fallback',Georgia,serif}
+h1,h2{letter-spacing:-.03em;line-height:1.08}
+h1 em,h2 em,.intro p.gross em{font-family:'Sego','Playfair Display',Georgia,serif;font-style:normal;letter-spacing:0;font-size:1.08em}
+.hero-text h1,.e-hero-text h1,.subhero h1{font-size:clamp(2.6rem,6.2vw,5.4rem)}
+.gruss,.persoenlich-text .gruss,.about-text .gruss{font-family:'Sego','Playfair Display',Georgia,serif}
+/* Bogenrahmen */
+.intro-grid figure,.about-figur figure,.persoenlich figure,.subhero-figur figure{border-radius:999px 999px var(--radius) var(--radius)}
+.paket figure{border-radius:999px 999px 0 0;aspect-ratio:1/1}
+/* Stimmen ohne Kästen */
+.stimme{background:none!important;border-top:1px solid rgba(46,106,110,.35);border-radius:0;padding:var(--s2) 0 0;box-shadow:none}
+.stimme p,.slider .stimme p{font-family:var(--serif);font-size:1.1rem;line-height:1.55}
+/* zweiter Button als Textlink */
+.btn-line,.btn-tline{background:none;border:0;border-bottom:1px solid currentColor;border-radius:0;padding:.35rem 0;min-height:auto}
+.btn-line:hover,.btn-tline:hover{background:none;transform:none;opacity:.75}
+/* Video zweispaltig */
+.video-meta{font-size:var(--fs-0);letter-spacing:.04em;color:var(--flaeche);margin-top:.8rem}
+@media (min-width:900px){
+  .video-slot{max-width:1180px;display:grid;grid-template-columns:.75fr 1.25fr;column-gap:clamp(2rem,5vw,4.5rem);text-align:left;align-items:start;align-content:center}
+  .video-slot>.eyebrow{grid-column:1;grid-row:1;align-self:end}
+  .video-slot>h2{grid-column:1;grid-row:2}
+  .video-slot>.video-meta{grid-column:1;grid-row:3}
+  .video-slot>.video-cta{grid-column:1;grid-row:4}
+  .video-slot>.video-rahmen{grid-column:2;grid-row:1/6;margin-top:0}
+}
+</style>
 </head>
 <body>
-<a class="skip" href="#inhalt">Skip to content</a>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a class="brand" href="index.html" aria-label="The Water Devotion, home">
+    <a class="brand" href="index-de-b.html" aria-label="The Water Devotion, Startseite">
       <img src="assets/logo-hell.png" alt="The Water Devotion" width="150" height="64">
     </a>
-    <nav class="sprache" aria-label="Language"><span aria-current="page" lang="en">EN</span><a href="workshops-de.html" hreflang="de" lang="de">DE</a></nav>
-    <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+    <nav class="sprache" aria-label="Sprache"><a href="workshops-b.html" hreflang="en" lang="en">EN</a><span aria-current="page" lang="de">DE</span></nav>
+    <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="menu">
-      <li><a href="mentoring.html">1:1</a></li>
-      <li><a href="workshops.html">Workshops</a></li>
-      <li><a href="shiatsu.html">Shiatsu</a></li>
-      <li><a href="index.html#about">About</a></li>
-      <li><a class="pill" href="https://cal.com/lucymarlennicholas/30min" target="_blank" rel="noopener noreferrer">Free intro call</a></li>
+      <li><a href="mentoring-de-b.html">1:1</a></li>
+      <li><a href="workshops-de-b.html">Workshops</a></li>
+      <li><a href="shiatsu-de-b.html">Shiatsu</a></li>
+      <li><a href="index-de-b.html#about">Über mich</a></li>
+      <li><a class="pill" href="https://cal.com/lucymarlennicholas/30min" target="_blank" rel="noopener noreferrer">Kostenloses Kennenlernen</a></li>
     </ul>
   </div>
 </header>
@@ -391,18 +419,18 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
   <section class="subhero">
     <div class="wrap subhero-grid">
       <div>
-        <p class="eyebrow">Live in Lucerne &amp; online</p>
+        <p class="eyebrow">Live in Luzern &amp; online</p>
         <h1>Workshops &amp; Dance <em>Journeys</em></h1>
-        <p class="lead">Become part of a community devoted to the waters within. A space where we admire, inspire and support each other in our ever-unfolding movement.</p>
+        <p class="lead">Werde Teil einer Gemeinschaft, die sich den inneren Gewässern widmet. Ein Raum, in dem wir einander bewundern, inspirieren und unterstützen – in unserer Bewegung, die sich immer weiter entfaltet.</p>
         <div class="subhero-cta">
-          <a class="btn btn-voll" href="#dates">See the next dates</a>
+          <a class="btn btn-voll" href="#dates">Zu den nächsten Daten</a>
         </div>
       </div>
       <div class="subhero-figur">
         <figure><picture>
   <source type="image/avif" srcset="assets/img/workshops-hero-400.avif 400w, assets/img/workshops-hero-800.avif 800w, assets/img/workshops-hero-1200.avif 1200w" sizes="(max-width: 900px) 76vw, 32vw">
   <source type="image/webp" srcset="assets/img/workshops-hero-400.webp 400w, assets/img/workshops-hero-800.webp 800w, assets/img/workshops-hero-1200.webp 1200w" sizes="(max-width: 900px) 76vw, 32vw">
-  <img src="assets/img/workshops-hero-800.jpg" srcset="assets/img/workshops-hero-400.jpg 400w, assets/img/workshops-hero-800.jpg 800w, assets/img/workshops-hero-1200.jpg 1200w" sizes="(max-width: 900px) 76vw, 32vw" width="1200" height="1500" alt="Dancers moving together in a meadow, arms rising" fetchpriority="high">
+  <img src="assets/img/workshops-hero-800.jpg" srcset="assets/img/workshops-hero-400.jpg 400w, assets/img/workshops-hero-800.jpg 800w, assets/img/workshops-hero-1200.jpg 1200w" sizes="(max-width: 900px) 76vw, 32vw" width="1200" height="1500" alt="Tanzende bewegen sich gemeinsam auf einer Wiese, die Arme steigen" fetchpriority="high">
 </picture></figure>
       </div>
     </div>
@@ -412,16 +440,16 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
     <div class="wrap">
       <div class="trio-text">
         <div class="reveal">
-          <p class="eyebrow">Awareness</p>
-          <p>Develop a deeper awareness of your body and discover its natural state of flow and creativity. Explore deeper layers of your physical body and expand your movement repertoire through different fluid movement tools, concepts and partnerwork.</p>
+          <p class="eyebrow">Wahrnehmung</p>
+          <p>Entwickle ein tieferes Bewusstsein für deinen Körper und entdecke seinen natürlichen Zustand von Fluss und Kreativität. Erkunde tiefere Schichten deines Körpers und erweitere dein Bewegungsrepertoire mit verschiedenen Fluid-Movement-Tools, Konzepten und Partnerarbeit.</p>
         </div>
         <div class="reveal">
-          <p class="eyebrow">Expression</p>
-          <p>Connect with your inner world and allow it to become a source of expression. Become the vessel of your own movement and explore the freedom that can emerge when we find comfort within the discomfort.</p>
+          <p class="eyebrow">Ausdruck</p>
+          <p>Verbinde dich mit deiner Innenwelt und lass sie zur Quelle deines Ausdrucks werden. Werde zum Gefäss deiner eigenen Bewegung und erlebe die Freiheit, die entstehen kann, wenn wir uns im Unbequemen wohlfühlen lernen.</p>
         </div>
         <div class="reveal">
-          <p class="eyebrow">Connection</p>
-          <p>Through partner work and supportive exercises, experience connection, trust and the power of moving together. Learn to listen, respond and flow with another body while staying connected to your own.</p>
+          <p class="eyebrow">Verbindung</p>
+          <p>In Partnerarbeit und unterstützenden Übungen erlebst du Verbindung, Vertrauen und die Kraft, sich gemeinsam zu bewegen. Du lernst, auf einen anderen Körper zu hören, zu antworten und mit ihm zu fliessen – und dabei bei dir zu bleiben.</p>
         </div>
       </div>
     </div>
@@ -432,32 +460,32 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
       <picture>
   <source type="image/avif" srcset="assets/img/workshops-group-480.avif 480w, assets/img/workshops-group-800.avif 800w, assets/img/workshops-group-1200.avif 1200w, assets/img/workshops-group-1600.avif 1600w, assets/img/workshops-group-2000.avif 2000w" sizes="100vw">
   <source type="image/webp" srcset="assets/img/workshops-group-480.webp 480w, assets/img/workshops-group-800.webp 800w, assets/img/workshops-group-1200.webp 1200w, assets/img/workshops-group-1600.webp 1600w, assets/img/workshops-group-2000.webp 2000w" sizes="100vw">
-  <img src="assets/img/workshops-group-800.jpg" srcset="assets/img/workshops-group-480.jpg 480w, assets/img/workshops-group-800.jpg 800w, assets/img/workshops-group-1200.jpg 1200w, assets/img/workshops-group-1600.jpg 1600w, assets/img/workshops-group-2000.jpg 2000w" sizes="100vw" width="2000" height="1333" alt="The group standing close together in the meadow" loading="lazy" decoding="async">
+  <img src="assets/img/workshops-group-800.jpg" srcset="assets/img/workshops-group-480.jpg 480w, assets/img/workshops-group-800.jpg 800w, assets/img/workshops-group-1200.jpg 1200w, assets/img/workshops-group-1600.jpg 1600w, assets/img/workshops-group-2000.jpg 2000w" sizes="100vw" width="2000" height="1333" alt="Die Gruppe steht nah beieinander auf der Wiese" loading="lazy" decoding="async">
 </picture>
     </figure>
     <div class="wrap gemeinschaft-text reveal">
-      <p>A space to come home to yourself and,<br><em>through movement, come home to each other.</em></p>
+      <p>Ein Raum, um bei dir selbst anzukommen –<br><em>und durch Bewegung beieinander.</em></p>
     </div>
   </section>
 
   <section>
     <div class="wrap raum-grid">
       <div class="prosa reveal" style="margin:0">
-        <p class="gross-zeile">We create a space where we come not only to dance, but to reconnect in ways we may have forgotten.</p>
-        <p>A place to dive into the unique expression of our bodies, to embody our dance and awaken strength through softness. It is a space that connects people, nourishes, and allows you to unfold in the most natural and authentic way.</p>
-        <p>No longer about performance, this space invites you to move from presence and to discover symbolism that lingers far beyond the dance floor. It's about becoming playful, explorative and endlessly curious about what is waiting to unfold.</p>
-        <p><strong>To connect within, to connect authentically with the world.</strong></p>
+        <p class="gross-zeile">Wir schaffen einen Raum, in den wir nicht nur zum Tanzen kommen, sondern um uns auf eine Art zu verbinden, die wir vielleicht vergessen haben.</p>
+        <p>Ein Ort, um in den einzigartigen Ausdruck unseres Körpers einzutauchen, unseren Tanz zu verkörpern und durch Sanftheit Stärke zu wecken. Ein Raum, der Menschen verbindet, nährt und dich auf die natürlichste und echteste Weise entfalten lässt.</p>
+        <p>Hier geht es nicht mehr um Leistung. Dieser Raum lädt dich ein, dich aus der Präsenz heraus zu bewegen und Bilder zu entdecken, die weit über die Tanzfläche hinaus nachklingen. Es geht darum, verspielt zu werden, neugierig und immer weiter erkundend, was sich entfalten möchte.</p>
+        <p><strong>Sich nach innen verbinden – und ehrlich mit der Welt.</strong></p>
       </div>
       <div class="duo reveal">
         <figure><picture>
   <source type="image/avif" srcset="assets/img/galerie-1-400.avif 400w, assets/img/galerie-1-800.avif 800w" sizes="(max-width: 900px) 45vw, 24vw">
   <source type="image/webp" srcset="assets/img/galerie-1-400.webp 400w, assets/img/galerie-1-800.webp 800w" sizes="(max-width: 900px) 45vw, 24vw">
-  <img src="assets/img/galerie-1-800.jpg" srcset="assets/img/galerie-1-400.jpg 400w, assets/img/galerie-1-800.jpg 800w" sizes="(max-width: 900px) 45vw, 24vw" width="800" height="1000" alt="Two dancers leaning into each other" loading="lazy" decoding="async">
+  <img src="assets/img/galerie-1-800.jpg" srcset="assets/img/galerie-1-400.jpg 400w, assets/img/galerie-1-800.jpg 800w" sizes="(max-width: 900px) 45vw, 24vw" width="800" height="1000" alt="Zwei Tanzende lehnen sich aneinander" loading="lazy" decoding="async">
 </picture></figure>
         <figure><picture>
   <source type="image/avif" srcset="assets/img/galerie-3-400.avif 400w, assets/img/galerie-3-800.avif 800w" sizes="(max-width: 900px) 45vw, 24vw">
   <source type="image/webp" srcset="assets/img/galerie-3-400.webp 400w, assets/img/galerie-3-800.webp 800w" sizes="(max-width: 900px) 45vw, 24vw">
-  <img src="assets/img/galerie-3-800.jpg" srcset="assets/img/galerie-3-400.jpg 400w, assets/img/galerie-3-800.jpg 800w" sizes="(max-width: 900px) 45vw, 24vw" width="800" height="1000" alt="The group resting together in a close circle" loading="lazy" decoding="async">
+  <img src="assets/img/galerie-3-800.jpg" srcset="assets/img/galerie-3-400.jpg 400w, assets/img/galerie-3-800.jpg 800w" sizes="(max-width: 900px) 45vw, 24vw" width="800" height="1000" alt="Die Gruppe ruht eng beieinander im Kreis" loading="lazy" decoding="async">
 </picture></figure>
       </div>
     </div>
@@ -468,14 +496,14 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
       <figure class="reveal studio-bild"><picture>
   <source type="image/avif" srcset="assets/img/workshops-studio-400.avif 400w, assets/img/workshops-studio-800.avif 800w, assets/img/workshops-studio-1200.avif 1200w" sizes="(max-width: 900px) 92vw, 44vw">
   <source type="image/webp" srcset="assets/img/workshops-studio-400.webp 400w, assets/img/workshops-studio-800.webp 800w, assets/img/workshops-studio-1200.webp 1200w" sizes="(max-width: 900px) 92vw, 44vw">
-  <img src="assets/img/workshops-studio-800.jpg" srcset="assets/img/workshops-studio-400.jpg 400w, assets/img/workshops-studio-800.jpg 800w, assets/img/workshops-studio-1200.jpg 1200w" sizes="(max-width: 900px) 92vw, 44vw" width="1200" height="800" alt="A workshop in the studio, everyone moving in their own way" loading="lazy" decoding="async">
+  <img src="assets/img/workshops-studio-800.jpg" srcset="assets/img/workshops-studio-400.jpg 400w, assets/img/workshops-studio-800.jpg 800w, assets/img/workshops-studio-1200.jpg 1200w" sizes="(max-width: 900px) 92vw, 44vw" width="1200" height="800" alt="Ein Workshop im Studio, alle bewegen sich auf ihre eigene Art" loading="lazy" decoding="async">
 </picture></figure>
       <div class="reveal">
-        <p class="eyebrow">Immersions &amp; workshops</p>
-        <h2>A deep dive into what it means to <em>meet the waters</em></h2>
+        <p class="eyebrow">Immersions &amp; Workshops</p>
+        <h2>Eintauchen in das, was es heisst, <em>dem Wasser zu begegnen</em></h2>
         <div class="prosa" style="margin:var(--s3) 0 0">
-          <p>A space to connect with the potential of the body and explore our own ranges of motion. We become more attuned to the subtle currents and sensations we can give and receive, exploring the many qualities of water and how we meet and move with other bodies.</p>
-          <p>A space to discover new possibilities, regulate, sense and listen to what is present. A space to remember the essence, and to surrender to an ever-unfolding flow.</p>
+          <p>Ein Raum, um uns mit dem Potenzial des Körpers zu verbinden und unseren eigenen Bewegungsspielraum zu erkunden. Wir werden feiner für die leisen Strömungen und Empfindungen, die wir geben und empfangen können – und erforschen die vielen Qualitäten des Wassers und wie wir anderen Körpern begegnen und uns mit ihnen bewegen.</p>
+          <p>Ein Raum, um neue Möglichkeiten zu entdecken, zur Ruhe zu kommen, zu spüren und auf das zu hören, was gerade da ist. Ein Raum, um sich an das Wesentliche zu erinnern – und sich einem Fluss hinzugeben, der sich immer weiter entfaltet.</p>
         </div>
       </div>
     </div>
@@ -484,40 +512,40 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
   <section class="aqua-hell" id="dates">
     <div class="wrap">
       <div class="sek-kopf reveal">
-        <p class="eyebrow">Upcoming dates</p>
-        <h2>Workshops, intensives &amp; <em>journeys</em></h2>
-        <p style="margin-top:1rem">Limited spots. Every date is held at Tanzlaboor Luzern unless noted.</p>
+        <p class="eyebrow">Nächste Daten</p>
+        <h2>Workshops, Intensives &amp; <em>Journeys</em></h2>
+        <p style="margin-top:1rem">Begrenzte Plätze. Alle Daten finden im Tanzlaboor Luzern statt, sofern nicht anders angegeben.</p>
       </div>
       <div class="tickets" id="payrexx-demo">
         <article class="ticket reveal">
           <div class="ticket-kopf"><span class="datum">10. &amp; 11.10.2026</span><span class="preis">CHF 50–190</span></div>
-          <h3>A weekend of the waters — TWD Dance Intensive</h3>
-          <p class="meta">Saturday 17–20h, Sunday 11–16h · Tanzlaboor Luzern</p>
-          <p class="beschr">Through fluid movement practices, meditative exploration and contact improvisation, we engage with depth, surrender and gravity, building trust in the body’s intelligence and in the space we share. An invitation to soften and follow what wants to be felt.</p>
-          <p class="spots">— Limited spots —</p>
+          <h3>Ein Wochenende im Wasser · TWD Dance Intensive</h3>
+          <p class="meta">Samstag 17–20 Uhr, Sonntag 11–16 Uhr · Tanzlaboor Luzern</p>
+          <p class="beschr">Mit fliessender Bewegung, meditativem Erkunden und Kontaktimprovisation gehen wir in Tiefe, Hingabe und Schwerkraft – und bauen Vertrauen auf: in die Intelligenz des Körpers und in den Raum, den wir teilen. Eine Einladung, weich zu werden und dem zu folgen, was gespürt werden will.</p>
+          <p class="spots">Begrenzte Plätze</p>
           <div class="ticket-fuss">
-        <!-- [PAYREXX: Lucys Paylink hier einsetzen] --><a class="btn btn-tline" href="mailto:lucy@thewaterdevotion.com?subject=A%20weekend%20of%20the%20waters%20—%20TWD%20Dance%20Intensive">Register by email</a>
+        <!-- [PAYREXX: Lucys Paylink hier einsetzen] --><a class="btn btn-tline" href="mailto:lucy@thewaterdevotion.com?subject=A%20weekend%20of%20the%20waters%20—%20TWD%20Dance%20Intensive">Per E-Mail anmelden</a>
           </div>
         </article>
         <article class="ticket reveal">
-          <div class="ticket-kopf"><span class="datum">Online · 4 classes</span><span class="preis">CHF 320</span></div>
-          <h3>The Waters Within — Online Dance Immersion</h3>
+          <div class="ticket-kopf"><span class="datum">Online · 4 Classes</span><span class="preis">CHF 320</span></div>
+          <h3>The Waters Within · Online Dance Immersion</h3>
           
-          <p class="beschr">Across four classes we explore the potential of the fluid human body. The journey encourages softening, sensing and surrender, in your own four walls. Tune your dance, welcome your expression.</p>
+          <p class="beschr">In vier Klassen erkunden wir das Potenzial des fliessenden Körpers. Die Reise lädt zum Weichwerden, Spüren und Hingeben ein – in deinen eigenen vier Wänden. Stimm deinen Tanz ein, heiss deinen Ausdruck willkommen.</p>
           
           <div class="ticket-fuss">
-        <!-- [PAYREXX: Lucys Paylink hier einsetzen] --><a class="btn btn-tline" href="mailto:lucy@thewaterdevotion.com?subject=The%20Waters%20Within%20—%20Online%20Dance%20Immersion">Register by email</a>
-        <a class="btn btn-tline" href="mailto:lucy@thewaterdevotion.com?subject=Recordings%20The%20Waters%20Within%20—%20Online%20Dance%20Immersion">Get the recordings · CHF 150</a>
+        <!-- [PAYREXX: Lucys Paylink hier einsetzen] --><a class="btn btn-tline" href="mailto:lucy@thewaterdevotion.com?subject=The%20Waters%20Within%20—%20Online%20Dance%20Immersion">Per E-Mail anmelden</a>
+        <a class="btn btn-tline" href="mailto:lucy@thewaterdevotion.com?subject=Recordings%20The%20Waters%20Within%20—%20Online%20Dance%20Immersion">Aufzeichnungen holen · CHF 150</a>
           </div>
         </article>
         <article class="ticket reveal">
-          <div class="ticket-kopf"><span class="datum">Dance Journey</span><span class="preis">CHF 420 · or 2 × 210</span></div>
-          <h3>Awakening Flow — Dance Journey</h3>
+          <div class="ticket-kopf"><span class="datum">Dance Journey</span><span class="preis">CHF 420 · oder 2 × 210</span></div>
+          <h3>Awakening Flow · Dance Journey</h3>
           
-          <p class="beschr">A longer journey through fluid movement, body awareness and shared practice, with space to let your expression unfold over time.</p>
+          <p class="beschr">Eine längere Reise durch fliessende Bewegung, Körperwahrnehmung und gemeinsame Praxis – mit Zeit, damit sich dein Ausdruck entfalten kann.</p>
           
           <div class="ticket-fuss">
-        <!-- [PAYREXX: Lucys Paylink hier einsetzen] --><a class="btn btn-tline" href="mailto:lucy@thewaterdevotion.com?subject=Awakening%20Flow%20—%20Dance%20Journey">Register by email</a>
+        <!-- [PAYREXX: Lucys Paylink hier einsetzen] --><a class="btn btn-tline" href="mailto:lucy@thewaterdevotion.com?subject=Awakening%20Flow%20—%20Dance%20Journey">Per E-Mail anmelden</a>
           </div>
         </article>
       </div>
@@ -527,7 +555,7 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
   <section class="zitat">
     <div class="wrap reveal">
       <svg class="treiben" width="140" height="30" viewBox="0 0 140 30" aria-hidden="true"><path d="M6 15c11-13 22-13 33 0s22 13 33 0 22-13 33 0 18 10 29 4" stroke="#CFE8E6" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".85"/></svg>
-      <blockquote>“To understand water is to understand the cosmos, the marvels of nature, and life itself.”
+      <blockquote>„Wer das Wasser versteht, versteht den Kosmos, die Wunder der Natur und das Leben selbst.“
         <cite>Masaru Emoto</cite>
       </blockquote>
     </div>
@@ -536,40 +564,40 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
   <section>
     <div class="wrap">
       <div class="sek-kopf reveal">
-        <p class="eyebrow">Voices</p>
-        <h2>Kind <em>words</em></h2>
+        <p class="eyebrow">Stimmen</p>
+        <h2>Stimmen, die <em>berühren</em></h2>
       </div>
-      <div class="slider reveal" aria-label="Voices">
+      <div class="slider reveal" aria-label="Stimmen">
         <div class="slider-spur" tabindex="0">
         <div class="stimme">
-          <p>&ldquo;I was able to learn so much. My expression has opened deeply, and I feel much more connected to my body, to myself. For me, this experience went far beyond dancing. Lucy has an incredibly empathetic and beautiful way of holding and guiding space.&rdquo;</p>
+          <p>&bdquo;Ich konnte so viel lernen. Mein Ausdruck hat sich tief geöffnet, und ich fühle mich viel verbundener mit meinem Körper, mit mir selbst. Für mich ging diese Erfahrung weit über das Tanzen hinaus. Lucy hat eine unglaublich einfühlsame und schöne Art, den Raum zu halten und zu führen.&ldquo;</p>
           <footer>Janine · Dance Journey</footer>
         </div>
         <div class="stimme">
-          <p>&ldquo;I have perceived my body in a new, more holistic way. It helped me become more mindful and more sensitive in feeling into certain areas of it. […] It was a beautiful realization that my body can express so much more than I often think.&rdquo;</p>
+          <p>&bdquo;Ich habe meinen Körper auf eine neue, umfassendere Art wahrgenommen. Es hat mir geholfen, achtsamer zu werden und feiner in bestimmte Bereiche hineinzuspüren. […] Es war eine schöne Erkenntnis, dass mein Körper so viel mehr ausdrücken kann, als ich oft denke.&ldquo;</p>
           <footer>Fotini · Dance Journey</footer>
         </div>
         <div class="stimme">
-          <p>&ldquo;I could truly feel how the movement eventually transformed into real waves, and how I was able to flow effortlessly with my body. I had never experienced this before. […] I would never have thought that I could feel so connected to the other participants in an online class.&rdquo;</p>
-          <footer>Leonie · Online class</footer>
+          <p>&bdquo;Ich konnte richtig spüren, wie die Bewegung irgendwann zu echten Wellen wurde und ich mühelos mit meinem Körper fliessen konnte. Das hatte ich so noch nie erlebt. […] Ich hätte nie gedacht, dass ich mich in einer Online-Class so verbunden mit den anderen fühlen kann.&ldquo;</p>
+          <footer>Leonie · Online-Klasse</footer>
         </div>
         <div class="stimme">
-          <p>&ldquo;The Water Devotion journey connected me with parts of my body that I had never consciously felt before. I allowed myself to be guided by my soul and danced in a way that felt right and good for my body.&rdquo;</p>
-          <footer>Leonora · 1:1 Mentoring &amp; Dance Journey</footer>
+          <p>&bdquo;Die Water-Devotion-Journey hat mich mit Teilen meines Körpers verbunden, die ich vorher nie bewusst gespürt hatte. Ich habe mich von meiner Seele führen lassen und so getanzt, wie es sich für meinen Körper richtig und gut angefühlt hat.&ldquo;</p>
+          <footer>Leonora · 1:1-Begleitung &amp; Dance Journey</footer>
         </div>
         </div>
-        <div class="slider-knoepfe"><button type="button" data-richtung="-1" aria-label="Previous voice">←</button><button type="button" data-richtung="1" aria-label="Next voice">→</button></div>
+        <div class="slider-knoepfe"><button type="button" data-richtung="-1" aria-label="Vorherige Stimme">←</button><button type="button" data-richtung="1" aria-label="Nächste Stimme">→</button></div>
       </div>
     </div>
   </section>
 
   <section class="aqua schluss-cta">
     <div class="wrap reveal">
-      <h2>Questions about a <em>date</em>?</h2>
-      <p>Write me a few lines, and we'll find the right way into the water together.</p>
+      <h2>Fragen zu einem <em>Termin</em>?</h2>
+      <p>Schreib mir ein paar Zeilen, dann finden wir zusammen deinen Weg ins Wasser.</p>
       <div class="hero-cta" style="justify-content:center">
-        <a class="btn btn-tinte" href="mailto:lucy@thewaterdevotion.com?subject=Workshops">Write me</a>
-        <a class="btn btn-tline" href="https://www.instagram.com/luzseed/" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
+        <a class="btn btn-tinte" href="mailto:lucy@thewaterdevotion.com?subject=Workshops">Schreib mir</a>
+        <a class="btn btn-tline" href="https://www.instagram.com/luzseed/" target="_blank" rel="noopener noreferrer">Auf Instagram folgen</a>
       </div>
     </div>
   </section>
@@ -581,19 +609,19 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
     <div class="foot-grid">
       <div class="foot-brand">
         <img src="assets/logo-hell.png" alt="The Water Devotion" width="170" height="72" loading="lazy">
-        <p>Fluid dance, embodiment &amp; ZenThai Shiatsu with Lucy Nicholas in Lucerne, Switzerland.</p>
+        <p>Fluider Tanz, 1:1-Begleitung &amp; ZenThai Shiatsu mit Lucy Nicholas in Luzern, Schweiz.</p>
       </div>
-      <nav aria-label="Footer">
-        <h3>Explore</h3>
+      <nav aria-label="Fusszeile">
+        <h3>Entdecken</h3>
         <ul>
-          <li><a href="mentoring.html">1:1 Mentoring</a></li>
-          <li><a href="workshops.html">Workshops &amp; Journeys</a></li>
-          <li><a href="shiatsu.html">ZenThai Shiatsu</a></li>
-          <li><a href="index.html#about">About me</a></li>
+          <li><a href="mentoring-de-b.html">1:1-Begleitung</a></li>
+          <li><a href="workshops-de-b.html">Workshops &amp; Journeys</a></li>
+          <li><a href="shiatsu-de-b.html">ZenThai Shiatsu</a></li>
+          <li><a href="index-de-b.html#about">Über mich</a></li>
         </ul>
       </nav>
       <div>
-        <h3>Connect</h3>
+        <h3>Kontakt</h3>
         <ul>
           <li><a href="mailto:lucy@thewaterdevotion.com">lucy@thewaterdevotion.com</a></li>
           <li><a href="https://www.instagram.com/luzseed/" target="_blank" rel="noopener noreferrer">Instagram · @luzseed</a></li>
@@ -647,6 +675,6 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
   });
 })();
 </script>
-<nav class="variante-schalter" aria-label="Design-Variante" style="position:fixed;left:12px;bottom:12px;z-index:60;background:rgba(30,50,52,.88);color:#EAF4F3;border-radius:999px;padding:.4rem .9rem;font:500 .78rem/1.2 Outfit,Arial,sans-serif;letter-spacing:.04em">Variante <a href="workshops.html" style="color:inherit;font-weight:600;text-decoration:underline">A</a> | <a href="workshops-b.html" style="color:inherit;">B</a></nav>
+<nav class="variante-schalter" aria-label="Design-Variante" style="position:fixed;left:12px;bottom:12px;z-index:60;background:rgba(30,50,52,.88);color:#EAF4F3;border-radius:999px;padding:.4rem .9rem;font:500 .78rem/1.2 Outfit,Arial,sans-serif;letter-spacing:.04em">Variante <a href="workshops-de.html" style="color:inherit;">A</a> | <a href="workshops-de-b.html" style="color:inherit;font-weight:600;text-decoration:underline">B</a></nav>
 </body>
 </html>
