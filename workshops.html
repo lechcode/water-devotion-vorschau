@@ -500,24 +500,13 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
           </div>
         </article>
         <article class="ticket reveal">
-          <div class="ticket-kopf"><span class="datum">Online · 4 classes</span><span class="preis">CHF 320</span></div>
+          <div class="ticket-kopf"><span class="datum">Online · 4 classes</span><span class="preis">CHF 150</span></div>
           <h3>The Waters Within — Online Dance Immersion</h3>
           
           <p class="beschr">Across four classes we explore the potential of the fluid human body. The journey encourages softening, sensing and surrender, in your own four walls. Tune your dance, welcome your expression.</p>
           
           <div class="ticket-fuss">
         <!-- [PAYREXX: Lucys Paylink hier einsetzen] --><a class="btn btn-tline" href="mailto:lucy@thewaterdevotion.com?subject=The%20Waters%20Within%20—%20Online%20Dance%20Immersion">Register by email</a>
-        <a class="btn btn-tline" href="mailto:lucy@thewaterdevotion.com?subject=Recordings%20The%20Waters%20Within%20—%20Online%20Dance%20Immersion">Get the recordings · CHF 150</a>
-          </div>
-        </article>
-        <article class="ticket reveal">
-          <div class="ticket-kopf"><span class="datum">Dance Journey</span><span class="preis">CHF 420 · or 2 × 210</span></div>
-          <h3>Awakening Flow — Dance Journey</h3>
-          
-          <p class="beschr">A longer journey through fluid movement, body awareness and shared practice, with space to let your expression unfold over time.</p>
-          
-          <div class="ticket-fuss">
-        <!-- [PAYREXX: Lucys Paylink hier einsetzen] --><a class="btn btn-tline" href="mailto:lucy@thewaterdevotion.com?subject=Awakening%20Flow%20—%20Dance%20Journey">Register by email</a>
           </div>
         </article>
       </div>
@@ -552,10 +541,6 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
         <div class="stimme">
           <p>&ldquo;I could truly feel how the movement eventually transformed into real waves, and how I was able to flow effortlessly with my body. I had never experienced this before. […] I would never have thought that I could feel so connected to the other participants in an online class.&rdquo;</p>
           <footer>Leonie · Online class</footer>
-        </div>
-        <div class="stimme">
-          <p>&ldquo;The Water Devotion journey connected me with parts of my body that I had never consciously felt before. I allowed myself to be guided by my soul and danced in a way that felt right and good for my body.&rdquo;</p>
-          <footer>Leonora · 1:1 Mentoring &amp; Dance Journey</footer>
         </div>
         </div>
         <div class="slider-knoepfe"><button type="button" data-richtung="-1" aria-label="Previous voice">←</button><button type="button" data-richtung="1" aria-label="Next voice">→</button></div>
@@ -633,6 +618,10 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
       if(e.isIntersecting){e.target.classList.add('sichtbar'); io.unobserve(e.target);}
     })},{threshold:.12});
     reveals.forEach(function(r){io.observe(r)});
+    /* Absicherung (07.10.): bei schnellem Scrollen verpasst der Observer Blöcke -> alles im/über dem Sichtfeld zeigen */
+    var nachziehen=function(){reveals.forEach(function(r){if(!r.classList.contains('sichtbar')&&r.getBoundingClientRect().top<innerHeight){r.classList.add('sichtbar');io.unobserve(r);}})};
+    var tick=null;addEventListener('scroll',function(){clearTimeout(tick);tick=setTimeout(nachziehen,120)},{passive:true});
+    addEventListener('load',nachziehen);setTimeout(nachziehen,2500);
   }
 
   /* Stimmen-Slider: Pfeile scrollen eine Karte weiter */
@@ -647,6 +636,5 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
   });
 })();
 </script>
-<nav class="variante-schalter" aria-label="Design-Variante" style="position:fixed;left:12px;bottom:12px;z-index:60;background:rgba(30,50,52,.88);color:#EAF4F3;border-radius:999px;padding:.4rem .9rem;font:500 .78rem/1.2 Outfit,Arial,sans-serif;letter-spacing:.04em">Variante <a href="workshops.html" style="color:inherit;font-weight:600;text-decoration:underline">A</a> | <a href="workshops-b.html" style="color:inherit;">B</a></nav>
 </body>
 </html>

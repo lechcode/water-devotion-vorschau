@@ -605,6 +605,10 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
       if(e.isIntersecting){e.target.classList.add('sichtbar'); io.unobserve(e.target);}
     })},{threshold:.12});
     reveals.forEach(function(r){io.observe(r)});
+    /* Absicherung (07.10.): bei schnellem Scrollen verpasst der Observer Blöcke -> alles im/über dem Sichtfeld zeigen */
+    var nachziehen=function(){reveals.forEach(function(r){if(!r.classList.contains('sichtbar')&&r.getBoundingClientRect().top<innerHeight){r.classList.add('sichtbar');io.unobserve(r);}})};
+    var tick=null;addEventListener('scroll',function(){clearTimeout(tick);tick=setTimeout(nachziehen,120)},{passive:true});
+    addEventListener('load',nachziehen);setTimeout(nachziehen,2500);
   }
 
   /* Stimmen-Slider: Pfeile scrollen eine Karte weiter */
@@ -619,6 +623,5 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
   });
 })();
 </script>
-<nav class="variante-schalter" aria-label="Design-Variante" style="position:fixed;left:12px;bottom:12px;z-index:60;background:rgba(30,50,52,.88);color:#EAF4F3;border-radius:999px;padding:.4rem .9rem;font:500 .78rem/1.2 Outfit,Arial,sans-serif;letter-spacing:.04em">Variante <a href="shiatsu-de.html" style="color:inherit;font-weight:600;text-decoration:underline">A</a> | <a href="shiatsu-de-b.html" style="color:inherit;">B</a></nav>
 </body>
 </html>
