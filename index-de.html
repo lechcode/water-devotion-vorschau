@@ -307,6 +307,9 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
 .persoenlich-text p{margin-bottom:var(--s2);max-width:56ch}
 .persoenlich-text p.betont{font-family:var(--serif);font-size:var(--fs-2);line-height:1.4;color:#fff}
 @media (max-width:900px){.persoenlich{grid-template-columns:1fr}.persoenlich figure{max-width:300px}}
+/* 10.10.: Safari gab der About-Figur Breite 0 (justify-self:center + img width:100% = zirkulär) -> Bild lud nie */
+.about-figur{width:100%}
+@media (min-width:901px){.about-grid{grid-template-columns:1.15fr .85fr}.about-figur{order:2}}
 </style>
 </head>
 <body>
@@ -536,10 +539,12 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
       <div class="reveal">
         <p class="eyebrow" style="color:var(--akzent);margin-bottom:1rem">Newsletter</p>
         <h2>Bleib im <em>Fluss</em></h2>
-        <p>Ab und zu ein Brief von mir: neue Daten, Journeys und was das Wasser gerade erzählt.</p>
+        <p>Ab und zu ein Brief von mir: neue Termine, Journeys und was mir das Wasser gerade erzählt. Oder komm in die Community auf WhatsApp oder Telegram für News und Termine.</p>
       </div>
       <div class="news-cta reveal">
         <a class="btn btn-tinte" href="https://shorturl.at/KjHTp" target="_blank" rel="noopener noreferrer">Newsletter abonnieren</a>
+        <a class="btn btn-tline" href="https://chat.whatsapp.com/GdOg8k9JPDa9zMTHbQsz1a" target="_blank" rel="noopener noreferrer">Auf WhatsApp beitreten</a>
+        <a class="btn btn-tline" href="https://t.me/+X1H6A2RAav8yMGI0" target="_blank" rel="noopener noreferrer">Auf Telegram beitreten</a>
         <a class="btn btn-tline" href="https://www.instagram.com/luzseed/" target="_blank" rel="noopener noreferrer">Auf Instagram folgen</a>
       </div>
     </div>
