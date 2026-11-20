@@ -484,6 +484,8 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
 .ablauf li{border-top:2px solid var(--akzent);padding-top:var(--s2)}
 .ablauf li::before{counter-increment:a;content:counter(a, decimal-leading-zero);display:block;font-size:var(--fs-0);letter-spacing:.2em;color:var(--akzent);margin-bottom:.4rem}
 .ablauf strong{display:block;font-family:var(--serif);font-weight:400;font-size:var(--fs-2);margin-bottom:.3rem}
+.fliesstext{max-width:640px}
+.fliesstext p+p{margin-top:var(--s2)}
 @media (max-width: 1000px){.ablauf{grid-template-columns:1fr 1fr}}
 @media (max-width: 560px){.ablauf{grid-template-columns:1fr}}
 .preis-zeile{font-size:var(--fs-0);opacity:.9;margin-top:.3rem}
@@ -649,16 +651,14 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
   <section>
     <div class="wrap">
       <div class="sek-kopf reveal">
-        <p class="eyebrow">90 Minuten</p>
         <h2>So läuft ein <em>Treffen</em> ab</h2>
       </div>
-      <ol class="ablauf">
-        <li class="reveal"><strong>Ankommen</strong>Wir reden kurz oder gehen direkt in die Bewegung.</li>
-        <li class="reveal"><strong>Am Boden</strong>Eine kleine Reise durch den Körper, angeleitet mit meiner Stimme.</li>
-        <li class="reveal"><strong>Fliessende Werkzeuge</strong>Wir vertiefen, was dein Körper gerade lernt.</li>
-        <li class="reveal"><strong>Dein Thema</strong>Kontaktimprovisation oder ein Thema, das wir im Körper erforschen. Choreos, wenn du magst.</li>
-        <li class="reveal"><strong>Ausklang</strong>Ein sanftes, meditatives Ankommen im Hier und Jetzt, oft mit meinen Händen.</li>
-      </ol>
+      <div class="fliesstext reveal">
+        <p>Wir beginnen mit dem Ankommen: ein sanftes Einchecken miteinander und mit deinem Körper. Von dort gehen wir in intuitive Berührung und Bewegung. Ich führe dich mit meiner Stimme und mit sanfter Berührung auf eine Reise, die dich im Raum erdet und deine Sinne öffnet.</p>
+        <p>Dann erkunden wir fliessende Werkzeuge, verschiedene Qualitäten von Wasser, die deine Präsenz im Körper vertiefen. Danach folgt dein Thema, was gerade in dir lebendig ist. Das können Kontaktimprovisation, Partnerwork, Bewegungsmuster oder etwas anderes sein, dem wir im Körper begegnen.</p>
+        <p>Und wir enden mit dem Ausklang: einem sanften, meditativen Ankommen im Hier und Jetzt, oft mit meinen Händen.</p>
+        <p>Jedes Treffen entfaltet sich auf seine eigene Weise. An manchen Tagen braucht der Körper mehr Stille, an anderen mehr Bewegung, und wir folgen dem, was er im Moment braucht.</p>
+      </div>
     </div>
   </section>
 

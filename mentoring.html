@@ -475,6 +475,8 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
 .ablauf li{border-top:2px solid var(--akzent);padding-top:var(--s2)}
 .ablauf li::before{counter-increment:a;content:counter(a, decimal-leading-zero);display:block;font-size:var(--fs-0);letter-spacing:.2em;color:var(--akzent);margin-bottom:.4rem}
 .ablauf strong{display:block;font-family:var(--serif);font-weight:400;font-size:var(--fs-1);margin-bottom:.3rem}
+.fliesstext{max-width:640px}
+.fliesstext p+p{margin-top:var(--s2)}
 @media (max-width: 1000px){.ablauf{grid-template-columns:1fr 1fr}}
 @media (max-width: 560px){.ablauf{grid-template-columns:1fr}}
 .preis-zeile{font-size:var(--fs-0);opacity:.9;margin-top:.3rem}
@@ -621,16 +623,14 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
   <section>
     <div class="wrap">
       <div class="sek-kopf reveal">
-        <p class="eyebrow">90 minutes</p>
         <h2>What a <em>session</em> looks like</h2>
       </div>
-      <ol class="ablauf">
-        <li class="reveal"><strong>Arriving</strong>Check soft tune in with each other, with your body.</li>
-        <li class="reveal"><strong>Intuitive touch and movement</strong>We open the senses through a guided journey through my voice, with gentle touch and grounding into the space.</li>
-        <li class="reveal"><strong>Fluid tools</strong>Exploring different qualities of water and deepening the presence into your body.</li>
-        <li class="reveal"><strong>Your theme</strong>CI, Partnerwork, movement patterns, or a theme we explore in the body that is currently present.</li>
-        <li class="reveal"><strong>Nourishment</strong>A gentle, meditative landing in the here and now, often with my hands.</li>
-      </ol>
+      <div class="fliesstext reveal">
+        <p>We begin by arriving: a soft check-in with each other and with your body. From there, we move into intuitive touch and movement. I guide you through a journey with my voice, with gentle touch, grounding you into the space and opening your senses.</p>
+        <p>Then we explore fluid tools, different qualities of water that deepen your presence in your body. Next comes your theme, whatever is alive in you right now. That might be CI, partnerwork, movement patterns, or something else we meet in the body.</p>
+        <p>And we end with nourishment: a gentle, meditative landing in the here and now, often with my hands.</p>
+        <p>Every session unfolds in its own way. Some days the body wants more stillness, some days more movement, and we follow what it needs in that moment.</p>
+      </div>
     </div>
   </section>
 
