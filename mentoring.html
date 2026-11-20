@@ -443,7 +443,11 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
 .angebote .paket .klein{margin-top:var(--s2)}
 @media (max-width:700px){.angebote{grid-template-columns:1fr}}
 .vielleicht-block{max-width:62ch;margin:0 auto;text-align:center}
-#vielleicht::after{background:rgba(20,40,42,.68)}
+#vielleicht{background:#14282a;text-align:left}
+#vielleicht::after{display:none}
+#vielleicht figure{position:relative;inset:auto;aspect-ratio:3/2}
+#vielleicht .vielleicht-block{margin:0;text-align:left}
+@media(min-width:900px){#vielleicht figure{position:absolute;inset:0 0 0 52%;aspect-ratio:auto}#vielleicht figure img{object-position:50% 40%}#vielleicht .wrap{padding-right:50%}}
 .vielleicht-block h2{margin-bottom:var(--s3)}
 .vielleicht-block p{margin-bottom:var(--s2)}
 .vielleicht{margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid rgba(46,106,110,.25)}
@@ -644,7 +648,7 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
   <!-- Maybe you're here because -->
   <section class="zitat-bild" id="vielleicht">
     <figure>
-<img src="assets/tanzlaboor-shoot-1204-19-mwoxhtwp.jpg" width="1400" height="933" alt="" loading="lazy" decoding="async">
+<img src="assets/tanzlaboor-shoot-1204-19-mwoxhtwp.jpg" width="1400" height="933" alt="Dancer in a black bodysuit in a flowing pose against a light background, black and white photo" loading="lazy" decoding="async">
     </figure>
     <div class="wrap">
       <div class="vielleicht-block reveal">
