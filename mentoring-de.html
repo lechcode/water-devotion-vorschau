@@ -425,6 +425,16 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
 .reise li{padding:0 0 var(--s2)}
 .reise strong{display:block;font-family:var(--serif);font-weight:500;font-size:1.15em;color:var(--akzent)}
 .paket-lead{margin:var(--s2) 0}
+/* Angebots-Kästen (zwei nebeneinander) */
+.angebote{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.2rem,3vw,2.4rem);align-items:stretch;margin-bottom:var(--s5)}
+.angebote .paket{position:static;display:flex;flex-direction:column}
+.angebote .paket .btn{margin-top:auto}
+.angebote .paket .paket-lead + p{margin-bottom:var(--s3)}
+.angebote .paket .klein{margin-top:var(--s2)}
+@media (max-width:700px){.angebote{grid-template-columns:1fr}}
+.vielleicht-block{max-width:62ch;margin:0 auto}
+.vielleicht-block h2{margin-bottom:var(--s3)}
+.vielleicht-block p{margin-bottom:var(--s2)}
 .vielleicht{margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid rgba(46,106,110,.25)}
 .vielleicht h3{font-size:var(--fs-2);margin-bottom:var(--s2)}
 .vielleicht p{margin-bottom:var(--s2);max-width:46ch}
@@ -556,25 +566,8 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
       <div class="sek-kopf reveal">
         <p class="eyebrow">Unsere Zusammenarbeit</p>
         <h2>The Fluid <em>Self</em></h2>
-        <p class="sek-lead">Ein Raum für alle, die neu im Fluid Movement sind, und genauso für Tänzerinnen, die Gelerntes loslassen und tiefer in ihr eigentliches Potenzial von Fühlen und Bewegung eintauchen möchten.</p>
       </div>
-      <div class="zs-grid">
-        <div class="zs-text reveal">
-          <p>The Fluid Self ist eine persönliche Reise, gestaltet rund um dich, deine Bedürfnisse und das, was in dir lebendig ist. Über 2–6 Monate schaffen wir Raum, deine Beziehung zu Bewegung, zu deinem Körper und zu deinem eigenen Ausdruck zu erkunden – und lassen den Prozess in seinem eigenen Tempo geschehen.</p>
-          <h3 class="reise-titel">Was unsere Reise enthalten kann</h3>
-          <ul class="reise">
-            <li><strong>1:1-Treffen</strong>Eine Reihe von sechs Einzelterminen à 90 Minuten, online oder im Studio in Kriens, Schweiz.</li>
-            <li><strong>ZenThai Shiatsu</strong>Eines unserer Treffen widmen wir einer nährenden Körperarbeit, die durch Berührung zu tieferer Verbindung, Loslassen und Wahrnehmung einlädt.</li>
-            <li><strong>Deine eigene Praxis</strong>Die Möglichkeit, in Into Fluid Movement einzutauchen, eine Sammlung von 10 Videos, die deine Erkundung zwischen den Treffen begleiten und inspirieren.</li>
-            <li><strong>Raum dazwischen</strong>Sanfte Begleitung und die Möglichkeit, über Nachrichten verbunden zu bleiben, während du deinen eigenen Prozess durchlebst.</li>
-            <li><strong>Raum, sich zu entfalten</strong>Unsere Treffen sind an keinen starren Zeitplan gebunden. Wir finden einen Rhythmus, der für dich passt, und lassen Zeit für Integration, Neugier und alles, was auf dem Weg entstehen mag.</li>
-          </ul>
-          <div class="vielleicht">
-            <h3>Vielleicht bist du hier, weil …</h3>
-            <p>dein Kopf sagt: „Ich schaff das schon“, und dein Körper sagt etwas anderes. Du arbeitest, arbeitest, arbeitest – und dir fehlt die Frage: Was fühle ich eigentlich?</p>
-            <p>Du musst nicht bereit ankommen. Wir fangen da an, wo du gerade bist.</p>
-          </div>
-        </div>
+      <div class="angebote">
         <aside class="paket reveal" aria-label="The Fluid Self auf einen Blick">
           <figure><picture>
   <source type="image/avif" srcset="assets/img/paket-wasser-400.avif 400w, assets/img/paket-wasser-800.avif 800w, assets/img/paket-wasser-1200.avif 1200w" sizes="(max-width: 900px) 92vw, 40vw">
@@ -582,11 +575,39 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
   <img src="assets/img/paket-wasser-800.jpg" srcset="assets/img/paket-wasser-400.jpg 400w, assets/img/paket-wasser-800.jpg 800w, assets/img/paket-wasser-1200.jpg 1200w" sizes="(max-width: 900px) 92vw, 40vw" width="1200" height="900" alt="Eine Frau steht bei Sonnenuntergang im See, die Arme bewegen sich durchs Wasser" loading="lazy" decoding="async">
 </picture></figure>
           <h3>The Fluid Self</h3>
-          <p class="paket-lead">Ein offener Weg über 2–6 Monate, individuell gestaltet nach dem, was du brauchst. Er beginnt mit einem Kennenlern-Call.</p>
+          <p class="paket-lead">Ein offener Weg über zwei bis sechs Monate.</p>
+          <p>Ein Raum für alle, die neu im Fluid Movement sind, und genauso für Tänzerinnen, die Gelerntes loslassen und freier in ihr eigentliches Potenzial von Heilung und Bewegung eintauchen möchten.</p>
           <!-- [KALENDER-LINK: sobald Lucys Buchungsseite steht, hier eintragen] -->
           <a class="btn btn-voll" href="https://cal.com/lucymarlennicholas/30min" target="_blank" rel="noopener noreferrer">Kostenloses Kennenlernen buchen</a>
-          <p class="klein" style="margin-top:var(--s2)">Das 1:1 begleite ich derzeit mit Frauen.</p>
+          <p class="klein">Das 1:1 begleite ich derzeit mit Frauen.</p>
         </aside>
+        <aside class="paket reveal" aria-label="Shoot-Angebot">
+          <figure><img src="assets/0n8a7228-mw86u6ky.jpg" width="933" height="1400" alt="Platzhalterbild für das Shoot-Angebot" loading="lazy" decoding="async"></figure>
+          <!-- [PLATZHALTER SHOOT: Bild, Titel und Text liefert Lucy] -->
+          <h3>Shoot-Angebot</h3>
+          <p class="paket-lead">Platzhalter: Titel und Text für das Shoot-Angebot folgen.</p>
+          <a class="btn btn-voll" href="https://cal.com/lucymarlennicholas/30min" target="_blank" rel="noopener noreferrer">Kostenloses Kennenlernen buchen</a>
+        </aside>
+      </div>
+      <div class="zs-text reveal">
+          <ul class="reise">
+            <li><strong>1:1-Treffen</strong>Eine Reihe von sechs Einzelterminen à 90 Minuten, online oder im Studio in Kriens, Schweiz.</li>
+            <li><strong>ZenThai Shiatsu</strong>Eines unserer Treffen widmen wir einer nährenden Körperarbeit, die durch Berührung zu tieferer Verbindung, Loslassen und Wahrnehmung einlädt.</li>
+            <li><strong>Deine eigene Praxis</strong>Die Möglichkeit, in Into Fluid Movement einzutauchen, eine Sammlung von 10 Videos, die deine Erkundung zwischen den Treffen begleiten und inspirieren.</li>
+            <li><strong>Raum dazwischen</strong>Sanfte Begleitung und die Möglichkeit, über Nachrichten verbunden zu bleiben, während du deinen eigenen Prozess durchlebst.</li>
+            <li><strong>Raum, sich zu entfalten</strong>Unsere Treffen sind an keinen starren Zeitplan gebunden. Wir finden einen Rhythmus, der für dich passt, und lassen Zeit für Integration, Neugier und alles, was auf dem Weg entstehen mag.</li>
+          </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vielleicht bist du hier, weil -->
+  <section class="dunkel" id="vielleicht">
+    <div class="wrap">
+      <div class="vielleicht-block reveal">
+            <h2>Vielleicht bist du hier, weil …</h2>
+            <p>dein Kopf sagt: „Ich schaff das schon“, und dein Körper sagt etwas anderes. Du arbeitest, arbeitest, arbeitest – und dir fehlt die Frage: Was fühle ich eigentlich?</p>
+            <p>Du musst nicht bereit ankommen. Wir fangen da an, wo du gerade bist.</p>
       </div>
     </div>
   </section>

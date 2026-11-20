@@ -425,6 +425,16 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
 .reise li{padding:0 0 var(--s2)}
 .reise strong{display:block;font-family:var(--serif);font-weight:500;font-size:1.15em;color:var(--akzent)}
 .paket-lead{margin:var(--s2) 0}
+/* Angebots-Kästen (zwei nebeneinander) */
+.angebote{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.2rem,3vw,2.4rem);align-items:stretch;margin-bottom:var(--s5)}
+.angebote .paket{position:static;display:flex;flex-direction:column}
+.angebote .paket .btn{margin-top:auto}
+.angebote .paket .paket-lead + p{margin-bottom:var(--s3)}
+.angebote .paket .klein{margin-top:var(--s2)}
+@media (max-width:700px){.angebote{grid-template-columns:1fr}}
+.vielleicht-block{max-width:62ch;margin:0 auto}
+.vielleicht-block h2{margin-bottom:var(--s3)}
+.vielleicht-block p{margin-bottom:var(--s2)}
 .vielleicht{margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid rgba(46,106,110,.25)}
 .vielleicht h3{font-size:var(--fs-2);margin-bottom:var(--s2)}
 .vielleicht p{margin-bottom:var(--s2);max-width:46ch}
@@ -554,27 +564,8 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
       <div class="sek-kopf reveal">
         <p class="eyebrow">Working together</p>
         <h2>The Fluid <em>Self</em></h2>
-        <p class="sek-lead">A space for those who are new to fluid movement, as well as for dancers who want to decondition and tap more deeply into their true potential of feeling and movement.</p>
       </div>
-      <div class="zs-grid">
-        <div class="zs-text reveal">
-          <p>The Fluid Self is a personal journey, shaped around you, your needs and what is alive within you. Over the course of 2–6 months, we create space to explore your relationship with movement, your body and your own expression — allowing the process to unfold at its own pace.</p>
-          <h3 class="reise-titel">What our journey may hold</h3>
-          <ul class="reise">
-            <li><strong>1:1 sessions</strong>A series of individual sessions of 90 minutes, held online or in the studio in Lucerne, Switzerland.</li>
-            <li><strong>ZenThai Shiatsu</strong>Our sessions are also dedicated to a nurturing bodywork experience, inviting deeper connection, release and awareness through touch. Depending on what your body needs, we dive deeper into ZenThai Shiatsu.</li>
-            <li><strong>Your own practice</strong>The option to dive into the online course "First steps into Fluidity", a collection of 10 videos to accompany and inspire your exploration between sessions.</li>
-          </ul>
-          <div class="vielleicht">
-            <h3>Maybe you're here because…</h3>
-            <p>Somewhere within you there is a quiet longing to slow down. To listen a little closer. To feel what lives beneath the noise of everyday life.</p>
-            <p>Perhaps you've been moving, doing, giving and holding a lot. And now something in you is curious about another way of being. One that allows for softness, openness and a deeper connection with yourself.</p>
-            <p>Maybe you feel called to explore the language of your body, to move beyond the familiar, to find new ways of expressing what words cannot hold.</p>
-            <p>Or perhaps you simply feel that there is something waiting to be discovered.</p>
-            <p>Whatever has brought you here, there is no need to arrive with answers, expectations or a clear direction.</p>
-            <p>Come as you are. We begin there. With listening, exploring and allowing whatever wants to unfold, to find its way, within the curious ways of the waters. The element, that holds your deepest potential with what you came here to be.</p>
-          </div>
-        </div>
+      <div class="angebote">
         <aside class="paket reveal" aria-label="The Fluid Self at a glance">
           <figure><picture>
   <source type="image/avif" srcset="assets/img/paket-wasser-400.avif 400w, assets/img/paket-wasser-800.avif 800w, assets/img/paket-wasser-1200.avif 1200w" sizes="(max-width: 900px) 92vw, 40vw">
@@ -582,11 +573,41 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
   <img src="assets/img/paket-wasser-800.jpg" srcset="assets/img/paket-wasser-400.jpg 400w, assets/img/paket-wasser-800.jpg 800w, assets/img/paket-wasser-1200.jpg 1200w" sizes="(max-width: 900px) 92vw, 40vw" width="1200" height="900" alt="A woman standing in the lake at sunset, arms moving through the water" loading="lazy" decoding="async">
 </picture></figure>
           <h3>The Fluid Self</h3>
-          <p class="paket-lead">An open path over 2–6 months, shaped individually around what you need. It begins with an intro call.</p>
+          <p class="paket-lead">An open path over two to six months.</p>
+          <p>A space for those who are new to fluid movement as well as for dancers who want to decondition and tap more freely into their true potential of healing and movement.</p>
           <!-- [KALENDER-LINK: sobald Lucys Buchungsseite steht, hier eintragen] -->
           <a class="btn btn-voll" href="https://cal.com/lucymarlennicholas/30min" target="_blank" rel="noopener noreferrer">Book a free intro call</a>
-          <p class="klein" style="margin-top:var(--s2)">I currently work 1:1 with women.</p>
+          <p class="klein">I currently work 1:1 with women.</p>
         </aside>
+        <aside class="paket reveal" aria-label="Shoot offer">
+          <figure><img src="assets/0n8a7228-mw86u6ky.jpg" width="933" height="1400" alt="Placeholder image for the shoot offer" loading="lazy" decoding="async"></figure>
+          <!-- [PLATZHALTER SHOOT: Bild, Titel und Text liefert Lucy] -->
+          <h3>Shoot offer</h3>
+          <p class="paket-lead">Placeholder: title and text for the shoot offer will follow.</p>
+          <a class="btn btn-voll" href="https://cal.com/lucymarlennicholas/30min" target="_blank" rel="noopener noreferrer">Book a free intro call</a>
+        </aside>
+      </div>
+      <div class="zs-text reveal">
+          <ul class="reise">
+            <li><strong>1:1 sessions</strong>A series of individual sessions of 90 minutes, held online or in the studio in Lucerne, Switzerland.</li>
+            <li><strong>ZenThai Shiatsu</strong>Our sessions are also dedicated to a nurturing bodywork experience, inviting deeper connection, release and awareness through touch. Depending on what your body needs, we dive deeper into ZenThai Shiatsu.</li>
+            <li><strong>Your own practice</strong>The option to dive into the online course "First steps into Fluidity", a collection of 10 videos to accompany and inspire your exploration between sessions.</li>
+          </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maybe you're here because -->
+  <section class="dunkel" id="vielleicht">
+    <div class="wrap">
+      <div class="vielleicht-block reveal">
+            <h2>Maybe you're here because…</h2>
+            <p>Somewhere within you there is a quiet longing to slow down. To listen a little closer. To feel what lives beneath the noise of everyday life.</p>
+            <p>Perhaps you've been moving, doing, giving and holding a lot. And now something in you is curious about another way of being. One that allows for softness, openness and a deeper connection with yourself.</p>
+            <p>Maybe you feel called to explore the language of your body, to move beyond the familiar, to find new ways of expressing what words cannot hold.</p>
+            <p>Or perhaps you simply feel that there is something waiting to be discovered.</p>
+            <p>Whatever has brought you here, there is no need to arrive with answers, expectations or a clear direction.</p>
+            <p>Come as you are. We begin there. With listening, exploring and allowing whatever wants to unfold, to find its way, within the curious ways of the waters. The element, that holds your deepest potential with what you came here to be.</p>
       </div>
     </div>
   </section>
