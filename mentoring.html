@@ -405,6 +405,16 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
 .drei{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.2rem,2.5vw,2rem);margin:var(--s4) auto 0;max-width:1000px}
 .drei li{font-family:var(--serif);font-size:var(--fs-2);line-height:1.3;border-top:2px solid var(--akzent);padding-top:var(--s2)}
 @media (max-width:900px){.drei{grid-template-columns:1fr}}
+.braver{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(2rem,6vw,6rem);align-items:center}
+.braver figure{aspect-ratio:4/5;border-radius:var(--radius);overflow:hidden;max-width:340px;width:100%}
+.braver figure img{width:100%;height:100%;object-fit:cover}
+.braver-text .eyebrow{margin-bottom:1rem}
+.braver-text h2{font-size:var(--fs-3);margin-bottom:var(--s2);text-wrap:balance}
+.braver-text p.betont{font-family:var(--serif);font-size:var(--fs-2);line-height:1.4;margin-bottom:var(--s3)}
+.braver-liste{list-style:none;padding:0;margin:0;display:grid;gap:var(--s2);max-width:46ch}
+.braver-liste li{font-size:1.15rem;line-height:1.5;padding-left:1.6rem;position:relative}
+.braver-liste li::before{content:"";position:absolute;left:0;top:.7em;width:.9rem;height:2px;background:currentColor;opacity:.6}
+@media (max-width:900px){.braver{grid-template-columns:1fr}.braver figure{max-width:300px;margin-inline:auto}}
 .wellen h2{color:#fff;font-size:var(--fs-3);margin-bottom:var(--s2)}
 .wellen h2 em{color:var(--akzent-d)}
 .wellen-lead{max-width:48ch;margin:0 auto var(--s3);font-size:var(--fs-2);line-height:1.5;color:var(--aqua-hell)}
@@ -534,13 +544,29 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
         <p>Underneath your longing for expression and your individual way of movement? Ever wondered how it feels to embrace the fluidity in your body and in your rhythm of life?</p>
         <p>I invite you to go on a journey within. Exploring layers that you meet each day but were never truly able to touch. A space of slowing down, to listen to your body, your breath and what wants to move through you.</p>
         <p>Expression takes courage and patience. That's why we work with soft, intuitive methods, tailored specifically to you and your body. The pressure to perform is invited to leave. Your dance becomes softer, rounder, more authentic. And slowly, a deep trust in your inner flow and the mystique that lives within you begins to unfold.</p>
-        <p class="gross-satz">You will grow braver in being seen, in your dance and in your life.</p>
       </div>
-      <ul class="drei reveal">
-        <li>Unfold your inner flow</li>
-        <li>Feel empowered in your authentic body</li>
-        <li>Surrender to the softness of freedom, beyond achievement</li>
-      </ul>
+    </div>
+  </section>
+
+  <!-- Your invitation (von der Startseite hierher verschoben) -->
+  <section class="aqua-hell" id="braver">
+    <div class="wrap braver">
+      <figure class="reveal">
+<img src="assets/natureshoottwd-1204-100-mwox7tv2.jpg" width="933" height="1400" alt="Black and white photo of several hands reaching upward in a dance, dark background" loading="lazy" decoding="async">
+      </figure>
+      <div class="braver-text reveal">
+        <p class="eyebrow">Your invitation</p>
+        <h2>You will grow braver in <em>being seen</em></h2>
+        <p class="betont">In your dance and in your life.</p>
+        <ul class="braver-liste">
+          <li>Unfold your inner flow</li>
+          <li>Feel empowered in your authentic body</li>
+          <li>Surrender to the softness of freedom, beyond achievement</li>
+        </ul>
+      </div>
+      <figure class="reveal">
+<img src="assets/70287497-6df2-4b07-a2d1-c5168cb229c0-mwox86l5.jpg" width="932" height="1400" alt="Black and white photo of a dancer in flowing movement" loading="lazy" decoding="async">
+      </figure>
     </div>
   </section>
 
