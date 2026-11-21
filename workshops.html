@@ -368,6 +368,13 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
 .zitat blockquote.lang{font-size:var(--fs-2);line-height:1.45}
 @media (max-width:900px){.raum-grid,.raum-grid.umgekehrt{grid-template-columns:1fr}.galerie figure:nth-child(2),.duo figure:nth-child(2){transform:none}}
 </style>
+<style>
+/* Element-Trio (Kundenwunsch 21.11.: drei Bilder + Wasser-Satz, vor dem Approach) */
+.element-trio .galerie{margin-bottom:clamp(3rem,6vw,4.5rem)}
+.element-trio .galerie img{width:100%;height:100%;object-fit:cover}
+.element-satz{font-family:var(--serif);font-size:var(--fs-3);line-height:1.35;text-align:center;max-width:30ch;margin-inline:auto;text-wrap:balance;color:var(--flaeche)}
+@media (max-width:900px){.element-trio .galerie{grid-template-columns:1fr 1fr}.element-trio .galerie figure:first-child{grid-column:1/-1;aspect-ratio:4/3}.element-trio .galerie{margin-bottom:var(--s4)}}
+</style>
 
 </head>
 <body>
@@ -410,6 +417,29 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
   <img src="assets/img/workshops-hero-800.jpg" srcset="assets/img/workshops-hero-400.jpg 400w, assets/img/workshops-hero-800.jpg 800w, assets/img/workshops-hero-1200.jpg 1200w" sizes="(max-width: 900px) 76vw, 32vw" width="1200" height="1500" alt="Dancers moving together in a meadow, arms rising" fetchpriority="high">
 </picture></figure>
       </div>
+    </div>
+  </section>
+
+  <section class="element-trio">
+    <div class="wrap">
+      <div class="galerie reveal">
+        <figure><picture>
+  <source type="image/avif" srcset="assets/img/ws-element-1-400.avif 400w, assets/img/ws-element-1-800.avif 800w, assets/img/ws-element-1-1200.avif 1200w" sizes="(max-width: 900px) 46vw, 30vw">
+  <source type="image/webp" srcset="assets/img/ws-element-1-400.webp 400w, assets/img/ws-element-1-800.webp 800w, assets/img/ws-element-1-1200.webp 1200w" sizes="(max-width: 900px) 46vw, 30vw">
+  <img src="assets/img/ws-element-1-800.jpg" srcset="assets/img/ws-element-1-400.jpg 400w, assets/img/ws-element-1-800.jpg 800w, assets/img/ws-element-1-1200.jpg 1200w" sizes="(max-width: 900px) 46vw, 30vw" width="1200" height="1500" alt="Dancers celebrating together with raised arms after a workshop" loading="lazy" decoding="async">
+</picture></figure>
+        <figure><picture>
+  <source type="image/avif" srcset="assets/img/ws-element-2-400.avif 400w, assets/img/ws-element-2-800.avif 800w, assets/img/ws-element-2-1200.avif 1200w" sizes="(max-width: 900px) 46vw, 30vw">
+  <source type="image/webp" srcset="assets/img/ws-element-2-400.webp 400w, assets/img/ws-element-2-800.webp 800w, assets/img/ws-element-2-1200.webp 1200w" sizes="(max-width: 900px) 46vw, 30vw">
+  <img src="assets/img/ws-element-2-800.jpg" srcset="assets/img/ws-element-2-400.jpg 400w, assets/img/ws-element-2-800.jpg 800w, assets/img/ws-element-2-1200.jpg 1200w" sizes="(max-width: 900px) 46vw, 30vw" width="1200" height="1500" alt="Two dancers' hands meeting in a moment of connection" loading="lazy" decoding="async">
+</picture></figure>
+        <figure><picture>
+  <source type="image/avif" srcset="assets/img/ws-element-3-400.avif 400w, assets/img/ws-element-3-800.avif 800w, assets/img/ws-element-3-1200.avif 1200w" sizes="(max-width: 900px) 46vw, 30vw">
+  <source type="image/webp" srcset="assets/img/ws-element-3-400.webp 400w, assets/img/ws-element-3-800.webp 800w, assets/img/ws-element-3-1200.webp 1200w" sizes="(max-width: 900px) 46vw, 30vw">
+  <img src="assets/img/ws-element-3-800.jpg" srcset="assets/img/ws-element-3-400.jpg 400w, assets/img/ws-element-3-800.jpg 800w, assets/img/ws-element-3-1200.jpg 1200w" sizes="(max-width: 900px) 46vw, 30vw" width="1200" height="1500" alt="Lucy dancing in the lake at sunset" loading="lazy" decoding="async">
+</picture></figure>
+      </div>
+      <p class="element-satz reveal">The water element carries the potential to remind us of what it means to feel, flow, adapt and transform - within movement and beyond.</p>
     </div>
   </section>
 
