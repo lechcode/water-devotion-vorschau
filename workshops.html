@@ -357,6 +357,11 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
 @media (max-width:900px){.trio-text{grid-template-columns:1fr}}
 .raum-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:center}
 .raum-grid.umgekehrt{grid-template-columns:1fr 1fr}
+/* Kundenwunsch 21.11.: ruhige Themenliste unter Immersions & Workshops */
+.themen{list-style:none;margin:var(--s3) 0 0;display:grid;grid-template-columns:1fr;gap:.5rem 2rem;font-size:var(--fs-0);font-weight:300;line-height:1.5;color:var(--tinte)}
+.themen li{position:relative;padding-left:1.6rem}
+.themen li::before{content:"";position:absolute;left:0;top:.5em;width:.9rem;height:.45rem;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 9' fill='none' stroke='%232E6A6E' stroke-width='1.4' stroke-linecap='round'%3E%3Cpath d='M1 5Q4.5 0 9 4.5T17 4'/%3E%3C/svg%3E")}
+@media (min-width:700px){.themen{grid-template-columns:1fr 1fr}}
 .gross-zeile{font-family:var(--serif);font-size:var(--fs-3);line-height:1.3;color:var(--flaeche);text-wrap:balance}
 .dunkel .gross-zeile{color:#fff}
 .galerie{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
@@ -530,6 +535,13 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
       <div class="reveal">
         <p class="eyebrow">Immersions &amp; workshops</p>
         <h2>A deep dive into what it means to <em>meet the waters</em></h2>
+        <ul class="themen">
+          <li>Deepening body awareness &amp; emotional presence</li>
+          <li>Tools for freestyle &amp; intuitive unfolding</li>
+          <li>Embodying softness, sensuality &amp; flow</li>
+          <li>Storytelling through movement &amp; authentic expression</li>
+          <li>Contact Improvisation</li>
+        </ul>
         <div class="prosa" style="margin:var(--s3) 0 0">
           <p>A space to connect with the potential of the body and explore our own ranges of motion. We become more attuned to the subtle currents and sensations we can give and receive, exploring the many qualities of water and how we meet and move with other bodies.</p>
           <p>A space to discover new possibilities, regulate, sense and listen to what is present. A space to remember the essence, and to surrender to an ever-unfolding flow.</p>
