@@ -314,7 +314,10 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
 .ticket{background:var(--papier);border-radius:var(--radius);padding:var(--s3);display:flex;flex-direction:column;gap:.9rem;box-shadow:0 6px 30px rgba(30,50,52,.08)}
 .ticket-kopf{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap}
 .ticket .datum{font-family:var(--serif);font-size:var(--fs-2);color:var(--akzent)}
-.ticket .preis{font-weight:500;background:var(--aqua);border-radius:999px;padding:.45rem 1rem;font-size:var(--fs-0);white-space:nowrap}
+.ticket .preis{font-weight:500;background:var(--aqua);border-radius:999px;padding:.45rem 1rem;font-size:var(--fs-0);white-space:nowrap;text-align:center;line-height:1.3}
+.ticket .preis-alt{opacity:.6;font-weight:400;margin-right:.35rem}
+.ticket .preis-neu{font-weight:600;font-size:1.1em}
+.ticket .preis-hinweis{display:block;font-size:.72em;font-weight:400;opacity:.7;letter-spacing:.03em}
 .ticket h3{font-size:var(--fs-2)}
 .ticket .meta{font-size:var(--fs-0);letter-spacing:.08em;text-transform:uppercase;color:var(--akzent)}
 .ticket p.beschr{flex:1}
@@ -564,7 +567,7 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
       </div>
       <div class="tickets" id="payrexx-demo">
         <article class="ticket reveal">
-          <div class="ticket-kopf"><span class="datum">Online · 11 Videos</span><span class="preis">CHF 188</span></div>
+          <div class="ticket-kopf"><span class="datum">Online · 11 Videos</span><span class="preis"><s class="preis-alt">CHF 188</s> <strong class="preis-neu">CHF 79</strong><small class="preis-hinweis">Gilt diese Woche</small></span></div>
           <h3>First Steps into Fluidity</h3>
           <p class="meta">Softening into flow. Moving with intention. Expanding possibilities.</p>
           <p class="beschr">Eine geführte Reise in fluide Bewegung, Körperwahrnehmung und die Kunst, deinen eigenen Flow zu finden. In 11 Videos erkundest du fliessende Bewegungsmuster, entdeckst neue Bewegungswerkzeuge und entwickelst Routinen, die du in deinen Alltag einweben kannst. Für dich, wenn du deinen Freestyle vertiefen, Tanz als Quelle emotionalen Ausdrucks erforschen und eine intuitivere Beziehung zu deinem Körper und zum Wasser pflegen möchtest.</p>
@@ -574,7 +577,7 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
           </div>
         </article>
         <article class="ticket reveal">
-          <div class="ticket-kopf"><span class="datum">Online · 4 Classes</span><span class="preis">CHF 150</span></div>
+          <div class="ticket-kopf"><span class="datum">Online · 4 Classes</span><span class="preis"><s class="preis-alt">CHF 150</s> <strong class="preis-neu">CHF 49</strong><small class="preis-hinweis">Gilt diese Woche</small></span></div>
           <h3>The Waters Within · Online Dance Immersion</h3>
           
           <p class="beschr">Ursprünglich als Live-Reise im Kreis von Frauen erlebt, ist The Waters Within eine Einladung, durch Bewegung in das Wesen des Wassers und seine Qualitäten einzutauchen.</p>
