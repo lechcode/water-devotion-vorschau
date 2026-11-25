@@ -293,7 +293,9 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
 .subhero-figur{max-width:420px;justify-self:end;width:100%}
 .subhero-figur figure{aspect-ratio:4/5;overflow:hidden;border-radius:var(--radius)}
 .subhero-figur img{width:100%;height:100%;object-fit:cover}
-.subhero-cta{margin-top:var(--s3);display:flex;flex-wrap:wrap;gap:.9rem}
+.subhero-cta{margin-top:var(--s3);display:flex;flex-wrap:wrap;align-items:center;gap:.9rem}
+.subhero-hinweis{font-family:var(--serif);font-style:italic;font-size:var(--fs-0);color:var(--akzent-d);opacity:.9}
+@media (max-width: 600px){.subhero-hinweis{flex-basis:100%}}
 @media (max-width: 900px){.subhero-grid{grid-template-columns:1fr}.subhero-figur{max-width:300px;justify-self:start}}
 .prosa{max-width:62ch;margin-inline:auto}
 .prosa p{margin-bottom:var(--s2)}
@@ -421,6 +423,7 @@ h1 em,h2 em,.em,.about-text .gruss,.zitat blockquote{font-style:normal}
         <div class="subhero-cta">
           <a class="btn btn-voll" href="#dates">See the next dates</a>
           <a class="btn btn-line" href="#online">Online programs</a>
+          <span class="subhero-hinweis">Starter discount, available right now</span>
         </div>
       </div>
       <div class="subhero-figur">
