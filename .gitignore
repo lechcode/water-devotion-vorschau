@@ -4,3 +4,4 @@ kunde-material/
 beweise/
 *.md
 .DS_Store
+!CLAUDE.md

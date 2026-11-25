@@ -12,7 +12,7 @@
 <meta property="og:description" content="Two online journeys into fluid movement with Lucy Nicholas: First Steps into Fluidity (11 videos) and The Waters Within (4 classes). Flow from home.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:url" content="https://thewaterdevotion.com/two-ways.html">
+<meta property="og:url" content="https://thewaterdevotion.com/onlineprograms">
 <meta property="og:image" content="https://thewaterdevotion.com/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -83,6 +83,20 @@ a{color:var(--akzent)}
 .ticket-fuss{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center}
 @media (max-width: 900px){.tickets{grid-template-columns:1fr}}
 
+.bildreihe{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.8rem,2vw,1.4rem);margin-bottom:clamp(2.5rem,5vw,4rem)}
+.bildreihe figure{aspect-ratio:4/5;border-radius:var(--radius);overflow:hidden;background:var(--aqua-hell)}
+.bildreihe img{width:100%;height:100%;object-fit:cover}
+@media (max-width: 700px){.bildreihe{grid-template-columns:1fr}}
+
+.worte{padding:0 0 var(--s6);text-align:center}
+.worte .eyebrow{font-size:var(--fs-0);letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--akzent);margin-bottom:var(--s2)}
+.worte h2{font-size:var(--fs-3);margin-bottom:var(--s3)}
+.worte h2 em{font-style:normal;color:var(--akzent)}
+.worte blockquote{max-width:44rem;margin:0 auto;display:flex;flex-direction:column;gap:var(--s2)}
+.worte blockquote p{font-size:var(--fs-2);line-height:1.55;text-wrap:pretty}
+.worte cite{font-style:normal;font-size:var(--fs-0);letter-spacing:.18em;text-transform:uppercase;color:var(--akzent)}
+@media (max-width: 480px){.worte .eyebrow{letter-spacing:.12em}}
+
 .minifoot{padding:var(--s3) 0 var(--s4);font-size:var(--fs-0);opacity:.7;text-align:center}
 .minifoot a{color:var(--akzent);text-decoration:none;margin:0 .6rem}
 .minifoot a:hover{text-decoration:underline}
@@ -105,6 +119,23 @@ a{color:var(--akzent)}
 
 <section class="programme">
   <div class="wrap">
+    <div class="bildreihe">
+      <figure><picture>
+        <source type="image/avif" srcset="assets/img/op-bild-1-400.avif 400w, assets/img/op-bild-1-800.avif 800w, assets/img/op-bild-1-1200.avif 1200w" sizes="(max-width: 700px) 92vw, 31vw">
+        <source type="image/webp" srcset="assets/img/op-bild-1-400.webp 400w, assets/img/op-bild-1-800.webp 800w, assets/img/op-bild-1-1200.webp 1200w" sizes="(max-width: 700px) 92vw, 31vw">
+        <img src="assets/img/op-bild-1-800.jpg" srcset="assets/img/op-bild-1-400.jpg 400w, assets/img/op-bild-1-800.jpg 800w, assets/img/op-bild-1-1200.jpg 1200w" sizes="(max-width: 700px) 92vw, 31vw" width="1200" height="1500" alt="Lucy dancing barefoot in a summer meadow at dusk" loading="lazy" decoding="async">
+      </picture></figure>
+      <figure><picture>
+        <source type="image/avif" srcset="assets/img/op-bild-2-400.avif 400w, assets/img/op-bild-2-800.avif 800w, assets/img/op-bild-2-1200.avif 1200w" sizes="(max-width: 700px) 92vw, 31vw">
+        <source type="image/webp" srcset="assets/img/op-bild-2-400.webp 400w, assets/img/op-bild-2-800.webp 800w, assets/img/op-bild-2-1200.webp 1200w" sizes="(max-width: 700px) 92vw, 31vw">
+        <img src="assets/img/op-bild-2-800.jpg" srcset="assets/img/op-bild-2-400.jpg 400w, assets/img/op-bild-2-800.jpg 800w, assets/img/op-bild-2-1200.jpg 1200w" sizes="(max-width: 700px) 92vw, 31vw" width="1200" height="1500" alt="Hands resting softly on the surface of dark water" loading="lazy" decoding="async">
+      </picture></figure>
+      <figure><picture>
+        <source type="image/avif" srcset="assets/img/op-bild-3-400.avif 400w, assets/img/op-bild-3-800.avif 800w, assets/img/op-bild-3-1200.avif 1200w" sizes="(max-width: 700px) 92vw, 31vw">
+        <source type="image/webp" srcset="assets/img/op-bild-3-400.webp 400w, assets/img/op-bild-3-800.webp 800w, assets/img/op-bild-3-1200.webp 1200w" sizes="(max-width: 700px) 92vw, 31vw">
+        <img src="assets/img/op-bild-3-800.jpg" srcset="assets/img/op-bild-3-400.jpg 400w, assets/img/op-bild-3-800.jpg 800w, assets/img/op-bild-3-1200.jpg 1200w" sizes="(max-width: 700px) 92vw, 31vw" width="1200" height="1500" alt="Lucy in a flowing dance movement, arms open like a wave" loading="lazy" decoding="async">
+      </picture></figure>
+    </div>
     <div class="tickets">
       <article class="ticket">
         <div class="ticket-kopf"><span class="datum">Online · 11 videos</span><span class="preis"><s class="preis-alt">CHF 188</s> <strong class="preis-neu">CHF 79</strong><small class="preis-hinweis">Valid this week</small></span></div>
@@ -125,6 +156,17 @@ a{color:var(--akzent)}
         </div>
       </article>
     </div>
+  </div>
+</section>
+
+<section class="worte">
+  <div class="wrap">
+    <p class="eyebrow">Voices</p>
+    <h2>Kind <em>words</em></h2>
+    <blockquote>
+      <p>&ldquo;An absolute recommendation for every woman who wants to deepen her connection with the element of water (&hellip;) Through Lucy&rsquo;s guidance, I was able to discover what flow can truly feel like on a whole new level. I could actually feel the movement transforming into real waves, allowing me to flow effortlessly with my body. I had never experienced anything like this before. It was an incredible gift to my soul and to my dance.&rdquo;</p>
+      <cite>Leonie</cite>
+    </blockquote>
   </div>
 </section>
 
