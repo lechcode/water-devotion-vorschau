@@ -82,6 +82,10 @@ a{color:var(--akzent)}
 .ticket p.beschr{flex:1}
 .ticket .meta-klein{font-size:calc(var(--fs-0) * .9);letter-spacing:.08em;color:var(--akzent)}
 .ticket-fuss{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center}
+.ticket.bundle{grid-column:1/-1;border:1.5px solid var(--akzent);align-items:center;text-align:center}
+.ticket.bundle .ticket-kopf{justify-content:center}
+.ticket.bundle .beschr{max-width:52rem}
+.ticket.bundle .spar{font-weight:500;color:var(--akzent)}
 @media (max-width: 900px){.tickets{grid-template-columns:1fr}}
 
 .bildreihe{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.8rem,2vw,1.4rem);margin-bottom:clamp(2.5rem,5vw,4rem)}
@@ -154,6 +158,16 @@ a{color:var(--akzent)}
         <p class="beschr">Originally experienced as a live journey shared with a circle of women, The Waters Within is an invitation to immerse yourself in the essence of water and its qualities through movement.<br><br>Across four interconnected classes, each building upon the previous one, we gradually explore the fluidity of the human body through softening, sensing, flowing and surrendering. A journey into the many ways water moves through us, inviting you to reconnect with your inner rhythms, awaken your natural expression and discover new dimensions of your own movement.</p>
         <div class="ticket-fuss">
           <a class="btn btn-tinte" href="https://thewaterdevotion.payrexx.com/pay?tid=b6910005" target="_blank" rel="noopener noreferrer">Get the recordings</a>
+        </div>
+      </article>
+      <article class="ticket bundle">
+        <div class="ticket-kopf"><span class="datum">Bundle · both programmes</span><span class="preis"><s class="preis-alt">CHF 246</s> <strong class="preis-neu">CHF 125</strong><small class="preis-hinweis">Over 40% off</small></span></div>
+        <h3>First Steps into Fluidity &amp; The Waters Within</h3>
+        <p class="meta">The whole journey into the water, from home.</p>
+        <p class="beschr">Begin with the foundations of fluid movement in First Steps into Fluidity, then let The Waters Within carry you deeper through four interconnected classes. Together they become one flowing path: tools and routines for your everyday practice, and an immersion to soften, sense, flow and surrender. Both are yours to return to as often as you like.</p>
+        <p class="spar">Both programmes together for CHF 125 (over 40% off)</p>
+        <div class="ticket-fuss">
+          <a class="btn btn-tinte" href="https://thewaterdevotion.payrexx.com/pay?tid=1e4931a8" target="_blank" rel="noopener noreferrer">Get both programmes</a>
         </div>
       </article>
     </div>
